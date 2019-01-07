@@ -1,4 +1,4 @@
-# Teste para candidatos à vaga de desenvolvedor Front-end (Javasccript)
+# Teste para candidatos à vaga de desenvolvedor Front-end (Javascript)
 
 > [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.jpg)](http://www.medgrupo.com.br)
 
@@ -7,7 +7,7 @@
 1. Leia atentamente as orientações do teste;
 2. As atividades abaixo deverão ser realizadas no prazo de 48h corridas;
 3. Faça um fork deste repositório;
-4. Preocupe-se em desenvolver o javascript utilizando boas práticas;
+4. Preocupe-se em desenvolver o Javascript utilizando boas práticas;
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 
 ### Você pode
