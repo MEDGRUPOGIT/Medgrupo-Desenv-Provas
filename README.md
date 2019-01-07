@@ -1,6 +1,6 @@
 # Teste para candidatos à vaga de desenvolvedor Front-end (Javasccript)
 
-> [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.png)](http://www.medgrupo.com.br)
+> [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.jpg)](http://www.medgrupo.com.br)
 
 ## Instruções
 
