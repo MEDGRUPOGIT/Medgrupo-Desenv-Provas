@@ -1,0 +1,23 @@
+
+.selecao-curso {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.selecao-curso:active,
+option:active,
+option,
+option::selection {
+    background-color: #000;
+    color: #fff;
+}
+.topo {
+    width: -webkit-fill-available;
+    display: block;
+    text-align: center;
+    background-color: #000;
+}

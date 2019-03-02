@@ -1,0 +1,36 @@
+.reset-texto{
+    font-size: 1rem;
+}
+
+.principal {
+    width: 100%;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+hr {
+    border-style: inset;
+    opacity: .2;
+    border-width: 1px;
+
+    margin: 1rem 0;
+}
+
+.visualizacao {
+    background-image: url(../imagens/bg-deitado.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    background-color: #000;
+    
+    float: right;
+    height: -webkit-fill-available;
+    width: 70%;
+}
+
+.apostilas {
+    height: -webkit-fill-available;
+    display: block;
+    padding: 0 6rem;
+}

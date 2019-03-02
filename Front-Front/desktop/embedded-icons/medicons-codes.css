@@ -8,5 +8,5 @@
 .icon-notificacao:before { content: '\e806'; } /* '' */
 .icon-sair:before { content: '\e807'; } /* '' */
 .icon-icon_newacademicas:before { content: '\e808'; } /* '' */
-.icon-icon_newcontri:before { content: '\e809'; } /* '' */
+.icon-icon_newcontri:before { content: '\e809'; font-size: 1rem; } /* '' */
 .icon-icon_newintegra:before { content: '\e80a'; } /* '' */
