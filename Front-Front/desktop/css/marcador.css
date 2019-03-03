@@ -11,3 +11,14 @@
     color: #fff;
     opacity: 0.8;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width:1023px) {
+    .marcador.mobile {
+        display: inline-block;
+        max-width: 30px;
+    }
+
+    ul.desabilitado~.marcador.mobile {
+        color: #243131;
+    }
+}

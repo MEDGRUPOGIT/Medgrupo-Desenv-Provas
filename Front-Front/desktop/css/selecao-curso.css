@@ -1,4 +1,3 @@
-
 .selecao-curso {
     background: transparent;
     border: none;
@@ -14,10 +13,4 @@ option,
 option::selection {
     background-color: #000;
     color: #fff;
-}
-.topo {
-    width: -webkit-fill-available;
-    display: block;
-    text-align: center;
-    background-color: #000;
 }

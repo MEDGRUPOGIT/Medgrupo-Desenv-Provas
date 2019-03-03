@@ -7,21 +7,3 @@
     padding-top: 10px;
 }
 
-.sair-simulados {
-    display: inline-block;
-    text-align: left;
-    width: 10%;
-}
-
-.titulo-pagina {
-    display: inline-block;
-    text-align: center;
-    width: 70%;
-    font-weight: bold;
-}
-
-.mensagem-simulados {
-    display: inline-block;
-    text-align: right;
-    width: 10%;
-}
