@@ -1,0 +1,13 @@
+.marcador-ano {
+    display: block;
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    font-size: .8rem;
+    padding-top: 2vh;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.8;
+}
