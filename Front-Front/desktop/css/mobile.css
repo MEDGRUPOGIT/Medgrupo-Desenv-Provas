@@ -1,0 +1,113 @@
+@media only screen and (min-device-width : 320px) and (max-device-width:767px) {
+    div.desktop {
+        display: block;
+    }
+
+    div.menu {
+        display: none;
+    }
+
+    div.visualizacao {
+        width: -webkit-fill-available;
+        background-image: url(../imagens/bg.jpg);
+    }
+
+    div.opcoes-lateral {
+        display: none;
+    }
+
+    div.apostilas {
+        padding: 0;
+        text-align: center;
+        height: 90vh;
+    }
+
+    div.topo {
+        margin-bottom: .5rem;
+        height: 5vh;
+    }
+
+    div.abas {
+        display: block;
+        width: 100%;
+        height: 5vh;
+        background-color: #000;
+        padding-top: 1rem;
+    }
+
+    div.assunto {
+        margin: 0;
+        font-weight: normal;
+        display: inline;
+        font-size: .8rem;
+    }
+
+    div.scroll {
+        height: auto;
+        display: block;
+        height: 70vh;
+    }
+
+    div.aulas {
+        max-height: -webkit-fill-available;
+    }
+
+    div.semana {
+        width: 48%;
+    }
+
+    div.semana>span {
+        display: none;
+    }
+
+    div.dupla {
+        padding: 0;
+        background: rgb(6, 22, 24, .8)
+    }
+
+    div.dupla ul {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+
+    .marcador.mobile {
+        display: inline-block;
+        max-width: 30px;
+    }
+
+    ul.desabilitado~.marcador.mobile {
+        color: #243131;
+    }
+
+
+    .pequeno {
+        font-size: .5rem;
+    }
+
+    .dupla ul>li:first-child {
+        font-size: .5rem;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+
+    .dupla ul.desabilitado {
+        background: rgb(6, 22, 24, .8);
+        color: #243131;
+    }
+
+    .desabilitado {
+        color: #243131;
+    }
+
+    .menu-inferior {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        height: 45px;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+
+}

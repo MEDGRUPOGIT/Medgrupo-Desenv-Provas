@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Prova MEDGRUPO</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/query.css" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/desktop.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-aulas.css" />
@@ -13,20 +16,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-opcao-lateral.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-scroll.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-topo.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/desktop.abas.css" />
-
+    <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-abas.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-overlay.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="embedded-icons/medicons.css" />
-    <script src="main.js"></script>
+
 </head>
 
 <body>
 
-    <div class="principal">
+    <div class="principal desktop">
         <div class="menu">
 
             <div class="med-icone">
-                <img src="icones/newmenu_cross.svg"/>
+                <img src="icones/newmenu_cross.svg" />
             </div>
 
             <div class="usuario">
@@ -136,25 +140,16 @@
                     <div class="aulas">
 
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="completo">
-                                    <li>100%</li>
+                                    <li class="pequeno">100%</li>
                                     <li>CIR</li>
                                 </ul>
-                                <ul class="completo">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 01
-                            <div class="dupla">
-                                <ul class="completo">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
+                                <div class="marcador mobile">
+                                    <span class="pequeno">Semana</span>
+                                    <span>01</span>
+                                </div>
                                 <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -162,79 +157,42 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 01
+                            <span><span>SEM 01</span></span>
                             <div class="dupla">
                                 <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
-                                <ul class="completo">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 01
-                            <div class="dupla">
-                                <ul class="completo">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
                             </div>
                         </div>
-
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 03</span>
                             <div class="dupla">
-                                <ul class="">
+                                <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
-                                <ul class="">
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 04</span>
                             <div class="dupla">
-                                <ul class="">
+                                <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
-                                <ul class="">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 01
-                            <div class="dupla">
-                                <ul class="">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                                <ul class="">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 01
-                            <div class="dupla">
-                                <ul class="">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                                <ul class="">
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="completo">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
@@ -242,12 +200,71 @@
                         </div>
 
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 05</span>
+                            <div class="dupla">
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="semana">
+                            <span>SEM 06</span>
+                            <div class="dupla">
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="semana">
+                            <span>SEM 07</span>
+                            <div class="dupla">
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="semana">
+                            <span>SEM 08</span>
+                            <div class="dupla">
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="semana">
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="meio">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="meio oito">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -255,12 +272,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -268,12 +286,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -281,12 +300,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 01
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="">
                                     <li>100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -295,12 +315,16 @@
                         </div>
 
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile">
+                                    <span class="pequeno">Semana</span>
+                                    <span>01</span>
+                                </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -308,12 +332,16 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile">
+                                    <span class="pequeno">Semana</span>
+                                    <span>01</span>
+                                </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -321,12 +349,16 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile">
+                                    <span class="pequeno">Semana</span>
+                                    <span>01</span>
+                                </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -334,65 +366,16 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
-                                <ul class="desabilitado">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="semana">
-                            SEM 02
-                            <div class="dupla">
-                                <ul class="desabilitado">
-                                    <li class="transparente">100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                                <ul class="desabilitado">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 02
-                            <div class="dupla">
-                                <ul class="desabilitado">
-                                    <li class="transparente">100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                                <ul class="desabilitado">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 02
-                            <div class="dupla">
-                                <ul class="desabilitado">
-                                    <li class="transparente">100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                                <ul class="desabilitado">
-                                    <li>100%</li>
-                                    <li>CIR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="semana">
-                            SEM 02
-                            <div class="dupla">
-                                <ul class="desabilitado">
-                                    <li class="transparente">100%</li>
-                                    <li>CIR</li>
-                                </ul>
+                                <div class="marcador mobile">
+                                    <span class="pequeno">Semana</span>
+                                    <span>01</span>
+                                </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -401,12 +384,13 @@
                         </div>
 
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -414,12 +398,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -427,12 +412,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -440,12 +426,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -454,12 +441,13 @@
                         </div>
 
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -467,12 +455,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -480,12 +469,13 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -493,12 +483,70 @@
                             </div>
                         </div>
                         <div class="semana">
-                            SEM 02
+                            <span>SEM 01</span>
                             <div class="dupla">
                                 <ul class="desabilitado">
                                     <li class="transparente">100%</li>
                                     <li>CIR</li>
                                 </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="desabilitado">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="semana">
+                            <span>SEM 01</span>
+                            <div class="dupla">
+                                <ul class="desabilitado">
+                                    <li class="transparente">100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="desabilitado">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="semana">
+                            <span>SEM 01</span>
+                            <div class="dupla">
+                                <ul class="desabilitado">
+                                    <li class="transparente">100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="desabilitado">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="semana">
+                            <span>SEM 01</span>
+                            <div class="dupla">
+                                <ul class="desabilitado">
+                                    <li class="transparente">100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
+                                <ul class="desabilitado">
+                                    <li>100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="semana">
+                            <span>SEM 01</span>
+                            <div class="dupla">
+                                <ul class="desabilitado">
+                                    <li class="transparente">100%</li>
+                                    <li>CIR</li>
+                                </ul>
+                                <div class="marcador mobile"> <span class="pequeno">Semana</span> <span>01</span> </div>
                                 <ul class="desabilitado">
                                     <li>100%</li>
                                     <li>CIR</li>
@@ -511,8 +559,18 @@
 
             </div>
 
+
+            <div class="menu-inferior">
+                <span>OPEN MENU</span>
+            </div>
+
         </div>
+
+
+
     </div>
+
+    <script src="js/sidenav.js"></script>
 
 </body>
 
