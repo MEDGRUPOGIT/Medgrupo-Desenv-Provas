@@ -1,7 +1,7 @@
 .scroll {
     overflow: auto;
     padding-top: 2px;
-    height: 45vw;
+    height: 45vh;
 }
 
 /* width */
@@ -19,4 +19,9 @@
     background: #000d16;
     border: 1px solid rgb(38, 60, 76, .6);
     border-radius: 10px;
+}
+
+.scroll.prateleira {
+    height: 90vh;
+    padding-top: 10vh;
 }
