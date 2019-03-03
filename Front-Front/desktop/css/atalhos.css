@@ -27,6 +27,9 @@
 
     padding: .1rem;
     margin-left: 1rem;
+
+    display: block;
+    text-align: left;
 }
 
 .atalhos .link:hover{
