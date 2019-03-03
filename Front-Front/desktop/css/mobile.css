@@ -9,7 +9,9 @@
 
     div.visualizacao {
         width: -webkit-fill-available;
+        max-height: 100vh;
         background-image: url(../imagens/bg.jpg);
+        position: relative;
     }
 
     div.opcoes-lateral {
@@ -100,7 +102,7 @@
     }
 
     .menu-inferior {
-        position: relative;
+        position: absolute;
         left: 0;
         bottom: 0;
         height: 45px;

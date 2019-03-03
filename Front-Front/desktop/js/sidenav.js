@@ -1,7 +1,7 @@
-function openNav() {
-    document.getElementById("menu-inferior").style.height = "70vh";
-}
-
-function closeNav() {
-    document.getElementById("menu-inferior").style.height = "10vh";
+function gaveta() {
+    if ( document.getElementById("menu-inferior").style.height == "10vh") {
+        document.getElementById("menu-inferior").style.height = "75vh";
+    } else {
+        document.getElementById("menu-inferior").style.height = "10vh";
+    }
 }
