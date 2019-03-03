@@ -11,20 +11,19 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="embedded-icons/medicons.css" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/capa.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/marcador-ano.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/cabecalho.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/caixa.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/prateleira.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/desktop-scroll.css" />
 
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/minificado/css.min.css">
+    <link rel="stylesheet" href="css/capa.css">
+
+
 </head>
 
 <body>
 
     <div class="cabecalho">
-        <div class="sair-simulados icon-sair"></div>
+        <a href="desktop.html">
+            <div class="sair-simulados icon-sair"></div>
+        </a>
         <div class="titulo-pagina">SIMULADOS</div>
         <div class="mensagem-simulados icon-notificacao"></div>
     </div>
@@ -277,6 +276,64 @@
         </div>
 
     </div>
+
+    <div class="menu-inferior" id="menu-inferior" onclick="gaveta()" style="height:80vh">
+
+        <div class="m-dropdown">
+            <div class="e-button open">
+                <div class="logo">
+                    <span class="icon-newmenu_cross"> </span>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <span>Academico!</span>
+            </div>
+
+            <div class="opcoes-mobile">
+                <div class="fancy title">
+                    <span>Geral</span>
+                </div>
+
+                <div class="grupo--mobile">
+                    <div class="link separador-direita">
+                        <span class="icon-icon_newmain icone "></span> Main
+                    </div>
+                    <div class="link separador-direita">
+                        <span class="icon-icon_newmain icone "></span> Main
+                    </div>
+                    <div class="link last">
+                        <span class="icon-icon_newmain icone"></span> Main
+                    </div>
+                    <div class="link separador-direita">
+                        <span class="icon-icon_newmain icone "></span> Main
+                    </div>
+                    <div class="link">
+                        <span class="icon-icon_newmain icone"></span> Main
+                    </div>
+                </div>
+
+                <div class="fancy title">
+                    <span>Area de Treinamento</span>
+                </div>
+                <div class="grupo--mobile">
+                    <div class="link separador-direita">
+                        <a href="simulados.html">
+                            <span class="icon-icon_newmain icone "></span> Simulados
+                        </a>
+                    </div>
+                    <div class="link separador-direita">
+                        <span class="icon-icon_newmain icone "></span> Main
+                    </div>
+                    <div class="link last">
+                        <span class="icon-icon_newmain icone"></span> Main
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/sidenav.js"></script>
 
 </body>
 
