@@ -1,4 +1,10 @@
-.prateleira {
-    display: block;
-    
+.caixa {
+    background-color: aquamarine;
+
+    height: 150px;
+    border-radius: 3px;
+    padding-left: 2px;
+    width: 135px;
+    margin: .5rem;
+    display: inline-block;
 }

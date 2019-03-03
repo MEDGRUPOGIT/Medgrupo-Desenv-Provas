@@ -1,0 +1,7 @@
+.prateleira {
+    display: block;
+    height: 90vh;
+    padding-top: 10vh;
+
+    background-color: gray;
+}
