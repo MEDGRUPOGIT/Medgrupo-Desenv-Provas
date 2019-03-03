@@ -47,7 +47,7 @@
     div.scroll {
         height: auto;
         display: block;
-        height: 70vh;
+        height: 80vh;
     }
 
     div.aulas {
@@ -102,14 +102,23 @@
     }
 
     .menu-inferior {
+        transition: all 0.8s ease-in-out;
         position: absolute;
         left: 0;
         bottom: 0;
         height: 45px;
         width: 100%;
-        background-color: red;
-        color: white;
+        background-color: transparent;
+        color: #000;
         text-align: center;
     }
 
+    .usuario {
+        background-color: #fff;
+    }
+
+    .usuario::before {
+        padding-top: 1rem;
+
+    }
 }
