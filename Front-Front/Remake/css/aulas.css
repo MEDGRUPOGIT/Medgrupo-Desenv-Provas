@@ -1,0 +1,78 @@
+.aulas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.semana {
+    width: 44.9999%;
+    min-width: 132px;
+    max-width: 180px;
+    min-height: 50px;
+    margin: 10px 2%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: darkblue;
+    display: inline-block;
+}
+
+.apostila {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 333px) {
+    .apostila {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+.indicador-semana {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    width: 20%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 333px) {
+    .indicador-semana {
+        width: 15%;
+    }
+}
+
+.indicador-semana::before {
+    content: "Semana";
+    padding-top: 5px;
+    display: block;
+    height: 25%;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 333px) {
+    .indicador-semana::before {
+        content: "Semana";
+        position: relative;
+        left: -7px;
+        font-size: 10px;
+    }
+}
+
+.porcentagem-de-leitura {
+    font-size: 8px;
+    padding-top: 5px;
+}
+
+.tema-apostila {
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.numero-da-apostila {
+    font-weight: bold;
+}

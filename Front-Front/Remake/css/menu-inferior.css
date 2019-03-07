@@ -1,0 +1,66 @@
+.menu-inferior{
+    background-color: aquamarine;
+
+    position: fixed;
+    display: block;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.aba-navegacao{
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+}
+
+.aba-navegacao::after,
+.aba-navegacao::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    top: 12px;
+
+    background-color: gray;
+}
+
+.aba-navegacao::after{
+    left: 17px;
+    border-bottom-left-radius: 100%;
+
+}
+
+.aba-navegacao::before{
+    right: 17px;
+    border-bottom-right-radius: 100%;
+}
+
+
+
+.icone-botao-med {
+    display: inline-block;
+
+    background-color: orangered;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-top: 5px;
+}
+
+.icone-botao-med::after{
+content: "";
+    width: 80px;
+    height: 60px;
+    position: relative;
+    display: block;
+    z-index: -1;
+    top: -43px;
+    border-radius: 50%;
+    left: -23px;
+
+    background-color: orangered;
+}
+

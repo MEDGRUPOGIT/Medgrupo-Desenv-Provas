@@ -1,0 +1,9 @@
+.conteudo-em-exibicao {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: -5;
+    width: 100%;
+    padding-top: 80px;
+    background-color: gray;
+}
