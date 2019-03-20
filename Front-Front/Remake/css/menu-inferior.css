@@ -56,6 +56,10 @@
     height: 35px;
     width: 35px;
     margin-top: 5px;
+
+    color: #fff;
+    font-size: 1.5em;
+    padding-top: 3px;
 }
 
 .icone-botao-med::after {
