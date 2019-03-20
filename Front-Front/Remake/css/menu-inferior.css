@@ -4,8 +4,10 @@
     position: fixed;
     display: block;
     bottom: 0;
-    height: 60px;
+    height: 10vh;
     width: 100%;
+
+    transition: all 1s ease-in-out;
 }
 
 .menu-inferior::after {
