@@ -6,4 +6,8 @@
     width: 100%;
     padding-top: 80px;
     background-color: gray;
+
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: round;
 }
