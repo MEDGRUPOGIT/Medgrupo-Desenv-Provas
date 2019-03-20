@@ -74,8 +74,8 @@
 }
 /* ########################### */
 
-/* -----saudacoes----- */
 
+/* -----saudacoes----- */
 .saudacao-usuario{
     background-color: #fff;
     height: 90px;
@@ -92,4 +92,79 @@
 
 .saudacao, .usuario {
     display: inline-block;
+}
+/* ####################### */
+
+
+/* -----categorias----- */
+.grupo-categorias-menu {
+    background-color: #fff;
+    top: -25px;
+    position: relative;
+    padding: 0 20px 30px;
+
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.nome-grupo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: darkblue;
+
+    margin-bottom: 10px;
+}
+
+.nome-grupo:before,
+.nome-grupo:after {
+    content: '';
+    color: gray;
+    border-top: 1px solid;
+    margin: 0 20px 0 10px;
+    flex: 1 0 20px;
+}
+
+.nome-grupo:after {
+    margin: 0 10px 0 20px;
+}
+
+
+.categoria {
+    width: 33.333333%;
+    height: 70px;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 1em;
+    text-align: center;
+    
+    color: darkblue;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.categoria__texto {
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.categoria:active::after{
+    content: "";
+    width: 80%;
+    margin: 5px auto 0;
+    display: block;
+
+    border-bottom: 2px solid lightblue;
+}
+.divisoria{
+    border-right: 1px solid gray;
 }

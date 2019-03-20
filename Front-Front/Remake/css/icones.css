@@ -1,0 +1,62 @@
+.icone-academicas::before,
+.icone-contribuicoes::before,
+.icone-cross::before,
+.icone-integra::before,
+.icone-main::before,
+.icone-medcode::before,
+.icone-monta::before,
+.icone-notificacao::before,
+.icone-sair::before,
+.icone-simulados::before,
+.icone-slide::before {
+    content: "";
+    background-size: contain;
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
+.icone-academicas::before {
+    background: url(../icons/icon_newacademicas.svg) no-repeat top center;
+}
+
+.icone-contribuicoes::before {
+    background: url(../icons/icon_newcontri.svg) no-repeat top center;
+}
+
+.icone-integra::before {
+    background: url(../icons/icon_newintegra.svg) no-repeat top center;
+}
+
+.icone-main::before {
+    background: url(../icons/icon_newmain.svg) no-repeat top center;
+}
+
+.icone-medcode::before {
+    background: url(../icons/icon_newmedcode.svg) no-repeat top center;
+}
+
+.icone-monta::before {
+    background: url(../icons/icon_newmonta.svg) no-repeat top center;
+}
+
+.icone-simulados::before {
+    background: url(../icons/icon_newsimu.svg) no-repeat top center;
+}
+
+.icone-slide::before {
+    background: url(../icons/icon_newslideaula.svg) no-repeat top center;
+}
+
+.icone-cross::before {
+    background: url(../icons/newmenu_cross.svg) no-repeat top center;
+}
+
+.icone-notificacao::before {
+    background: url(../icons/notificacao.svg) no-repeat top center;
+}
+
+.icone-sair::before {
+    background: url(../icons/sair.svg) no-repeat top center;
+}
