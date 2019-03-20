@@ -4,7 +4,7 @@
     position: fixed;
     display: block;
     bottom: 0;
-    height: 10vh;
+    height: 10%;
     width: 100%;
 
     transition: all 1s ease-in-out;
@@ -114,6 +114,12 @@
     color: gray;
 }
 
+@media only screen and (max-height: 565px) {
+    .saudacao-usuario {
+        height: 75px;
+    }
+}
+
 .saudacao, .usuario {
     display: inline-block;
 }
@@ -131,6 +137,12 @@
     display: -webkit-flex;
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
+}
+
+@media only screen and (max-height: 565px) {
+    .grupo-categorias-menu {
+        padding: 0 10px 10px;
+    }
 }
 
 .nome-grupo {
@@ -172,6 +184,12 @@
     color: darkblue;
     font-size: .8em;
     font-weight: bold;
+}
+
+@media only screen and (max-height: 565px) {
+    .categoria {
+        height: 50px;
+    }
 }
 
 .categoria__texto {
