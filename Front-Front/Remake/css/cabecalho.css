@@ -1,4 +1,5 @@
-.cabecalho {
+.cabecalho,
+.cabecalho--simulados {
     width: 100%;
     height: 40px;
     line-height: 40px;
@@ -8,15 +9,24 @@
     list-style-type: none;
 }
 
+.titulo-pagina {
+    width: 59.99999%;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 .sair {
     width: 19.9999%;
-        color: #fff;
+    color: #fff;
 
     text-align: left;
     padding-left: 20px;
 }
 
-li.curso + li.sair{
+li.curso+li.sair {
     visibility: hidden;
 }
 
