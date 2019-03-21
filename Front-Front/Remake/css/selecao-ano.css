@@ -1,0 +1,18 @@
+.selecao-ano {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.ano-selecionado {
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    line-height: 40px;
+}
