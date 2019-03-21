@@ -1,0 +1,39 @@
+#nav1 {
+	margin:0px;
+	padding: 20px;
+	float: left;
+	background-color: white;
+
+}
+#nav1 h4{
+	color: #C0C0C0;
+	font-size: 16px;
+}
+#nav1 h2{
+	font-size: 14px;
+}
+#nav1 a:link, a:visited, a:hover h2{
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+}
+#nav1 ul{
+	list-style-type: none;
+}
+#nav2 ul li{
+	display: inline-block;
+	margin-right: 100px;
+}
+#nav2{
+	background-color: black;
+	text-align: center;
+}
+#nav2 h2{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+#title{
+	text-align: center;
+	font-size: 20px;
+}
