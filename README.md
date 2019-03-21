@@ -1,4 +1,4 @@
-# Teste para candidatos à vaga de desenvolvedor Front-end (Javascript)
+# Teste para candidatos à vaga de desenvolvedor Front-end PLENO (Javascript)
 
 > [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.jpg)](http://www.medgrupo.com.br)
 
