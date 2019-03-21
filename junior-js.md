@@ -11,19 +11,13 @@
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 6. Caso não consiga fazer um pull request nos envie o código zipado por email
 
-### Você pode
 
+### Ganhe pontos extras por
 - Utilizar qualquer linguagem de preprocessador css ou css puro;
 - Utilizar um task runner de sua preferência;
 - Utilizar bibliotecas css como compass, bourbon, animatecss ou outras;
-
-### Esperamos que você
-
 - Faça commit também dos arquivos não minificados;
 - Divisão do projeto em camadas (service, controller etc) `Obs.: Não inflando uma só camada`
-
-### Ganhe pontos extras por
-
 - Desenvolver utilizando as praticas adotadas no [Angular Styleguide](https://github.com/johnpapa/angular-styleguide)
 - Desenvolver HTML semântico;
 - Utilizar boas práticas de SEO;
