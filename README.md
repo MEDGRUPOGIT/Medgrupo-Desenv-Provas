@@ -4,11 +4,12 @@
 
 ## Instruções
 
-1. Leia atentamente as orientações do teste;
+1. Leia atentamente as orientações do teste apresentadas aqui;
 2. As atividades abaixo deverão ser realizadas no prazo de 48h corridas;
 3. Faça um fork deste repositório;
 4. Implemente o HTML/CSS da tela com base material;
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
+6. Caso você não consiga realizar um fork e pull request nos envie o resultado do projeto zipado por email.
 
 - **Observação** Trata-se da reprodução de um layout especifico através de prints.
 
@@ -20,8 +21,8 @@
 
 ### Esperamos que você
 
-- Não utilizar a propriedade `grid`
-- Não utilizar propriedades de CSS brand-new.
+- Não utilize a propriedade `grid`
+- Não utilize propriedades de CSS brand-new.
 - Manter a fidelidade do layout apresentado
 - Minifique seu css e deixe-o na pasta "css"
 - Respeite os breakpoints definidos pelo design
@@ -37,14 +38,14 @@
 - Componentizar seu css;
 - Utilizar animações para o scroll da página.
 
-### Breakpoints
+### Media Querie
 
-| Nome do breakpoint | Largura mínima | Descrição                         |
-| ------------------ | -------------- | --------------------------------- |
-| phone              | 320px          | Breakpoint para smartphones       |
-| tablet             | 768px          | Breakpoint para tablets           |
-| desktop            | 1024px         | Breakpoint para desktops comuns   |
-| monitor            | 1280px         | Breakpoints para desktops grandes |
+| Nome               | Largura mínima | Descrição                          |
+| ------------------ | -------------- | ---------------------------------  |
+| phone              | 320px          | Media Querie para smartphones      |
+| tablet             | 768px          | Media Querie para tablets          |
+| desktop            | 1024px         | Media Querie para desktops comuns  |
+| monitor            | 1280px         | Media Querie para desktops grandes |
 
 ## Material
 
