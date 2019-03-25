@@ -4,7 +4,7 @@
     position: fixed;
     display: block;
     bottom: 0;
-    height: 10%;
+    height: 65px;
     width: 100%;
 
     transition: all 1s ease-in-out;
