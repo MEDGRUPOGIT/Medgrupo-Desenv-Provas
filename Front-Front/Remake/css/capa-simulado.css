@@ -1,0 +1,53 @@
+.capa-simulado    {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.capa-simulado--01 {
+    background: url(../images/sim_geral.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.capa-simulado--02 {
+    background: url(../images/sim_32.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.capa-simulado--03 {
+    background: url(../images/sim_30.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.capa-simulado--04 {
+    background: url(../images/sim_geral.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.capa-simulado--05 {
+    background: url(../images/sim_geral.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.capa-simulado--06 {
+    background: url(../images/sim_geral.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

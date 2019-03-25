@@ -7,6 +7,6 @@
 }
 
 .desabilitado{
-    -webkit-filter: grayscale(70%) blur(2px); /* Safari 6.0 - 9.0 */
-    filter: grayscale(70%) blur(2px);
+    -webkit-filter: grayscale(100%) blur(2px); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) blur(2px);
 }

@@ -1,8 +1,7 @@
 .simulados {
     height: -webkit-fill-available;
     position: relative;
-    padding: 40px 0 0 0;
-    top: -40px;
+    padding: 95px 0 0 0;
     width: 100%;
     text-align: center;
 }
@@ -12,7 +11,6 @@
     width: 135px;
     height: 145px;
     margin: 0 10px 20px;
-    background-color: red;
     box-shadow: -4px 0px lightblue;
     border-radius: 4px;
 }
@@ -53,4 +51,32 @@
     font-size: .5em;
     right: 18px;
     z-index: 1;
+}
+
+.detalhes-simulado {
+    display: block;
+    height: -webkit-fill-available;
+    text-align: left;
+}
+
+.abreviacao-estatica-simulado {
+    color: #fff;
+    font-size: 22px;
+    padding: 55px 0 0 15px;
+    display: inline-block;
+}
+
+.numero-simulado {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.tema-simulado {
+    width: 100%;
+    font-size: 10px;
+    color: #fff;
+    padding-left: 15px;
 }

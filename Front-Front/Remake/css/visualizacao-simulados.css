@@ -1,5 +1,6 @@
 .visualizacao-simulados {
     height: 100vh;
+    overflow: auto;
 
     background-color: gray;
 }
