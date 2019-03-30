@@ -6,6 +6,7 @@
     bottom: 0;
     height: 65px;
     width: 100%;
+    z-index: 99;
 
     transition: all 1s ease-in-out;
 }

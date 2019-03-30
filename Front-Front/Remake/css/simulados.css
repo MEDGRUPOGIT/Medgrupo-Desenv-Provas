@@ -1,9 +1,20 @@
 .simulados {
-    height: -webkit-fill-available;
+    height: fit-content;
     position: relative;
-    padding: 95px 0 0 0;
+    padding: 15px 0 0 0;
     width: 100%;
     text-align: center;
+}
+
+.visualizacao-simulados .container-colecao:first-of-type .simulados {
+    padding: 55px 0 0 0;
+}
+
+.visualizacao-simulados .container-colecao:last-of-type .simulados::after {
+    content: "";
+    display: block;
+    height: 75px;
+    width: 100%;
 }
 
 .simulado {

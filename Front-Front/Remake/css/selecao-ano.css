@@ -2,8 +2,9 @@
     width: 100%;
     height: 40px;
     text-align: center;
-    position: fixed;
-    margin-top: 40px;
+    position: sticky;
+    top: 40px;
+
     z-index: 2;
 }
 

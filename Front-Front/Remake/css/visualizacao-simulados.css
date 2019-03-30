@@ -1,6 +1,13 @@
 .visualizacao-simulados {
-    height: 100vh;
+    height: 100%;
     overflow: auto;
-
     background-color: gray;
+
+    position: absolute;
+}
+
+.container-colecao {
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
