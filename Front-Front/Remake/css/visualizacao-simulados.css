@@ -6,6 +6,13 @@
     position: absolute;
 }
 
+@media only screen and (min-width: 1024px) {
+    .visualizacao-simulados {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
 .container-colecao {
     height: auto;
     display: flex;

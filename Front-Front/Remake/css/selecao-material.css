@@ -9,6 +9,13 @@
     top: 40px;
 }
 
+@media only screen and (min-width: 1024px) {
+    .selecao-material {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
 .opcao-med {
     float: left;
     width: 24.9999%;

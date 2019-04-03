@@ -11,6 +11,14 @@
     z-index: 99;
 }
 
+@media only screen and (min-width: 1024px) {
+    .cabecalho,
+    .cabecalho--simulados {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
 .titulo-pagina {
     width: 59.99999%;
     display: inline-block;

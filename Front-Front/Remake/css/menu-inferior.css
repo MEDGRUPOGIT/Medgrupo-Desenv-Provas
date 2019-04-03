@@ -2,13 +2,21 @@
     background-color: transparent;
 
     position: fixed;
-    display: block;
     bottom: 0;
     height: 65px;
     width: 100%;
     z-index: 99;
 
     transition: all 1s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+    .menu-inferior {
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100% !important;
+    }
 }
 
 .menu-inferior::after {
@@ -62,6 +70,22 @@
     z-index: -1;
 }
 
+@media only screen and (min-width: 1024px) {
+    .aba-navegacao {
+        top: 0;
+        text-align: left;
+        padding: 20px 1px 0 20px;
+    }
+    .aba-navegacao::after, 
+    .aba-navegacao::before {
+        display: none;
+    }
+}
+
+/* ########################### */
+
+
+/* ----- icone botao med ---- */
 .icone-botao-med {
     display: inline-block;
 
@@ -73,6 +97,7 @@
 
     color: #fff;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .icone-botao-med::after {
@@ -90,19 +115,25 @@
     box-shadow: 0px 20px 0 8px #fff;
 }
 
-.icon-newmenu_cross::before{
+.icon-newmenu_cross::before {
     font-size: 30px;
 
     position: relative;
     top: 10px;
     left: 1px;
-
 }
+
+@media only screen and (min-width: 1024px) {
+    .icone-botao-med::after {
+        display: none;
+    }
+}
+
 /* ########################### */
 
 
 /* -----saudacoes----- */
-.saudacao-usuario{
+.saudacao-usuario {
     background-color: #fff;
     height: 90px;
     width: 100%;
@@ -116,15 +147,27 @@
     color: gray;
 }
 
-@media only screen and (max-height: 565px) {
+@media only screen and (max-width: 565px) {
     .saudacao-usuario {
         height: 75px;
     }
 }
 
-.saudacao, .usuario {
+.saudacao,
+.usuario {
     display: inline-block;
 }
+
+@media only screen and (min-width: 1024px) {
+
+    .saudacao,
+    .usuario {
+        display: block;
+        text-align: left;
+        padding: 0 20px;
+    }
+}
+
 /* ####################### */
 
 
@@ -147,6 +190,22 @@
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    .grupo-categorias-menu {
+        padding: 0px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupo-categorias-menu::before {
+        content: "";
+        width: 80%;
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.473);
+    }
+}
+
 .nome-grupo {
     display: flex;
     width: 100%;
@@ -159,6 +218,20 @@
     color: darkblue;
 
     margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nome-grupo {
+        display: block;
+        text-align: left;
+        padding:0 10px;
+        color: #000;
+    }
+
+    .nome-grupo:before,
+    .nome-grupo:after {
+        display: none;
+    }
 }
 
 .nome-grupo:before,
@@ -182,15 +255,40 @@
     padding: 0 5px;
     margin-bottom: 1em;
     text-align: center;
-    
+
     color: darkblue;
     font-size: .8em;
     font-weight: bold;
 }
 
+.grupo-categorias-menu .categoria::before {
+    font-size: 30px;
+    /* margin-right: 15px; */
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-height: 565px) {
     .categoria {
         height: 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .categoria {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 0 15px 0 30px;
+        color: #000;
+    }
+
+    .grupo-categorias-menu .categoria::before {
+        margin-right: 15px;
     }
 }
 
@@ -201,7 +299,7 @@
     margin: 0 auto;
 }
 
-.categoria:active::after{
+.categoria:active::after {
     content: "";
     width: 80%;
     margin: 5px auto 0;
@@ -209,6 +307,23 @@
 
     border-bottom: 2px solid lightblue;
 }
-.divisoria{
+
+@media only screen and (min-width: 1024px) {
+    .categoria:active::after {
+        display: none;
+    }
+    .categoria:active::before {
+        border-left: 5px solid lightblue;
+        margin-right: 10px;
+    }
+}
+
+.divisoria {
     border-right: 1px solid gray;
+}
+
+@media only screen and (min-width: 1024px) {
+    .divisoria {
+        border-right: none;
+    }
 }
