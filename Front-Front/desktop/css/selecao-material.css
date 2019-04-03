@@ -1,0 +1,28 @@
+.selecao-material {
+    background-color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .selecao-material {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
+.opcao-med {
+    float: left;
+    width: 24.9999%;
+    padding: .8rem 0;
+    font-size: .8em;
+}
+
+.opcao-med:hover{
+    border-bottom: 2px solid lightseagreen;
+}

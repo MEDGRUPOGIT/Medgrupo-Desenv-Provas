@@ -1,0 +1,12 @@
+.direita{
+    float: right;
+}
+
+.esquerda {
+    float: left;
+}
+
+.desabilitado{
+    -webkit-filter: grayscale(100%) blur(2px); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) blur(2px);
+}

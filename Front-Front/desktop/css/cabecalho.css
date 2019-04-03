@@ -1,9 +1,69 @@
-.cabecalho {
-    background-color: #000;
-    color: #fff;
-    height: 5vh;
+.cabecalho,
+.cabecalho--simulados {
     width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #000;
     text-align: center;
-    padding-top: 10px;
+    list-style-type: none;
+    position: fixed;
+    z-index: 99;
 }
 
+@media only screen and (min-width: 1024px) {
+    .cabecalho,
+    .cabecalho--simulados {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
+.titulo-pagina {
+    width: 59.99999%;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.sair {
+    width: 19.9999%;
+    color: #fff;
+
+    text-align: left;
+    padding-left: 20px;
+}
+
+li.curso+li.sair {
+    visibility: hidden;
+}
+
+
+.curso {
+    width: 59.99999%;
+    display: inline-block;
+
+    color: #fff;
+    text-align: center;
+}
+
+.notificacoes {
+    width: 19.9999%;
+    color: #fff;
+
+    text-align: right;
+    padding-right: 20px;
+}
+
+.selecao-curso {
+    background: #000;
+    color: #fff;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    line-height: 35px;
+    font-size: initial;
+    text-align-last: center;
+}

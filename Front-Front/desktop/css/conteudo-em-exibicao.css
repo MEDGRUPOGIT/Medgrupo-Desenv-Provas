@@ -1,0 +1,20 @@
+.conteudo-em-exibicao {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: -5;
+    width: 100%;
+    padding-top: 80px;
+    background-color: gray;
+
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: round;
+}
+
+@media only screen and (min-width: 1024px) {
+    .conteudo-em-exibicao {
+        width: 80%;
+        margin-left: 20%;
+    }
+}

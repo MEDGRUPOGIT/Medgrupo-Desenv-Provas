@@ -1,0 +1,67 @@
+/* icones embutidos em fonte (embedded icons)*/
+@font-face {
+    font-family: 'med icones';
+    src: url('../fonts/med-icones.eot');
+    src: url('../fonts/med-icones.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/med-icones.woff') format('woff'),
+         url('../fonts/med-icones.ttf') format('truetype'),
+         url('../fonts/med-icones.svg#med-icones') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*='icon-']:before {
+    display: inline-block;
+    font-family: 'med icones';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-newacademicas:before{content:'\0041';}
+.icon-newcontri:before{content:'\0042';}
+.icon-newintegra:before{content:'\0043';}
+.icon-newmain:before{content:'\0044';}
+.icon-newmedcode:before{content:'\0045';}
+.icon-newmonta:before{content:'\0046';}
+.icon-newsimu:before{content:'\0047';}
+.icon-newslideaula:before{content:'\0048';}
+.icon-newmenu_cross:before{content:'\0049';}
+.icon-notificacao:before{content:'\004a';}
+.icon-sair:before{content:'\004b';}
+
+
+
+/* icones não embutidos para testes (same icons, not embedded) */
+.icone-academicas::before,
+.icone-contribuicoes::before,
+.icone-cross::before,
+.icone-integra::before,
+.icone-main::before,
+.icone-medcode::before,
+.icone-monta::before,
+.icone-notificacao::before,
+.icone-sair::before,
+.icone-simulados::before,
+.icone-slide::before {
+    content: "";
+    background-size: contain;
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
+.icone-academicas::before {background: url(../icons/icon_newacademicas.svg) no-repeat top center;}
+.icone-contribuicoes::before {background: url(../icons/icon_newcontri.svg) no-repeat top center;}
+.icone-integra::before {background: url(../icons/icon_newintegra.svg) no-repeat top center;}
+.icone-main::before {background: url(../icons/icon_newmain.svg) no-repeat top center;}
+.icone-medcode::before {background: url(../icons/icon_newmedcode.svg) no-repeat top center;}
+.icone-monta::before {background: url(../icons/icon_newmonta.svg) no-repeat top center;}
+.icone-simulados::before {background: url(../icons/icon_newsimu.svg) no-repeat top center;}
+.icone-slide::before {background: url(../icons/icon_newslideaula.svg) no-repeat top center;}
+.icone-cross::before {background: url(../icons/newmenu_cross.svg) no-repeat top center;}
+.icone-notificacao::before {background: url(../icons/notificacao.svg) no-repeat top center;}
+.icone-sair::before {background: url(../icons/sair.svg) no-repeat top center;}
