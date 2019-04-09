@@ -1,0 +1,174 @@
+/*========================GERAL======================*/
+*{
+	margin:0;
+	padding:0;
+	overflow-y: hidden;
+}
+/*==========================TAGS=====================*/
+body{
+	background-color: grey;
+	font-family: Oswald, sans-serif;
+}
+/*===========================IDS======================*/
+/*IDS ESQUERDA*/
+#div-esquerda{
+	height: 100vh;
+	width: 21%;
+	float: left;
+	background-color: white;
+	position: fixed;
+}
+#content-esquerda{
+	margin: 25px 20px 20px 20px;
+}
+#content-esquerda #logo{
+	background-color: orange;
+	height: 3.8vh;
+	border-radius: 50%;
+	padding: 0.5vh;
+	margin-left: 3vh;
+}
+#content-esquerda h5{
+	font-weight: bold;
+	color: grey;
+	margin: 1.5vh 0vh 1.5vh 1.5vh;
+}
+/*IDS DIREITA*/
+#div-direita{
+	height: 100vh;
+	width: 79%;	
+	float: right;
+	background-image: url(img/img-simulado/bg.jpg);
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+/*IDS DIREITA CIMA*/
+#content-direita-cima{
+	background-color: black;
+	height: 8vh;
+}
+#notificacao img{
+	height: 3vh;
+	width: auto;
+	position: absolute;
+	right: 10vh;
+	top: 2vh;
+}
+#notificacao img:hover{
+	height: 3.4vh;
+	width: auto;
+	cursor:pointer;
+}
+/*DIV DIREITA BAIXO*/
+#content-direita-baixo{
+	margin: 10vh 20vh 10vh 20vh;
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 450px;
+}
+/*==================CLASSES=================*/
+.container{
+	min-width: 100vh;
+	min-height: 100vh;
+	margin: auto;
+	background-color: black;
+}
+/*CLASSES ESQUERDA*/
+.areahome{
+	padding: 2vh 1vh 2vh 1vh;
+}
+.areahome a{
+	margin:1.9vh 0vh 1vh 2vh;
+	text-decoration: none;
+	color: black;
+	display: block;
+	font-size: 12px;
+	transition: color 0.3s;
+}
+.areahome a:hover, a:active{
+	color: lightblue;
+}
+.areahome img{
+	height: 24px;
+	width: auto;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+/*CLASSES DIREITA CIMA*/
+.menumedcurso{
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding-top: 2vh;
+}
+.menumedcurso a{
+	color: white;
+	font-weight: bold;
+	font-size:18px;
+	transition: color 0.3s;
+	text-decoration: none;
+}
+.menumedcurso a:hover{
+	color: lightblue;
+}
+.submenubg{
+	background-color: black;
+	opacity: 0.5;
+	height: 8vh;
+}
+.submenu{
+	position: absolute;
+	top: 10vh;
+	left: 70vh;
+}
+.submenu a{
+	margin: 0vh 15vh 0vh 0vh;
+	text-decoration: none;
+	color: white;
+	padding:0px 15px 15px 15px;
+	font-size: 18px;
+	text-align: center;
+}
+.submenu a:hover, a:visited{
+	border-bottom: 2px solid #6EC3FC;
+}
+/*CLASSES DIREITA BAIXO*/
+.sem{
+	color: white;
+	display: block;
+	text-align: center;
+	float: left;
+	padding: 0vh  5vh 5vh 0vh;
+}
+.capsula{
+	height: 10vh;
+	width: 21vh;
+	border-radius: 50px;
+	background-image: linear-gradient(black, grey);
+	display: block;
+}
+.chart{
+	background-color: #6EC3FC;
+	padding:1vh;
+	border-radius: 50%;
+	height: 5vh;
+	width: 5vh;
+	color: white;
+	font-size: 10px;
+	margin:10px;
+	display: inline-block;
+}
+.chartesq{
+	float: left;
+}
+.chartdir{
+	float: right;
+}
+/*CUSTOM SCROLLBAR*/
+::-webkit-scrollbar{
+	width: 3px;
+}
+::-webkit-scrollbar-thumb{
+	background:black;
+}
