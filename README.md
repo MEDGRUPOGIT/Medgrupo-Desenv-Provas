@@ -5,7 +5,7 @@
 ## Instruções
 
 1. Leia atentamente as orientações do teste apresentadas aqui;
-2. As atividades abaixo deverão ser realizadas no prazo de 48h corridas;
+2. As atividades abaixo deverão ser realizadas no prazo de 72h corridas;
 4. Implemente o HTML/CSS da tela com base no material disponibilizado;
 5. Após terminar seu teste faça um arquivo .zip e nos envie por e-mail;
 
