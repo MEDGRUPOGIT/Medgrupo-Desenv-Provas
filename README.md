@@ -5,7 +5,7 @@
 ## Instruções
 
 1. Leia atentamente as orientações do teste apresentadas aqui;
-2. As atividades abaixo deverão ser realizadas no prazo de 48h corridas;
+2. As atividades abaixo deverão ser realizadas no prazo de 72h corridas;
 3. Faça um fork deste repositório;
 4. Implemente o HTML/CSS da tela com base material;
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
