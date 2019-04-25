@@ -1,0 +1,31 @@
+<div class="ranking">
+
+    <div>
+        <span class="direita">foram encontrados {{resultados.length}} registros</span>
+    </div>
+      
+    <table id="resultados">
+      <thead>
+        <tr>
+          <th class="th-tabela">POSIÇÃO</th>
+          <th class="th-tabela">NOTA</th>
+          <th class="th-tabela">MATRÍCULA</th>
+          <th class="th-tabela">ESPECIALIDADE</th>
+          <th class="th-tabela">TURMA</th>
+          <th class="th-tabela">FILIAL</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let resultado of rfiltrado; let i=index">
+          <td>{{i+1}}</td>
+          <td class="escuro">{{resultado.nota}}</td>
+          <td>{{resultado.matricula}}</td>
+          <td class="escuro">{{resultado.especialidade}}</td>
+          <td>{{resultado.turma}}</td>
+          <td class="escuro">{{resultado.filial}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>

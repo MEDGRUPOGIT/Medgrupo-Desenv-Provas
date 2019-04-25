@@ -1,0 +1,22 @@
+.titulo {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    height: 120px;
+}
+
+.titulo--pagina {
+    width: 49.99999%;
+    background: url(./images/titulo-pagina-simulados.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 215px;
+}
+
+.titulo--empresa {
+    width: 49.99999%;
+    background: url(./images/logo-empresa.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 300px;
+}

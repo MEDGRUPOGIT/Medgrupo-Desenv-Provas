@@ -1,0 +1,78 @@
+<div [ngStyle]="{'font-size': tfonte + 'px'}">
+  <barra-topo></barra-topo>
+
+  <div class="size-fontes">
+    <a class="size-fontes--aumentar" (click)="aumentarFonte()">A+</a>
+    &nbsp;
+    <a class="size-fontes--diminuir" (click)="diminuirFonte()">A-</a>
+  </div>
+
+  <div class="menu-simulados">
+    <h4>Simulados de 2008</h4>
+    <menu-simulados (bindSim)="bindSimulado=$event" (bindMarcador)="bindMarcador=$event"></menu-simulados>
+  </div>
+
+  <div class="dados-simulado" [hidden]="!bindMarcador">
+
+    <h2>{{bindSimulado}}</h2>
+
+    <p>Os resultados do simulado são atualizados diariamente, na medida em que os cartões-resposta e as provas
+      discursivas
+      vão sendo são processados.</p>
+
+    <p>Através dos filtros, você poderá criar rankings personalizados por ESPECIALIDADE, TURMA (curso) e UNIDADE
+      (cidade).
+    </p>
+
+    <div class="pesquisar">
+      <span class="pesquisar--texto">Entre com sua matrícula: </span>
+      <input type="number" [(ngModel)]="matrBusca" />
+      <button type="button" (click)="buscaMatr(); exibir=true">procurar</button>
+      <br />
+      <div *ngIf="exibir">
+          <div *ngIf="resulBusca!=''; else naoEncontrado">{{matrBusca}} localizado! A sua nota foi: {{resulBusca}}.</div>
+          <ng-template #naoEncontrado>Sua matrícula não foi localizada ou sua nota ainda não foi processada.</ng-template>
+      </div>
+    </div>
+
+    <br />
+    Filtrar por:
+    <br />
+
+    <div class="filtros">
+      <select (change)="attEspecialidade($event)">
+        <option value="">Especialidade - TODAS</option>
+        <option value="CLÍNICA MÉDICA">CLÍNICA MÉDICA</option>
+        <option value="CIRURGIA GERAL">CIRURGIA GERAL</option>
+      </select>
+
+      <select (change)="attFilial($event)">
+        <option value="">Filiais - TODAS</option>
+        <option value="São Paulo (SP)">São Paulo (SP)</option>
+        <option value="Salvador (BA)">Salvador (BA)</option>
+      </select>
+
+      <select (change)="attTurma($event)">
+        <option value="">Turmas - TODAS</option>
+        <option value="2008 MEDCURSO SÃO PAULO">2008 MEDCURSO SÃO PAULO</option>
+        <option value="2008 MEDCURSO SALVADOR">2008 MEDCURSO SALVADOR</option>
+      </select>
+    </div>
+
+  </div>
+
+  <div [hidden]="!bindMarcador">
+    <span class="esquerda">
+      <br />
+      <a href="">imprimir</a> | <a href="">enviar para um amigo</a>
+    </span>
+
+    <!-- <barra-simulados></barra-simulados> -->
+
+    <ranking [parentData]="[filtroEspecialidade, filtroTurma, filtroFilial]"></ranking>
+
+    <!-- <barra-simulados></barra-simulados> -->
+
+  </div>
+
+</div>

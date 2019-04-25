@@ -1,0 +1,14 @@
+<ul>
+  <li class="simulados--lista" *ngFor="let simulado of simulados; let i=index" (click)="simulado.exibir=!simulado.exibir">
+
+    Simulado {{simulado.id}}
+
+    <ul class="tipos" [hidden]="!simulado.exibir">
+
+      <li (click)="enviarDado(1, simulado.id)">Prova Objetiva</li>
+      <li (click)="enviarDado(2, simulado.id)">Prova Final</li>
+
+    </ul>
+
+  </li>
+</ul>

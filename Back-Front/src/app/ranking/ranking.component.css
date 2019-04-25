@@ -1,0 +1,55 @@
+.ranking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  
+  .topo-rank {
+    width: 100%;
+  }
+  
+  .opcao {
+    display: inline-flex;
+    width: 50%;
+  }
+  
+  .topo-rank--opcao {
+    font-size: .8rem;
+    padding: 0 5px;
+    text-align: left;
+  }
+  
+  .topo-rank--legenda {
+    width: 100%;
+    font-size: .8rem;
+    padding: 0 5px;
+    text-align: right;
+  }
+  
+  .th-tabela {
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: #c7c4c4;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+  
+  th, td {
+    text-align: center;
+  }
+
+  .direita {
+    float: right;
+  }
+
+  .escuro {
+    background-color: #e4e1e1;
+  }
+  

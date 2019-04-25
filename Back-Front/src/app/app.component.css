@@ -1,0 +1,53 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.size-fontes {
+  display: flex;
+  width: 100%;
+  color: white;
+
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.size-fontes--aumentar {
+  width: 1.4rem;
+  height: 1.2rem;
+  background-color: gray;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.size-fontes--diminuir {
+  width: 1.4rem;
+  height: 1.2rem;
+  background-color: gray;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.menu-simulados {
+  width: 29.99999%;
+  color: black;
+  height: auto;
+  float: left;
+}
+
+.dados-simulado {
+  width: 69.99999%;
+  color: black;
+  height: auto;
+  float: right;
+}
+
+.esquerda {
+  float: left;
+}
+
+.direita {
+  float: right;
+}
+
+.pesquisar {
+  background-color: #deeef5;
+}
