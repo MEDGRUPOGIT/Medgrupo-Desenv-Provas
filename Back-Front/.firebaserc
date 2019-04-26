@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "back-front-21e05"
+    "default": "back-front-21e05",
+    "back-front": "back-front-21e05"
   }
 }
