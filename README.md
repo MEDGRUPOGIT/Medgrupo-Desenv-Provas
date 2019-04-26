@@ -1,7 +1,6 @@
 # Medgrupo-Desenv-Avaliação
-
-Projeto de desenvolvimento de replicação de App responsivo para celulares, tablets e computadores (MedSoft) em HTML CSS e JS puros em pasta Front-Front.
-Projeto de página de consulta de dados em Angular 4+ na pasta Back-Front.
+- Projeto de desenvolvimento de replicação de App responsivo para celulares, tablets e computadores (MedSoft) em HTML CSS e JS puros em pasta Front-Front.
+- Projeto de página de consulta de dados em Angular 4+ na pasta Back-Front.
 
 ### Acesso de visualização do projeto Front-Front
 * Pode estar desatualizado (verifique versão): https://leonbraga.github.io/Medgrupo-Desenv-Provas/
