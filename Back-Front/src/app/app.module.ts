@@ -10,6 +10,9 @@ import { RankingComponent } from './ranking/ranking.component';
 import { SimuladosService } from './simulados.service';
 import { ResultadosService } from './resultados.service';
 
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,7 @@ import { ResultadosService } from './resultados.service';
   imports: [
     BrowserModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [
     SimuladosService,

@@ -17,6 +17,8 @@ export class AppComponent {
   public filtroTurma = '';
   public filtroFilial = '';
 
+  exibir;
+
   tfonte: number = 15;
 
   matrBusca;
