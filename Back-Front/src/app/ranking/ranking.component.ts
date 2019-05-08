@@ -9,8 +9,6 @@ import { ResultadosService } from '../resultados.service';
 export class RankingComponent implements OnInit {
 
   @Input('parentData') public filtros;
-  // @Input('parentData') public filtroTurma;
-  // @Input('parentData') public filtroFilial;
 
   resultados: any;
   rfiltrado: any;

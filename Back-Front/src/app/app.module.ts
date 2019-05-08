@@ -10,6 +10,8 @@ import { RankingComponent } from './ranking/ranking.component';
 import { SimuladosService } from './simulados.service';
 import { ResultadosService } from './resultados.service';
 
+import {NgxPrintModule} from 'ngx-print';
+
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 
@@ -24,6 +26,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     FormsModule,
+    NgxPrintModule,
     // AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [

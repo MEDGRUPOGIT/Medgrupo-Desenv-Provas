@@ -51,3 +51,11 @@
 .pesquisar {
   background-color: #deeef5;
 }
+
+.estilo-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+}

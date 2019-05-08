@@ -12,4 +12,5 @@ export class BarraSimuladosComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

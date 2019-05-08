@@ -30,8 +30,8 @@
       <button type="button" (click)="buscaMatr(); exibir=true">procurar</button>
       <br />
       <div *ngIf="exibir">
-          <div *ngIf="resulBusca!=''; else naoEncontrado">{{matrBusca}} localizado! A sua nota foi: {{resulBusca}}.</div>
-          <ng-template #naoEncontrado>Sua matrícula não foi localizada ou sua nota ainda não foi processada.</ng-template>
+        <div *ngIf="resulBusca!=''; else naoEncontrado">{{matrBusca}} localizado! A sua nota foi: {{resulBusca}}.</div>
+        <ng-template #naoEncontrado>Sua matrícula não foi localizada ou sua nota ainda não foi processada.</ng-template>
       </div>
     </div>
 
@@ -64,15 +64,16 @@
   <div [hidden]="!bindMarcador">
     <span class="esquerda">
       <br />
-      <a href="">imprimir</a> | <a href="">enviar para um amigo</a>
+      <button class="estilo-link" printSectionId="ranking" ngxPrint>imprimir</button> | <a href="">enviar para um amigo</a>
     </span>
 
     <!-- <barra-simulados></barra-simulados> -->
 
-    <ranking [parentData]="[filtroEspecialidade, filtroTurma, filtroFilial]"></ranking>
+    <ranking id="ranking" [parentData]="[filtroEspecialidade, filtroTurma, filtroFilial]"></ranking>
 
     <!-- <barra-simulados></barra-simulados> -->
 
   </div>
+
 
 </div>
