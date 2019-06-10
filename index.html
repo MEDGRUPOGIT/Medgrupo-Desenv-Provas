@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MedGrupo - Teste prático</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <link rel="stylesheet" href="./dist/css/all.min.css">
+
+    <!-- No lib.min.js está agrupado e minificado o jQuery v3.4.1 e o AngularJS v1.7.8 por meio do gulp -->
+    <script src="./dist/js/lib.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/controller.js"></script>
+    <script src="./dist/js/angular-route.min.js"></script>
+    <script src="./dist/js/zoom.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+    <header>
+        <div class="container-fluid barra-superior"></div>
+
+        <nav class="navbar navbar-default navbar-top-fixed">
+            <div class="container">
+                <div class="navbar-header">
+                    <img src="dist/imgs/simulados.png">
+                </div>
+                <img class="text-right" src="dist/imgs/medgrupo.png">
+            </div>
+        </nav>
+    </header>
+
+    <ng-view></ng-view>
+
+    <footer>
+        <div class="container-fluid" id="barra-inferior"></div><small><i class="fas fa-mug-hot"></i> By Aldiran</small>
+        </div>
+    </footer>
+</body>
+
+</html>

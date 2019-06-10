@@ -1,38 +1,7 @@
-# Teste para candidatos à vaga de desenvolvedor Front-end Júnior (Javascript)
+[Prova para **Front-end (HTML/CSS) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/front)
 
-> [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.jpg)](http://www.medgrupo.com.br)
+[Prova para **Front-end (HTML/CSS) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/FrontJR)
 
-## Instruções
+[Prova para **Front-end (Javascript) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front)
 
-1. Leia atentamente as orientações do teste apresentadas aqui;
-2. As atividades abaixo deverão ser realizadas no prazo de 72h corridas;
-3. Faça um fork deste repositório;
-4. Preocupe-se em desenvolver o Javascript utilizando boas práticas;
-5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
-6. Caso não consiga fazer um pull request nos envie o código zipado por email
-
-
-### Ganhe pontos extras por
-- Utilizar qualquer linguagem de preprocessador css ou css puro;
-- Utilizar um task runner de sua preferência;
-- Utilizar bibliotecas css como compass, bourbon, animatecss ou outras;
-- Faça commit também dos arquivos não minificados;
-- Divisão do projeto em camadas (service, controller etc) `Obs.: Não inflando uma só camada`
-- Desenvolver utilizando as praticas adotadas no [Angular Styleguide](https://github.com/johnpapa/angular-styleguide)
-- Desenvolver HTML semântico;
-- Utilizar boas práticas de SEO;
-- Componentizar seu Javascript;
-- Minifique seu Javascript;
-- Mantenha o deploy na pasta `dist`
-
-## Material
-
-- Todos os layouts necessários estão disponíveis no [Link para material](http://d1y36np0qkbzyh.cloudfront.net/medgrupo-prova-js.zip)
-
-## Submissão
-
-Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome e depois envie-nos o pull request.
-
-`Obs.: Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.`
-
-**Boa sorte!**
+[Prova para **Front-end (Javascript) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front-junior)

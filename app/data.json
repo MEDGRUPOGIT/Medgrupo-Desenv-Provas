@@ -1,0 +1,50 @@
+[
+    {
+        "posicao": "1º",
+        "nota": "42",
+        "matricula": "897413",
+        "especialidade": "CLÍNICA MÉDICA",
+        "turma": "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR",
+        "filial": "Salvador (BA)"
+    },
+    {
+        "posicao": "2º",
+        "nota": "40",
+        "matricula": "745133",
+        "especialidade": "CIRURGIA GERAL",
+        "turma": "2008 MEDCURSO SÃO PAULO TURMA A/2008 MED SÃO PAULO TURMA A",
+        "filial": "São Paulo (SP)"
+    },
+    {
+        "posicao": "2º",
+        "nota": "40",
+        "matricula": "897413",
+        "especialidade": "CLÍNICA MÉDICA",
+        "turma": "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR",
+        "filial": "Salvador (BA)"
+    },
+    {
+        "posicao": "3º",
+        "nota": "39",
+        "matricula": "745133",
+        "especialidade": "CIRURGIA GERAL",
+        "turma": "2008 MEDCURSO SÃO PAULO TURMA A/2008 MED SÃO PAULO TURMA A",
+        "filial": "São Paulo (SP)"
+    },
+    {
+        "posicao": "4º",
+        "nota": "38",
+        "matricula": "897413",
+        "especialidade": "CLÍNICA MÉDICA",
+        "turma": "2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR",
+        "filial": "Salvador (BA)"
+    },
+    {
+        "posicao": "4º",
+        "nota": "38",
+        "matricula": "745133",
+        "especialidade": "CIRURGIA GERAL",
+        "turma": "2008 MEDCURSO SÃO PAULO TURMA A/2008 MED SÃO PAULO TURMA A",
+        "filial": "São Paulo (SP)"
+    }
+]

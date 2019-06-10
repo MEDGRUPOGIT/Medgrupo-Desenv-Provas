@@ -1,0 +1,235 @@
+<div class="container">
+    <div class="zoom">
+        <button type="button" id="btnAumentar">A+</button>
+        <button type="button" id="btnDiminuir">A-</button>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-3">
+            <h4><strong>Simulados de 2008</strong></h4>
+
+            <ul class="nav-pills nav-stacked navbar-left">
+                <li>
+                    <a href="#" data-target="#item10" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 10</a>
+                    <ul class="nav-stacked collapse" id="item10">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item9" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 9</a>
+                    <ul class="nav-stacked collapse" id="item9">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item8" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 8</a>
+                    <ul class="nav-stacked collapse" id="item8">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item7" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 7</a>
+                    <ul class="nav-stacked collapse" id="item7">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item6" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 6</a>
+                    <ul class="nav-stacked collapse" id="item6">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item5" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 5</a>
+                    <ul class="nav-stacked collapse" id="item5">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item4" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 4</a>
+                    <ul class="nav-stacked collapse" id="item4">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item3" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 3</a>
+                    <ul class="nav-stacked collapse" id="item3">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item2" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 2</a>
+                    <ul class="nav-stacked collapse" id="item2">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item1" data-toggle="collapse"><i
+                            class="fas fa-caret-right"></i></span>Simulado 1</a>
+                    <ul class="nav-stacked collapse" id="item1">
+                        <li><a href="#">prova objetiva</a></li>
+                        <li><a href="#">prova final</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-9">
+            <div class="descricao">
+                <h1>SIMULADO 5 - PROVA OBJETIVA</h1>
+                <p>
+                    Os resultados do simulado são atualizados diariamente, na medida em que os cartões-respostas e
+                    as provas discursivas vão sendo processados.
+                </p>
+                <p>
+                    Através dos filtros, você poderá criar rankings personalizados, por ESPECIALIDADE, TURMA(Curso)
+                    e UNIDADE(Cidade).
+                </p>
+            </div>
+
+            <div class="formulario">
+                <form>
+                    <span>Encontre com sua matrícula:</span>
+                    <input type="text" class="input-search" alt="procurar-lista" ng-model="search.matricula" />
+                    <button type="button" class="conteudo-tabela" data-element="#conteudoTabela">procurar</button>
+                </form>
+            </div>
+
+            <div class="filtro">
+                <label for="">Filtrar por:</label>
+                <div class="filtro--select">
+                    <select ng-model="search.especialidade" class="filtro--select__item">
+                        <option value="">Especialidades - TODAS</option>
+                        <option ng-repeat="item in tabela | unique:'especialidade'" value="{{item.especialidade}}">
+                            {{item.especialidade}}</option>
+                    </select>
+                    <select ng-model="search.filial" class="filtro--select__item">
+                        <option value="">Filiais - TODAS</option>
+                        <option ng-repeat="item in tabela | unique:'filial'" value="{{item.filial}}">
+                            {{item.filial}}</option>
+                    </select>
+                    <select ng-model="search.turma" class="filtro--select__item">
+                        <option value="">Turmas - TODAS</option>
+                        <option ng-repeat="item in tabela | unique:'turma'" value="{{item.turma}}">
+                            {{item.turma}}</option>
+                    </select>
+                    </tr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container tabela">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row-fluid">
+                <div class="col-xs-12">
+                    <small>
+                        imprimir | enviar para um amigo
+                        <span style="float: right">foram encontrados 3201 registros</span>
+                    </small>
+                </div>
+            </div>
+
+            <div class="row barra-tabela-superior">
+                <div class="col-xs-10 col-sm-8">
+                    <small>
+                        1º ao 4º
+                        <button type="button" class="btn-voltar"><i class="fas fa-caret-left"></i></button>
+                        <button type="button" class="btn-avancar"><i class="fas fa-caret-right"></i></span></button>
+                        <span class="ir-conteudo">ir para: <input type="text" name="pesquisa da tabela"
+                                class="ir-para" /></span>
+                        mostrar:
+                        <select name="mostrar">
+                            <option value="mostrar itens da tabela">todos</option>
+                        </select>
+                    </small>
+                </div>
+
+                <div class="col-xs-2 col-sm-4 text-right">
+                    <small>
+                        <img src="dist/imgs/btn-download.ico" style="width:13px">
+                        baixar planilha completa
+                    </small>
+                </div>
+            </div>
+
+            <table class="informacoes">
+                <thead>
+                    <tr>
+                        <th>POSIÇÃO</th>
+                        <th>NOTA</th>
+                        <th>MATRÍCULA</th>
+                        <th>ESPECIALIDADE</th>
+                        <th>TURMA</th>
+                        <th class="linha-tabela">FILIAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in tabela | filter:search:strict">
+                        <td>{{item.posicao}}</td>
+                        <td>{{item.nota}}</td>
+                        <td>{{item.matricula}}</td>
+                        <td>{{item.especialidade}}</td>
+                        <td>{{item.turma}}</td>
+                        <td class="linha-tabela">{{item.filial}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row barra-tabela-inferior">
+                <div class="col-xs-10 col-sm-8">
+                    <small>
+                        1º ao 4º
+                        <button type="button" class="btn-voltar"><i class="fas fa-caret-left"></i></button>
+                        <button type="button" class="btn-avancar"><i class="fas fa-caret-right"></i></span></button>
+                        <span class="ir-conteudo">ir para: <input type="text" name="pesquisa da tabela"
+                                class="ir-para" /></span>
+                        mostrar:
+                        <select name="mostrar">
+                            <option value="mostrar itens da tabela">todos</option>
+                        </select>
+                    </small>
+                </div>
+
+                <div class="col-xs-2 col-sm-4 text-right">
+                    <small><img src="dist/imgs/btn-download.ico" style="width:13px">
+                        baixar planilha completa
+                    </small>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="col-xs-12">
+                    <small>
+                        imprimir | enviar para um amigo
+                    </small>
+                    <small class="topo">
+                        <a href="#">
+                            <i class="fas fa-caret-up"></i>
+                            topo
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
