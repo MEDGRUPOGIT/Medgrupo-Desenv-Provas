@@ -19,8 +19,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('lib', function () {
-    return gulp.src(['node_modules/jquery/dist/jquery.min.js', 'node_modules/angular/angular.min.js'])
-        .pipe(concat('lib.js'))
+    return gulp.src('node_modules/angular/angular.min.js')
+        .pipe(concat('angular.js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./dist/js/'));
 });

@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./dist/css/style.min.css">
     <link rel="stylesheet" href="./dist/css/all.min.css">
+    <link rel="stylesheet" href="./dist/css/print.css" media="print">
 
-    <!-- No lib.min.js está agrupado e minificado o jQuery v3.4.1 e o AngularJS v1.7.8 por meio do gulp -->
-    <script src="./dist/js/lib.min.js"></script>
+    <script src="./dist/js/angular.min.js"></script>
+    <script src="./dist/js/angular-route.min.js"></script>
     <script src="./app/app.js"></script>
     <script src="./app/controller.js"></script>
-    <script src="./dist/js/angular-route.min.js"></script>
-    <script src="./dist/js/zoom.js"></script>
+    <script src="./dist/js/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/zoom.js"></script>
+
 </head>
 
 <body ng-controller="myCtrl">
@@ -37,7 +39,8 @@
     <ng-view></ng-view>
 
     <footer>
-        <div class="container-fluid" id="barra-inferior"></div><small><i class="fas fa-mug-hot"></i> By Aldiran</small>
+        <div class="container-fluid" id="barra-inferior">
+            <a href="https://github.com/aldiransantos" target="_blank"><small><i class="fas fa-mug-hot"></i> By Aldiran</small></a>
         </div>
     </footer>
 </body>

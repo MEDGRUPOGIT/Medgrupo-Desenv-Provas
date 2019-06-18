@@ -1,0 +1,26 @@
+#no-print {
+    display: none !important;
+}
+
+#yes-print {
+    display: block !important;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid #333;
+    width: fit-content;
+    text-align: right;
+}
+
+.tabela table.informacoes {
+    border: 1px solid #333;
+}
+
+.tabela table.informacoes .linha-tabela,
+.tabela table.informacoes th,
+.tabela table.informacoes td {
+    border-right: 1px solid #333;
+}
