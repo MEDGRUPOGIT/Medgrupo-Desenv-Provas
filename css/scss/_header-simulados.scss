@@ -1,0 +1,38 @@
+.cabecalho{
+    position: fixed;
+    display: flex;
+    width:100%;
+    height:auto;
+    margin-bottom:40px;
+    background-color:#000;
+    padding-top:5px;
+    z-index:99;
+    @media (min-width:1025px){
+      width:80%;
+      margin-left:20%;
+    }
+&__titulo{
+  font-size:1em;
+  width:180px;
+  display: block;
+  margin:0 auto;
+  font-weight: bold;
+  padding:15px 0;
+  text-align:center;
+  color:#fff;
+}
+}
+  .icon-sair{
+    position: fixed;
+    color:#fff;
+    font-size:1.5em;
+    top:7px;
+    left:35px;
+    @media (min-width:1025px){
+      position: fixed;
+      color:#fff;
+      font-size:1.5em;
+      top:7px;
+      left:25%;
+  }
+  }

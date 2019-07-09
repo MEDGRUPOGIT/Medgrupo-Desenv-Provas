@@ -1,0 +1,77 @@
+body{
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+  width:100%;
+  max-width: 980px;
+  height:100%;
+  padding:80px 0;
+  justify-content:space-between;
+  @media (min-width:1025px){
+    width:70%;
+    margin-left:25%;
+  }
+}
+
+.semana{
+  display: flex;
+  flex: 1 1 calc(50% - 10px);
+  justify-content: space-between;
+  margin:10px 3px;
+  background-color:rgba(0, 0, 0, .5);
+  border-radius:35px;
+  @media (min-width:768px){
+    flex: 1 1 calc(33.333% - 20px);
+    margin:10px;
+  }
+  & span{
+    margin-top:2px;
+    font-size:0.4em;
+    font-weight: bold;
+    color:#fff;
+    text-align:center;
+    & p{
+      font-size:1.5em;
+      font-weight: bold;
+      margin-top:2px;
+      color:#fff;
+    }
+  }
+
+  &__conteudo{
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    background-color:#fff;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding:5px;
+    @media (min-width:400px){
+        width:60px;
+        height:60px;
+    }
+  }
+
+  &__percent{
+    font-size:0.6em;
+    margin-bottom:10px;
+    text-align:center;
+  }
+
+  &__tema, &__numero{
+    font-size:0.7em;
+    font-weight: bold;
+    align-self:center;
+    color:#000;
+    text-transform:uppercase;
+    
+  }
+
+}
