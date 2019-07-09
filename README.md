@@ -1,7 +1,6 @@
-[Prova para **Front-end (HTML/CSS) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/front)
+##Envio da avaliação referente a vaga de Front JR
 
-[Prova para **Front-end (HTML/CSS) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/FrontJR)
+Realizado o desenvolvimento da replicação de um app(MEDSOFT PRO) adaptável a dispositivos móveis e computadores.
 
-[Prova para **Front-end (Javascript) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front)
+O Porjeto foi desenvolvido em HTML, SASS, JAVASCRIPT e foi feita a utilização do GULP para minificar os arquivos css.
 
-[Prova para **Front-end (Javascript) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front-junior)
