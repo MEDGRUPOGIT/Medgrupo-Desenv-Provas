@@ -1,0 +1,217 @@
+/* media queries - Index */
+
+@media (min-width: 768px) {
+    .notificacao img {
+        width: 30px;
+        height: 30px;
+    }
+    .list-conteudo li {
+        padding-bottom: 12px;
+    }
+    .list-conteudo a {
+        padding-bottom: 15px;
+    }
+    .apostilas {
+        justify-content: space-evenly;
+    }
+    .semana {
+        width: 205px;
+        height: 85px;
+        border-radius: 40px;
+    }
+    .card-apostila {
+        border-radius: 50px;
+        width: 100px;
+    }
+    .secao {
+        justify-content: flex-start;
+    }
+    .separador {
+        height: 80px;
+        border-right: solid 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .select-cursos,  .num-semana p:last-child{
+        font-size: 1.3em;
+    }
+    .list-conteudo {
+        font-size: 1em;
+    }
+    .card-apostila p:first-child {
+        padding-top: 24px;
+        font-size: 1.3em;
+    }
+    .card-apostila p:last-child, .usuario, .titulo-secao {
+        font-size: 1.4em;
+    }
+    .num-semana p:first-child {
+        font-size: .7em;
+    }
+    .menu-inferior:hover {
+        height: 600px;
+    }
+    .opcao {
+        width: 255px;
+        height: 100px;
+    }
+    .icone img {
+        width: 40px;
+        height: 40px;
+    }
+    .caixa p {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        height: 85px;
+    }
+    .select-cursos,  .num-semana p:last-child{
+        font-size: 1.5em;
+    }
+    .list-conteudo {
+        font-size: 1.2em;
+    }
+    .card-apostila p:first-child {
+        padding-top: 24px;
+        font-size: 1.4em;
+    }
+    .card-apostila p:last-child, .usuario, .titulo-secao {
+        font-size: 1.5em;
+    }
+    .num-semana p:first-child {
+        font-size: .8em;
+    }
+    .menu-inferior:hover {
+        height: 700px;
+    }
+    .opcao {
+        width: 340px;
+        height: 110px;
+    }
+    .icone img {
+        width: 60px;
+        height: 60px;
+    }
+    .caixa p {
+        font-size: 1.3em;
+    }
+}
+
+/* media queries - Simulados */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .simulado {
+        width: 160px;
+        height: 160px;
+    }
+    .simulado img {
+        width: 160px;
+        height: 160px;
+    }
+    .estude {
+        left: 80px;
+        bottom: 175px;
+    }
+    .titulo-simulado p:first-child {
+        font-size: 1.6em;
+    }
+    .titulo-simulado p:last-child {
+        font-size: .8em;
+    }
+    .usuario, .titulo-secao {
+        font-size: 1.4em;
+    }
+    .menu-inferior:hover {
+        height: 600px;
+    }
+    .secao {
+        justify-content: flex-start;
+    }
+    .opcao {
+        width: 255px;
+        height: 100px;
+    }
+    .icone img {
+        width: 40px;
+        height: 40px;
+    }
+    .caixa p {
+        font-size: 1.1em;
+    }
+    .separador {
+        height: 80px;
+        border-right: solid 1px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        height: 90px;
+    }
+    .botao-sair img {
+        width: 30px;
+        height: 30px;
+        opacity: .3;
+    }
+    .notificacao img {
+        width: 30px;
+        height: 30px;
+        opacity: .3;
+    }
+    .titulo {
+        font-size: 1.5em;
+    }
+    .ano {
+        font-size: 1.3em;
+    }
+    .simulado {
+        width: 180px;
+        height: 180px;
+    }
+    .simulado img {
+        width: 180px;
+        height: 180px;
+    }
+    .estude {
+        left: 95px;
+        bottom: 192px;
+        width: 75px;
+        height: 35px;
+    }
+    .estude p {
+        font-size: .9em;
+    }
+    .titulo-simulado {
+        bottom: 140px;
+    }
+    .titulo-simulado p:first-child {
+        font-size: 1.9em;
+    }
+    .titulo-simulado p:last-child {
+        font-size: 1em;
+    }
+    .usuario, .titulo-secao {
+        font-size: 1.4em;
+    }
+    .menu-inferior:hover {
+        height: 700px;
+    }
+    .secao {
+        justify-content: flex-start;
+    }
+    .opcao {
+        width: 340px;
+        height: 110px;
+    }
+    .icone img {
+        width: 60px;
+        height: 60px;
+    }
+    .caixa p {
+        font-size: 1.3em;
+    }
+}

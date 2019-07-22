@@ -1,0 +1,124 @@
+.menu-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    transition: height .5s;
+    background: #fff;
+}
+.menu-inferior:hover {
+    height: 450px;
+}
+.botao-mg {
+    position: relative;
+    bottom: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+}
+.botao-mg::before {
+    content: "";
+    position: relative;
+    right: 10px;
+    border-bottom: 25px solid #fff;
+    border-left: 12px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+    z-index: -1;
+}
+.circulo-logo {
+    position: relative;
+    bottom: 12px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #dc7e46;
+    border-radius: 20px;
+}
+.circulo-logo img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.botao-mg::after {
+    content: "";
+    position: relative;
+    bottom: 56px;
+    left: 23px;
+    border-bottom: 25px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 12px solid transparent;
+    height: 0;
+    width: 125px;
+    z-index: -1;
+}
+.usuario {
+    color: #a2a3a5;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.titulo-secao {
+    position: relative;
+    top: 14px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #003050;
+    z-index: 1;
+}
+hr {
+    border: solid 1px #000;
+    width: 80%;
+    margin: 0 auto 30px auto;
+    opacity: .05;
+}
+.secao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.opcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 105px;
+    height: 70px;
+}
+.opcao a {
+    text-decoration: none;
+    color: #000;
+}
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.caixa:hover {
+    border-bottom: solid 2px #2abfe1;
+}
+.caixa p {
+    font-size: .8em;
+    font-weight: bold;
+}
+.separador {
+    height: 60px;
+    border-right: solid 1px rgba(0, 0, 0, 0.1);
+}
+.icone img {
+    width: 25px;
+    height: 25px;
+}
+

@@ -1,0 +1,64 @@
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0 50px 0;
+}
+.area-simulados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.simulado {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    background: #1fc6f0;
+    border-radius: 5px;
+}
+.simulado img {
+    position: relative;
+    left: 3px;
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+}
+.estude {
+    position: relative;
+    left: 67px;
+    bottom: 153px;
+    background-color: rgb(255, 167, 52);
+    width: 70px;
+    height: 30px;
+}
+.estude::before {
+    content: "";
+    position: relative;
+    right: 17px;
+    top: 15px;
+    z-index: -1;
+    border-top: 15px solid rgba(0, 0, 0, .0); 
+    border-right: 17px solid rgb(189, 116, 20); 
+}
+.estude p {
+    font-size: .6em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 9px;
+    text-shadow: -1px 1px #000;
+}
+.titulo-simulado {
+    position: relative;
+    left: 10px;
+    bottom: 125px;
+    color: #fff;
+}
+.titulo-simulado p:first-child {
+    font-size: 1.5em;
+}
+.titulo-simulado p:last-child {
+    font-size: .7em;
+}

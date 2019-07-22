@@ -1,0 +1,71 @@
+.conteudo {
+    position: absolute;
+    right: 0;
+    width: 62%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 0 83px;
+}
+.apostilas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bloco-sem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bloco-sem p {
+    font-family: Roboto-Bold;
+    color: #fff;
+    font-size: .8em;
+}
+.semana {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    height: 50px;
+    margin: 0 10px 10px 10px;
+    background: #000;
+    border-radius: 30px;
+}
+.card-apostila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 50px;
+}
+.card-apostila p {
+    text-align: center;
+    padding-top: 17px;
+    font-size: .8em;
+    font-family: Roboto;
+    color: #000;
+}
+.num-semana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.num-semana p:first-child {
+    font-size: .6em;
+}
+.num-semana p:last-child {
+    font-size: .8em;
+    font-weight: bold;
+}
+.bloqueado .card-apostila {
+    background-color: #051313;
+}
+.bloqueado .card-apostila {
+    color: #253131;
+}
+.bloqueado .num-semana {
+    color: rgb(255, 255, 255, .4);
+}
