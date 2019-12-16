@@ -1,3 +1,48 @@
-<div ng-controller="main">
-    
+<div ng-controller="main" class="container col-md-10">
+    <div id="disclaimer" class="col-md-6">
+        <h1>
+            Simulado 5 - PROVA OBJETIVA
+        </h1>
+        <p>
+            Os resultados do simulado são atualizados diariamente, na medida em que os cartões-resposta e as provas discursivas vão sendo processados.
+        </p>
+        <p>
+            Através dos filtros, você poderá criar rankings personalizados, por ESPECIALIDADE, TURMA (curso) e  UNIDADE (cidade).
+        </p>
+
+        <div class="input-registration">
+            Entre com sua matrícula: <input type="text" ng-model="registration"> <button id="search" ng-click="filterByRegistration()">procurar</button>
+        </div>
+        <div>
+            <p>Filtrar por:</p>
+            <select ng-model="expertise">
+                <option value="medica">Clínica Médica</option>
+                <option value="geral">Cirurgia Geral</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <table>
+                <thead>
+                    <th>POSIÇÃO</th>
+                    <th>NOTA</th>
+                    <th>MATRÍCULA</th>
+                    <th>ESPECIALIDADE</th>
+                    <th>TURMA</th>
+                    <th>FILIAL</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="(k, simulado) in simulados">
+                        <td>{{simulado.position}}</td>
+                        <td>{{simulado.grade}}</td>
+                        <td>{{simulado.registration}}</td>
+                        <td>{{simulado.expertise}}</td>
+                        <td>{{simulado.class}}</td>
+                        <td>{{simulado.city}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
