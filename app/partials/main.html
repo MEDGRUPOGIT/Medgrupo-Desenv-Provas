@@ -15,9 +15,22 @@
         </div>
         <div>
             <p>Filtrar por:</p>
-            <select ng-model="expertise">
+            <select ng-model="expertise" ng-change="filterByFilters()">
+                <option value="none">Especialidade - Todas</option>
                 <option value="medica">Clínica Médica</option>
                 <option value="geral">Cirurgia Geral</option>
+            </select>
+
+            <select ng-model="city" ng-change="filterByFilters()">
+                <option value="none">Filiais - Todas</option>
+                <option value="salvador">Salvador (BA)</option>
+                <option value="saopaulo">São Paulo (SP)</option>
+            </select>
+
+            <select ng-model="class" ng-change="filterByFilters()">
+                <option value="none">Turmas - Todas</option>
+                <option value="salvador1">2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR</option>
+                <option value="saopaulo1">2008 MEDCURSO SÃO PAULO TURMA A/2008 MED SÃO PAULO TURMA A</option>
             </select>
         </div>
     </div>
