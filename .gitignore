@@ -1,0 +1,7 @@
+node_modules
+dist
+.tmp
+bower_components
+app/mockups
+*.sublime-workspace
+app/styles/main.css

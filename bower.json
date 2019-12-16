@@ -1,0 +1,22 @@
+{
+  "name": "orange-boilerplate",
+  "version": "0.1.0",
+  "homepage": "https://github.com/orangehill/orange-boilerplate",
+  "description": "Grunt, LESS and include-replace for all your webapp development needs",
+  "authors": [
+    "Orange Hill Development <vedran.opacic@orangehilldev.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "dist",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2",
+    "angular": "^1.7.9"
+  }
+}

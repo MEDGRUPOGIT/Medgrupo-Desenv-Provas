@@ -1,7 +1,8 @@
-[Prova para **Front-end (HTML/CSS) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/front)
+## Requirements
+NodeJS
+grunt (npm i --global grunt)
+bower (npm i --global bower)
 
-[Prova para **Front-end (HTML/CSS) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/FrontJR)
-
-[Prova para **Front-end (Javascript) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front)
-
-[Prova para **Front-end (Javascript) Júnior / Estagiário PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/master/junior-js.md)
+## Setup
+npm install & bower install
+grunt serve
