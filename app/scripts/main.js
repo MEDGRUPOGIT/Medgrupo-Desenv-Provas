@@ -7,11 +7,16 @@ app.controller("main",["$scope", function($scope){
     let self = this;
 
     $scope.simulados = simulados
-    $scope.expertise = "none"
-    $scope.city = "none"
-    $scope.class = "none"
+    clearFilters();
+
+    function clearFilters(){
+        $scope.expertise = "none"
+        $scope.city = "none"
+        $scope.class = "none"
+    }
 
     function filterByRegistration(){
+        clearFilters();
         $scope.simulados = simulados.filter( (s) => {
             return s.registration == $scope.registration
         })
