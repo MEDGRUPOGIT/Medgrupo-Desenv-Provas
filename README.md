@@ -1,7 +1,42 @@
-[Prova para **Front-end (HTML/CSS) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/front)
+# Teste para candidatos à vaga de desenvolvedor Front-end
 
-[Prova para **Front-end (HTML/CSS) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/FrontJR)
+> [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.jpg)](http://www.medgrupo.com.br)
 
-[Prova para **Front-end (Javascript) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front)
+## Instruções
 
-[Prova para **Front-end (Javascript) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front-junior)
+1. Leia atentamente as orientações do teste apresentadas aqui;
+2. As atividades abaixo deverão ser realizadas no prazo de 72h corridas;
+3. Implemente o HTML/CSS da tela com base material;
+4. Nos envie o resultado do projeto zipado por email.
+
+- **Observação** Trata-se da reprodução de um layout especifico através de prints.
+
+### Você pode
+
+- Utilizar qualquer linguagem de pré-processador SASS ou css puro;
+- Utilizar um task runner de sua preferência;
+
+### Esperamos que você
+
+- Manter a fidelidade do layout apresentado
+- Animações fluidas e consistentes
+
+### Ganhe pontos extras por
+
+- Desenvolver HTML semântico;
+- Utilizar boas práticas de SEO;
+- É permitido o uso de qualquer font que se aproxime do layout proposto.
+- Utilizar '@font-face' para os ícones (se houver)
+- Componentizar seu css;
+
+## Material
+
+- Todos os layouts necessários estão disponíveis no [Link para material](http://d1y36np0qkbzyh.cloudfront.net/medgrupo-prova-frontend.zip)
+
+## Submissão
+
+Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome e depois envie-nos o pull request.
+
+`Obs.: Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.`
+
+**Boa sorte!**
