@@ -24,6 +24,8 @@
 - Minifique seu css e deixe-o na pasta "css"
 - Faça commit também dos arquivos não minificados
 - Dê suporte a Chrome(33), Safari(9).
+- Coloque transições animadas nos comportamentos da tela
+- Faça animações fluidas e consistentes
 
 ### Ganhe pontos extras por
 
