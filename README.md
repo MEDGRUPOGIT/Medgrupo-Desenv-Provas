@@ -38,7 +38,7 @@
 
 ## Material
 
-- Todos os layouts necessários estão disponíveis no [Link para material](http://d1y36np0qkbzyh.cloudfront.net/medgrupo-prova-frontend.zip)
+- Todos os layouts necessários estão disponíveis no [Link para material](http://med-cdn.s3-sa-east-1.amazonaws.com/medgrupo-prova-frontend.zip)
 
 ## Submissão
 
