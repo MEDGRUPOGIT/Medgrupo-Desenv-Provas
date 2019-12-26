@@ -19,7 +19,8 @@
 ### Esperamos que você
 
 - Manter a fidelidade do layout apresentado
-- Animações fluidas e consistentes
+- Coloque transições animadas nos comportamentos da tela
+- Faça animações fluidas e consistentes
 
 ### Ganhe pontos extras por
 
