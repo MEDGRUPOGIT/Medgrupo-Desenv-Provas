@@ -1,0 +1,344 @@
+@import "helpers/variaveis";
+@import "helpers/mixin";
+@import "base/reset";
+@import "layout/footer";
+@import "layout/provas-montadas";
+@import "layout/header";
+@import "layout/visualiza-prova";
+@import "helpers/placeholder.scss";
+
+header{
+    width: $alturaLargura-padrao;
+    height: 15%;
+    background: black;
+    position: fixed;
+    @include flex-centraliza();
+    align-items: center;
+    z-index: 5;
+}
+.titulo-prova{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90%;
+    color: white;
+    align-items: flex-end;
+}
+html,body,main{
+    width: 100%;
+    height: auto;
+}
+.prova{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 95% ;
+    height: 13% ;
+    background: black;
+    border-radius: 5% ;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.botao-montaProva {
+  position: fixed;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 20px;
+  background-color: rgba(42, 169, 200, 1);
+  bottom: 12%;
+  @include cursor();
+}
+.linear-porcentagem{
+  font-size: 1em;
+  width: 82%;
+  height: 82%;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.mais{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    @include flex-centraliza;
+    position: absolute;
+    right: 0;
+    width: 13%;
+    height: 18%;
+    background: rgb(20, 83, 98);
+    font-size: 2em;
+    font-weight: bold;
+    @include cursor();
+}
+.menos{
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    @include flex-centraliza;
+    position: absolute;
+    left: 0;
+    width: 13%;
+    height: 18%;
+    background: rgb(20, 82, 98);
+    font-size: 2em;
+    font-weight: bold;
+    @include cursor();
+    opacity: 0.3;
+}
+@media (min-width: 1025px) {
+    .linear-porcentagem{
+        font-size: 1em;
+        
+    }
+  #Menu_lateral {
+      width: 60%;  
+    }
+    .icon-colon{
+      margin-top: 1.8%;
+      position: absolute;
+      right:25%;}
+    .icon-down-open{
+      position: absolute;
+      left: 25%;
+      margin-top: 0PX;
+      font-size: 1.2em;
+      color:white; 
+    
+    } 
+    .porcentagem{
+        height: 100%;
+      width: 20% ;
+    }
+    .div-realiza-prova{
+        width: 55%;
+        margin-top: 0;
+    }
+    .porcentagem2{
+        width: 30%;
+    }
+    .mais{
+        border-radius: 50%;
+        right: 10%;
+        width: 4%;
+        height: 14%;
+    }
+    .menos{
+        border-radius: 50%;
+        left: 10%;
+        width: 4%;
+        height: 14%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+  .porcentagem{
+      width: 24% ;
+    }
+  }
+.texto{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+}
+
+.Menu_Inferior:hover{
+    height: 80%;
+    display: flex;
+    transition: all.300s linear;
+    @include cursor();
+    justify-content: center;
+}
+
+.simbolo{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-top: -15px;
+    background: #e18a4f;
+    border-radius: 100%;
+    border-top:  6px solid white;
+    border-right:  6px solid white;
+    border-left:  6px solid white;
+    border-bottom:  6px solid white;
+}
+.menu-inferiorbotao{
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    position: relative;
+    border-radius: 100%;
+    margin: -11px 0 0 0 ;
+    width: 70px;
+    background: white;
+}
+
+.seletor a{
+    padding-left: 30.333%;
+    padding-right: 30%;
+    text-decoration: none;
+    font-size: 1em;
+    background: black;
+    color: rgba(250, 250, 250, 0.3);
+
+}
+
+.seletor a:hover{
+    color:white;
+    border-bottom: aqua solid 3px; 
+    padding-bottom: 8px;
+}
+
+.Menu_Inferior{
+    display: flex;
+    position: fixed;
+    bottom :0;
+    width: 100%;
+    height: 40px;
+    background: white;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center; 
+    font-size: 10px;
+ 
+  
+
+}
+.aula{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.container{
+    width: 90%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 15%;
+    justify-content: center;
+    }
+
+.semana{
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-left: 2%;
+    height: 67px;
+    width: 180px;
+    display: flex;
+    background: rgba(10, 10, 10, 0.5);
+    border-radius: 39%
+
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.2);
+    color:white;
+    font-size: 0.7em;
+    text-align: center;
+}
+.teste2{
+    text-align :center;
+    margin-left: -30px;
+    margin-top: 20px;  
+    background: transparent;
+    color:black;
+    font-size: 1em;
+    width: 45px;
+}
+
+.menu-container {
+    position: relative;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+.itens-menu{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    color:black;
+}
+.itens-menu li{
+    width: 33.333%;
+    list-style: none;
+    color:black;
+}
+.itens-menu a{
+    color:black;
+    font-size: 3em;
+    text-decoration: none;
+}
+.itens-menu p{
+    color:black;
+    font-size: 0.5em;
+    margin-top: 0px;
+    padding: 0%;
+}
+.itens-menu p:hover{
+    border-bottom: aqua solid 3px; 
+}
+.texto-menuinf{
+    color: rgb(0,0,60);
+    width: 100%;
+    font-size: 2em;
+}
+.texto-nome{
+    color:grey;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+.geral a{
+    text-decoration: none;
+    width: 33.333%;
+    color:black;
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

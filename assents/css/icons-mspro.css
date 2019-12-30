@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'icons-mspro';
+  src: url('../font/icons-mspro.eot?65946892');
+  src: url('../font/icons-mspro.eot?65946892#iefix') format('embedded-opentype'),
+       url('../font/icons-mspro.woff2?65946892') format('woff2'),
+       url('../font/icons-mspro.woff?65946892') format('woff'),
+       url('../font/icons-mspro.ttf?65946892') format('truetype'),
+       url('../font/icons-mspro.svg?65946892#icons-mspro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons-mspro';
+    src: url('../font/icons-mspro.svg?65946892#icons-mspro') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons-mspro";
+  font-style: normal;
+  font-weight: normal;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-icon_newmain:before { content: '\e800'; } /* '' */
+.icon-icon_newmedcode:before { content: '\e801'; } /* '' */
+.icon-icon_newmonta:before { content: '\e802'; } /* '' */
+.icon-icon_newsimu:before { content: '\e803'; } /* '' */
+.icon-icon_newslideaula:before { content: '\e804'; } /* '' */
+.icon-newmenu_cross:before { content: '\e805'; 
+  z-index: 5;
+  font-size: 2.2em;
+  /* position: absolute; */
+  margin-top: 45%;
+  color:white;
+  align-content: center;
+} /* '' */
+.icon-notificacao:before { content: '\e806'; } /* '' */
+.icon-sair:before { content: '\e807';
+  color:white; 
+  font-size: 1.5em;
+  position: fixed;
+  top: 25px;
+  left: 10px;
+text-decoration: none;
+cursor: pointer; } /* '' */
+.icon-icon_newacademicas:before { content: '\e808'; } /* '' */
+.icon-icon_newcontri:before { content: '\e809'; } /* '' */
+.icon-icon_newintegra:before { content: '\e80a'; } /* '' */
+.icon-search:before { content: '\e80b'; 
+  font-size: 1.5em;
+  color:white;
+  text-decoration: none;
+} /* '' */
+.icon-colon:before { content: '\e80c';
+  right:6%;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5em;
+  color:white} /* '' */
+.icon-down-open:before { content: '\f004';
+  position: absolute;
+  left: 6%;
+  font-size: 1.2em;
+  color:white; 
+  cursor: pointer;
+  
+
+} /* '' */
+
+.icon-down-open:hover { content: '\f004';
+  color: red}
+  #ferramentas:hover{
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    right: 6%;
+    width: 55%;
+    height: 24%;
+    background:white;
+    color: black;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+  }
+  #ferramentas:hover div{
+    font-size: 1em;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #ferramentas div{
+    display: none;
+  }
+  #ferramentas div p{
+    margin-bottom: 10%;
+
+  }
+  #ferramentas2:hover{
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    right: 3%;
+    width: 55%;
+    height: 150%;
+    background:white;
+    color: black;
+    font-size: 1em;
+    justify-content: center;
+  }
+  
+  #ferramentas2:hover div{
+    font-size: 1em;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #ferramentas2 div{
+    display: none;
+  }
+  #ferramentas2 div p{
+    margin-bottom: 10%;
+  }
+  #ferramentas2 {
+    position: absolute;
+    right: 2%;
+    font-size: 1.5em;
+    color: white;
+    top: 56%;
+  }
+  .icon-icon_newacademicas::before {background: url(../icons/icon_newacademicas.svg) no-repeat top center;}
+  .icon-icon_newcontri::before {background: url(../icons/icon_newcontri.svg) no-repeat top center;}
+  .icon-icon_newintegra::before {background: url(../icons/icon_newintegra.svg) no-repeat top center;}
+  .icon-icon_newmain::before {background: url(../icons/icon_newmain.svg) no-repeat top center;}
+  .icon-icon_newmedcode::before {background: url(../icons/icon_newmedcode.svg) no-repeat top center;}
+  .icon-icon_newmonta::before {background: url(../icons/icon_newmonta.svg) no-repeat top center;}
+  .icon-icon_newsimu::before {background: url(../icons/icon_newsimu.svg) no-repeat top center;}
+  .icon-icon_newslideaula::before {background: url(../icons/icon_newslideaula.svg) no-repeat top center;}
+  .icon-notificacao::before {background: url(../icons/notificacao.svg) no-repeat top center;}

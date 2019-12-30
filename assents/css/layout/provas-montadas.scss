@@ -1,0 +1,142 @@
+.provas-montadas{
+    @include flex-centraliza();
+    width: $alturaLargura-padrao;
+    height: auto;
+    position: absolute;
+    top: 25% ;
+    cursor: pointer;
+}
+.prova-opcoes{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    right:  1%;
+    position: absolute;
+    a{
+        margin: 11px 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 1.1em;
+    }
+}
+
+.porcentagem{
+    @extend %porcentagem;
+    width: 100%;
+}
+.porcentagem2{
+   
+    width: 45%;
+    height: 50%;
+}
+.acertos{
+    @include flex-centraliza;
+    border-radius: 10px;
+    height: 90%;
+    width: 40%;
+    background: rgb(34, 210, 117);
+}
+.erros{
+    @include flex-centraliza;
+    border-radius: 10px;
+    height: 90%;
+    width: 40%;
+    background: rgb(255, 92, 93);
+}
+.naofeito{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    height: 90%;
+    width: 40%;
+    background:rgb(110, 110, 110);
+
+}
+.quantidade-acertos,.quantidade-acertos-index{
+    @extend %acertos;
+}
+
+.quantidade-erros,.quantidade-erros-index{
+  @extend %erros;
+}
+.quantidade-naofeita,.quantidade-naofeita-index{
+    @extend %nao-feito;
+}
+.quantidade-acertos-index,.quantidade-erros-index,.quantidade-naofeita-index{
+    @extend %total;
+
+}
+.porcentagem3{
+    @extend %porcentagem;
+    height: 72%;
+}
+#Menu_lateral {
+    border-radius: 7px;
+    font-size: 15px;
+    width: 92%; 
+     }
+.item{
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background: black;
+    margin-top: 3%;
+    border-radius: 9px;
+    a{
+        display: flex;
+        justify-content: flex-start;
+    }
+    li{
+        width: 100%;
+        height: 200px;
+    }
+    label{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size :20px;
+        cursor: pointer;  
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        text-decoration: none;
+        width: 100%;
+        list-style: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: all.450s linear;
+        background: #ffffff14;
+        li a{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            text-decoration: none;
+            color: white; 
+        }
+        
+    }
+    input{
+        display:none;
+    
+    }
+}
+.item input:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    transform: all;
+}
+.texto-questoes{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}

@@ -1,0 +1,110 @@
+@import "helpers/variaveis";
+@import "helpers/mixin";
+@import "base/reset.scss";
+@import "layout/footer.scss";
+@import "layout/provas-montadas.scss";
+@import "layout/header.scss";
+@import "helpers/placeholder.scss";
+
+body,html{
+    width: $alturaLargura-padrao;
+    height: auto;
+}
+body{
+    @include display-flex();
+}
+html{
+    width: $alturaLargura-padrao;
+    background-image: url("../img/background.png"); 	
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+}
+main{
+    @include display-flex();
+    justify-content: center;
+    width: $alturaLargura-padrao;
+    height: $alturaLargura-padrao;
+   
+
+}
+  .prova{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 95% ;
+      height: 13% ;
+      background: black;
+      border-radius: 5% ;
+      text-align: center;
+      margin-top: 4%;
+  }
+
+  .botao-montaProva {
+    position: fixed;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 20px;
+    background-color: rgba(42, 169, 200, 1);
+    bottom: 12%;
+    cursor: pointer;
+}
+.linear-porcentagem{
+    width: 82%;
+    height: 82%;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 1025px) {
+    #Menu_lateral {
+        width: 60%;  
+      }
+      .icon-colon{
+        position: relative;
+        left: 95%;
+      }
+      .icon-down-open{
+        position: relative;
+        left: 5%;
+      
+      } 
+    
+      .porcentagem3{
+        width: 40% ;
+        margin-right: 15%;
+      }
+    .item{
+      ul {
+        li{
+          @include flex-centraliza();
+        }
+        a{
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width :1025px){
+      
+    .porcentagem3{
+        width: 24% ;
+      }
+    }

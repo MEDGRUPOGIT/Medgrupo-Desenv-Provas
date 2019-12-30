@@ -1,0 +1,89 @@
+.realiza-prova{
+    @include flex-centraliza;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 50%;
+    background: rgba(13, 13, 13,1);
+}
+    .div-realiza-prova{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 38%;
+        margin-top: 10%;
+        h2{
+            height: 0;
+            @include flex-centraliza;
+            font-size: 1.3em;
+            width: 100%;
+        }
+        h3{ 
+            height: 0;
+            @include flex-centraliza;
+            font-size: 1.2em;
+            width: 100%;
+        }
+    }
+        .texto-realiza{
+            width: 100%;
+            height: 0;
+            @include flex-centraliza;
+        
+    }
+
+
+    
+
+.quantidade-questoess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    top: 65%;
+    width: 100%;
+    height: 12%;
+    background: linear-gradient(to bottom,black, rgb(2, 20, 22));
+    h1{
+        @include flex-centraliza;
+        width: 68%;
+        font-size: 1.8em;
+        color: #32d0f0;
+        border-top: rgb(24, 97, 111) 2px solid;
+    }
+    p{
+        @include flex-centraliza;
+        width: 70%;
+        height: 56%;
+        color: white;
+        border-bottom: #18616F solid 3px;
+       
+    }
+}
+.botao-realiza{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 23%;
+    top: 76.9%;
+    background: rgba(13, 13, 13,1);
+}
+.botao-montaProva {
+    position: fixed;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 20px;
+    background-color: rgba(52 , 200 , 241, 1);
+    bottom: 12%;
+    cursor: pointer;
+}

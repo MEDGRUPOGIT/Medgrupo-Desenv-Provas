@@ -1,0 +1,62 @@
+.menu-superior{
+    color: white;
+    @include flex-centraliza();
+    align-items: center;
+}
+header{
+    width: $alturaLargura-padrao;
+    height: 10%;
+    background: black;
+    position: fixed;
+    @include flex-centraliza();
+    align-items: center;
+    z-index: 5;
+}
+
+.h1-titulo{
+    width: 70%;
+    font-size: 1.2em;
+}
+.h2-titulo{
+    width: 42%;
+    color:rgb(43, 191, 225);
+    font-size: 0.7em;
+    font: bold;
+}
+
+#divBusca{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(43, 43, 43, 0.603);
+    height: 10%;
+    width: $alturaLargura-padrao;
+    position: fixed;
+    top: 10%;
+    z-index: 5;
+  }
+   
+  #txtBusca{
+    background-color: transparent;
+    padding-left: 3%;
+    font-family: inherit;
+    font-size: 1.2em;
+    border: none;
+    color: white;
+    height: 100%;
+    font-style: bold;
+    font-weight: bold;
+    width: 100%;
+    text-decoration: underline;
+  }
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.308);
+    text-decoration: underline;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-color: rgba(255, 255, 255, 0.308);
+    font-style: italic;
+  }
+  .data{
+    opacity: 0.4;
+  }
+  
