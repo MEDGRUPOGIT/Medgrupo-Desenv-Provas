@@ -1,0 +1,32 @@
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 10;
+
+  &__voltar {
+    margin: 0 16px;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__sub-title {
+    display: block;
+    color: #2aa9c8;
+    font-size: 12px;
+  }
+}

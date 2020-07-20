@@ -1,0 +1,21 @@
+.montar-prova {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__btn {
+    border-radius: 29px;
+    color: #fff;
+    border: none;
+    background: #3795d2;
+    padding: 14px 23px 14px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 160px;
+    width: 180px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+  }
+}
