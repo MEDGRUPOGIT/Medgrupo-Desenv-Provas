@@ -1,0 +1,40 @@
+@import'header.css';
+@import'subheader.css';
+@import'content.css';
+@import'menu.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;  
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.prova {
+    background: var(--color-background);
+}
+
+:root {
+    --color-background: #333;
+
+    --color-background-folder: rgb(219, 127, 73);
+
+    --color-background-card: rgb(34, 34, 34);
+
+    --color-background-status: rgb(27, 27, 27);
+
+    --color-background-acertos: #3e7b5a;
+
+    --color-background-erros: #ff4f53;
+
+    --color-background-nota: #6e6e6e;
+    
+    --color-primary: #32d2f3;
+}
+

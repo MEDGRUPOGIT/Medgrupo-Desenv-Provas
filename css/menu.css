@@ -1,0 +1,86 @@
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    top: 95vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 9;
+    margin: 0px auto 0 auto;
+    transition: all 200ms ease;
+}
+
+.treinamento {
+    overflow: auto;
+    height: 88vh;    
+    margin: 0 auto;
+}
+
+@media(min-width:395px){
+    .treinamento {
+        max-width: 395px;    
+    }
+}
+
+.folder {
+    width: 81px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+    top: -30px;
+    margin: 0 auto;    
+}
+.folder__btn {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: var(--color-background-folder);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.folder__btn img {
+    width: 40px;
+}
+
+legend {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.items ul {
+    width: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px;
+}
+
+.items ul li {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-flow: column;
+    text-align: center;
+}
+
+.items ul li img{
+    width: 40px;
+}
+
+.menu-toggle {
+    top: 17vh;
+    transition: all 200ms ease;
+}

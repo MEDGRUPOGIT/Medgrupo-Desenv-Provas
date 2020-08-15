@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;      
+}
+
+.header__img {
+    width: 20px;
+    margin-top: 12px;
+}
+
+.header__titulo {
+    color: #fff;
+    text-align: center;   
+}
+
+.header__sub-titulo {
+    display: block;
+
+    font-size: 10px;
+    color: var(--color-primary);
+    text-align: center;
+}

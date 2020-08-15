@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet"  type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="prova">
+        <div class="header">
+            <div class="header__voltar">
+                <img class="header__img" src="images/icon/sair.svg" alt="">
+            </div>
+            <div class="header__titulo">MONTAR PROVAS <span class="header__sub-titulo">MINHAS PROVAS</span></div>
+        </div>
+
+        <div class="subheader">
+            <div class="subheader__img-search">
+                <!-- <img src="images/icon_pesquisar.svg" alt="Imagem Lupa"> -->
+            </div>
+            <div class="subheader__input-search"><input type="search" placeholder="Procurar em minhas provas" name="" id=""></div>
+        </div>
+
+        <div class="content">
+          <div class="card" id="fullPiechart">
+            <div class="card__header">
+                <div class="card__toggle" id="arrow" onclick="toggleFunction()"></div>
+                <span class="card__header-text">Teste</span>
+                <span class="card__header-menu" onclick="toggleMenuHeader()">...</span>
+                <div class="card__details" id="toggleMenu">
+                    <div class="card__lista"><img class="card__img-lista" src="images/icon/Filter_icon-icons.com_52097.svg" alt="Ver filtro"> Ver filtro selecionado <span class="card__menu-lista">...</span></div>
+                    <div class="card__lista"><img class="card__img-lista" src="images/icon/edit_121277.svg" alt="Renomear prova"> Renomear prova</div>
+                    <div class="card__lista"><img class="card__img-lista" src="images/icon/trash-can-stroke_icon-icons.com_57754.svg" alt="Excluir prova"> Excluir prova</div>
+                    <span class="card__lista-data">Criada em 17/10/2019</span>
+                </div>
+            </div>
+            <div class="card__content" id="toggle">
+                <div class="card__content-piechart">
+                    <div class="card__piechart" onclick="fullPiechart()">
+
+                        <div class="piechat-text">
+                            <div>
+                                total de <br><span>100</span><br>questões
+                            </div>                            
+                        </div>
+                        <div class="pieContainer">
+                            <div class="pieBackground"></div>
+                            <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+                            <div id="pieSlice2" class="hold"><div class="pie"></div></div>
+                            <div id="pieSlice3" class="hold"><div class="pie"></div></div>                            
+                        </div>
+                    </div>
+
+                    <div class="card__status">
+                        <div class="status-ranking">
+                            <ul class="status-ranking__itens">
+                            <li class="status-ranking__item">
+                                <span class="status-ranking__texto-acerto">Acertos</span>
+                                <span class="status-ranking__valores status-ranking__nota-acertos">0</span>
+                            </li>
+                            <li class="status-ranking__item">
+                                <span class="status-ranking__texto-erros">Erros</span>
+                                <span class="status-ranking__valores status-ranking__nota-erros">0</span>
+                            </li>
+                            <li class="status-ranking__item">
+                                <span class="status-ranking__texto-realizacao">Não Realizados</span>
+                                <span class="status-ranking__valores status-ranking__nota-realizacao">0</span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__questoes">
+                    <div class="remove__quetao">-</div>
+                    <div class="card__questoes-text">
+                        Sua prova possui<br><span>100 QUESTÕES</span><br>
+                        de um total de 249 questões filtradas.<br>
+                        Aumente o número de questões.
+                    </div>
+                    <div class="add__questao">+</div>                    
+                </div>
+                <div class="card__content-text">
+                    <div class="card__content-text--top"></div>
+                    <div class="card__content-text--info">
+                        145 QUESTÕES <span class="card__content-text--restante">restantes no filtro selecionando.</span>
+                    </div>                        
+                    <div class="card__content-text--bottom"></div>
+                </div>
+
+                <div class="card__content-text--btn-realizar">REALIZAR PROVA</div>
+            </div>
+                
+          </div>
+          <div class="card__content-text--btn-montar">MONTAR PROVA</div>
+        </div>
+
+        <div class="menu" id="menu">
+            <div class="folder">
+                <div onclick="toggleMenu()" class="folder__btn">
+                  <img src="images/icon/newmenu_cross.svg" alt="">
+                </div>
+            </div>
+            <div class="treinamento">
+                <legend>
+                    <h2>Olá, Rafael</h2>
+                  </legend>
+                <div class="items">
+
+                    <ul>
+                        <li>
+                            <img src="images/icon/icon_newmain.svg" alt="Main">
+                            <span>Main</span>
+                        </li>
+                        <li>
+                            <img src="images/icon/icon_newmedcode.svg" alt="Medcode">
+                            <span>Medcode</span>
+                        </li>
+                        <li>
+                            <img src="images/icon/icon_newslideaula.svg" alt="Slide de Aula">
+                            <span>Slide de<br> Aula</span>
+                        </li>
+                        <li>
+                            <img src="images/icon/icon_newacademicas.svg" alt="Dúvidas Acadêmicas">
+                            <span>Dúvidas<br> Acadêmicas</span>
+                        </li>
+                    </ul>
+                </div>
+                <legend>
+                    <h2>Área de Treinamento</h2>
+                </legend>
+                <div class="items">                    
+                    <ul>
+                        <li>
+                            <img src="images/icon/icon_newsimu.svg" alt="Simulados">
+                            <span>Simulados</span>
+                        </li>
+                        <li>
+                            <img src="images/icon/icon_newsimu.svg" alt="Simulado R3 Cirurgia">
+                            <span>Simulado R3<br> Cirurgia</span>
+                        </li>
+                        <li>
+                            <img src="images/icon/icon_newsimu.svg" alt="Multimídia CP=MED">
+                            <span>Multimídia<br> CP-MED</span>
+                        </li>
+                        <li>
+                            <img src="images/icon/icon_newintegra.svg" alt="Concursos na Integra">
+                            <span>Concursos<br> na Integra</span>
+                        </li>
+                        <li>
+                          <img src="images/icon/icon_newmonta.svg" alt="Monta Provas">
+                          <span>Monta Provas</span>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
