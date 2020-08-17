@@ -10,6 +10,7 @@
 4. Preocupe-se em desenvolver o Javascript utilizando boas práticas;
 5. Após terminar seu teste submeta um pull request e aguarde seu feedback.
 6. Caso não consiga fazer um pull request nos envie o código zipado por email
+7. Mantenha o deploy na pasta `dist`
 
 ### Você pode
 
@@ -29,7 +30,6 @@
 - Utilizar boas práticas de SEO;
 - Componentizar seu Javascript;
 - Minifique seu Javascript;
-- Mantenha o deploy na pasta `dist`
 
 ## Material
 
