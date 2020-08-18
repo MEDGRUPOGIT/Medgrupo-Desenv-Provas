@@ -38,3 +38,12 @@
     outline: none;
 }
 
+@media (orientation: landscape) {
+    @media (max-height:330px){
+        .subheader{
+            position: fixed;
+            z-index: 10;
+        }       
+    }  
+}
+

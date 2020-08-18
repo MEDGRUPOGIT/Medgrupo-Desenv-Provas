@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .prova {
     background: var(--color-background);
 }
@@ -36,5 +32,18 @@ body {
     --color-background-nota: #6e6e6e;
     
     --color-primary: #32d2f3;
+
+    font-size: 60%;
+}
+
+body, input, button, textarea {    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    color: var(--color-text-base);   
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
 }
 

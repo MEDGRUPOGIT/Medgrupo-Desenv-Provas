@@ -28,7 +28,9 @@
 
 .header__titulo {
     color: #fff;
-    text-align: center;   
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem; 
 }
 
 .header__sub-titulo {
@@ -37,4 +39,13 @@
     font-size: 10px;
     color: var(--color-primary);
     text-align: center;
+}
+
+@media (orientation: landscape) {
+    @media (max-height:330px){
+        .header {
+            position: fixed;
+            z-index: 10;
+        }       
+    }  
 }

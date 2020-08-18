@@ -8,20 +8,20 @@
     left: 0;
     right: 0;
     height: 100vh;
-    z-index: 9;
+    z-index: 11;
     margin: 0px auto 0 auto;
     transition: all 200ms ease;
 }
 
 .treinamento {
     overflow: auto;
-    height: 88vh;    
+    height: 69vh;    
     margin: 0 auto;
 }
 
-@media(min-width:395px){
+@media(max-height: 400px){
     .treinamento {
-        max-width: 395px;    
+        height: 57vh;     
     }
 }
 
@@ -57,8 +57,8 @@ legend {
     margin-top: 0px;
 }
 
-.items ul {
-    width: 91%;
+.items .itens_lista {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,17 +66,20 @@ legend {
     flex-wrap: wrap;
     gap: 30px;
     padding: 18px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.items ul li {
+.items .itens_lista .item {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     flex-flow: column;
     text-align: center;
+    width: 25%;
 }
 
-.items ul li img{
+.items .itens_lista .item img{
     width: 40px;
 }
 

@@ -27,15 +27,17 @@
         <div class="content">
           <div class="card" id="fullPiechart">
             <div class="card__header">
-                <div class="card__toggle" id="arrow" onclick="toggleFunction()"></div>
-                <span class="card__header-text">Teste</span>
-                <span class="card__header-menu" onclick="toggleMenuHeader()">...</span>
-                <div class="card__details" id="toggleMenu">
-                    <div class="card__lista"><img class="card__img-lista" src="images/icon/Filter_icon-icons.com_52097.svg" alt="Ver filtro"> Ver filtro selecionado <span class="card__menu-lista">...</span></div>
-                    <div class="card__lista"><img class="card__img-lista" src="images/icon/edit_121277.svg" alt="Renomear prova"> Renomear prova</div>
-                    <div class="card__lista"><img class="card__img-lista" src="images/icon/trash-can-stroke_icon-icons.com_57754.svg" alt="Excluir prova"> Excluir prova</div>
-                    <span class="card__lista-data">Criada em 17/10/2019</span>
-                </div>
+                <div class="card__header-content">
+                    <div class="card__toggle" id="arrow" onclick="toggleFunction()"><img class="card__toggle-img" src="images/icon/down-arrow.svg" alt=""></div>
+                    <span class="card__header-text">Teste</span>
+                    <span class="card__header-menu" onclick="toggleMenuHeader()"><img class="card__toggle-img" src="images/icon/open-menu.svg" alt=""></span>
+                    <div class="card__details" id="toggleMenu">
+                        <div class="card__lista"><img class="card__img-lista" src="images/icon/Filter_icon-icons.com_52097.svg" alt="Ver filtro"> Ver filtro selecionado <span class="card__menu-lista" onclick="toggleMenuHeader()">...</span></div>
+                        <div class="card__lista"><img class="card__img-lista" src="images/icon/edit_121277.svg" alt="Renomear prova"> Renomear prova</div>
+                        <div class="card__lista"><img class="card__img-lista" src="images/icon/trash-can-stroke_icon-icons.com_57754.svg" alt="Excluir prova"> Excluir prova</div>
+                        <span class="card__lista-data">Criada em 17/10/2019</span>
+                    </div>
+                </div>                
             </div>
             <div class="card__content" id="toggle">
                 <div class="card__content-piechart">
@@ -109,50 +111,50 @@
                   </legend>
                 <div class="items">
 
-                    <ul>
-                        <li>
+                    <div class="itens_lista">
+                        <div class="item">
                             <img src="images/icon/icon_newmain.svg" alt="Main">
                             <span>Main</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/icon/icon_newmedcode.svg" alt="Medcode">
                             <span>Medcode</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/icon/icon_newslideaula.svg" alt="Slide de Aula">
                             <span>Slide de<br> Aula</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/icon/icon_newacademicas.svg" alt="Dúvidas Acadêmicas">
                             <span>Dúvidas<br> Acadêmicas</span>
-                        </li>
+                        </div>
                     </ul>
                 </div>
                 <legend>
                     <h2>Área de Treinamento</h2>
                 </legend>
                 <div class="items">                    
-                    <ul>
-                        <li>
+                    <div class="itens_lista">
+                        <div class="item">
                             <img src="images/icon/icon_newsimu.svg" alt="Simulados">
                             <span>Simulados</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/icon/icon_newsimu.svg" alt="Simulado R3 Cirurgia">
                             <span>Simulado R3<br> Cirurgia</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/icon/icon_newsimu.svg" alt="Multimídia CP=MED">
                             <span>Multimídia<br> CP-MED</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                             <img src="images/icon/icon_newintegra.svg" alt="Concursos na Integra">
                             <span>Concursos<br> na Integra</span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="item">
                           <img src="images/icon/icon_newmonta.svg" alt="Monta Provas">
                           <span>Monta Provas</span>
-                    </ul>
+                    </div>
                 </div>
             </div>
             
