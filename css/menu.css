@@ -1,0 +1,89 @@
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    top: 95vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 11;
+    margin: 0px auto 0 auto;
+    transition: all 200ms ease;
+}
+
+.treinamento {
+    overflow: auto;
+    height: 69vh;    
+    margin: 0 auto;
+}
+
+@media(max-height: 400px){
+    .treinamento {
+        height: 57vh;     
+    }
+}
+
+.folder {
+    width: 81px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+    top: -30px;
+    margin: 0 auto;    
+}
+.folder__btn {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: var(--color-background-folder);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.folder__btn img {
+    width: 40px;
+}
+
+legend {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.items .itens_lista {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.items .itens_lista .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    width: 25%;
+}
+
+.items .itens_lista .item img{
+    width: 40px;
+}
+
+.menu-toggle {
+    top: 17vh;
+    transition: all 200ms ease;
+}

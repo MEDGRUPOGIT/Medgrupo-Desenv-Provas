@@ -1,7 +1,7 @@
-[Prova para **Front-end (HTML/CSS) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/front-v2.0)
+Prova realizada usando HTML/CSS e js para fazer o toggle de alguns elementos na tela.
 
-[Prova para **Front-end (HTML/CSS) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/frontJR-v2.0)
+Para rodar o projeto: Clicar no arquivo Index.html para abrir no navegador.
 
-[Prova para **Front-end (Javascript) PLENO**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front)
+Tempo de realização acompanhando o gabarito: 2Horas
 
-[Prova para **Front-end (Javascript) Júnior / Estagiário**](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/back-front-junior)
+Tempo de realização apos ver o gabarito: 3horas.

@@ -1,0 +1,57 @@
+Quadrado simples
+Quadrado 1x1
+{
+    "id": 10, //posição do box na grid
+    "class": "grayheavy" //cor do box
+},
+
+Quadrado 2x1
+{
+    "id": 10,
+    "class": " grid__item--w-2 grayheavy" //largura e cor do box
+},
+
+quadrado 2x2
+{
+    "id": 10,
+    "class": " grid__item--w-2 grid__item--h-2 grayheavy" //Largura do box, altura do box e cor do box
+},
+
+hover  - escurece a grid
+
+pointer - colocar o cursor pointer
+
+"link": - linca para outra pagina ou rota.
+
+"external": true, - quando houver link externo. 
+quando for rota não precisa usar essa propriedade.
+exemplo ("link": "aprovacoes")
+
+
+Quadrado com icone
+
+"iconmain": "<use xlink:href='#icon-medgrupo' />",
+"iconfill": "#ffffff"
+
+quando tiver video:
+
+"video": true, - colocar o icone de play, overlay e funcinalidade de hover
+
+"vimeoid": "109612063", - usado para montar o video na modal abaixi.
+
+"videoloop": - local onde está o vídeo (vimeo)
+
+"header": "aprovações" - Coloca texto no box
+
+"contentclass": "item__content--bottom" - posiciona o texto dentro da box.
+
+03193656541967
+
+
+
+
+testa os pluguins
+
+android 6.0
+
+Ios Ultima do 10
