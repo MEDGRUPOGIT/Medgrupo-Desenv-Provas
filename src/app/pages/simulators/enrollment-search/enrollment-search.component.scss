@@ -1,0 +1,11 @@
+:host{
+    .enrollment-search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+            margin-left: 1rem;
+        }
+    }
+}

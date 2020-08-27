@@ -1,3 +1,5 @@
+import { IEntity } from "./utils.model";
+
 export interface IGrade {
     value: number,
     enrollment: number,
@@ -6,7 +8,3 @@ export interface IGrade {
     branch: IEntity
 }
 
-export interface IEntity {
-    id: number,
-    name: string
-}

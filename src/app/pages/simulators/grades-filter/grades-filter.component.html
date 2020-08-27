@@ -1,0 +1,41 @@
+<div class="filter-content">
+    <span class="p-float-label form-group">
+        <p-multiSelect 
+            id="specialty"
+            optionLabel="name"
+            dataKey="id"
+            appendTo="body"
+            [filter]="false"
+            [options]="specialtiesOptions" 
+            [(ngModel)]="specialtySelected">
+        </p-multiSelect>
+        <label for="specialty">Especialidade</label>
+    </span>
+
+    <span class="p-float-label form-group">
+        <p-multiSelect 
+            id="class"
+            optionLabel="name"
+            dataKey="id"
+            appendTo="body"
+            [filter]="false"
+            [options]="classesOptions" 
+            [(ngModel)]="classSelected">
+        </p-multiSelect>
+        <label for="class">Turma</label>
+    </span>
+
+    <span class="p-float-label form-group">
+        <p-multiSelect 
+            id="branches"
+            optionLabel="name"
+            dataKey="id"
+            appendTo="body"
+            [filter]="false"
+            [options]="branchesOptions" 
+            [(ngModel)]="branchSelected">
+        </p-multiSelect>
+        <label for="branches">Filial</label>
+    </span>
+    <button pButton type="button" label="Filtrar" icon="pi pi-filter"></button>
+</div>

@@ -14,7 +14,12 @@ import { TreeModule } from 'primeng/tree';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { MultiSelectModule } from 'primeng/multiselect';
+
 import { GradeService } from './services/grade/grade.service'
+import { DomainService } from './services/domain/domain.service';
+import { GradesFilterComponent } from './pages/simulators/grades-filter/grades-filter.component';
+import { EnrollmentSearchComponent } from './pages/simulators/enrollment-search/enrollment-search.component'
 
 
 @NgModule({
@@ -24,6 +29,8 @@ import { GradeService } from './services/grade/grade.service'
     SimulatorsComponent,
     SimulatorTreeComponent,
     SimulatorDetailsComponent,
+    GradesFilterComponent,
+    EnrollmentSearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,9 +40,10 @@ import { GradeService } from './services/grade/grade.service'
     TreeModule,
     InputTextModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    MultiSelectModule
   ],
-  providers: [SimulatorService, GradeService],
+  providers: [SimulatorService, GradeService, DomainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
