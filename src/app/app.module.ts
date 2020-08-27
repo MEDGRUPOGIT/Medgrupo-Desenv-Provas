@@ -18,8 +18,10 @@ import { MultiSelectModule } from 'primeng/multiselect';
 
 import { GradeService } from './services/grade/grade.service'
 import { DomainService } from './services/domain/domain.service';
-import { GradesFilterComponent } from './pages/simulators/grades-filter/grades-filter.component';
-import { EnrollmentSearchComponent } from './pages/simulators/enrollment-search/enrollment-search.component'
+import { GradesFilterComponent } from './pages/simulators/grades-table/grades-filter/grades-filter.component';
+import { EnrollmentSearchComponent } from './pages/simulators/grades-table/enrollment-search/enrollment-search.component';
+import { GradesTableComponent } from './pages/simulators/grades-table/grades-table.component'
+import { PaginatorModule } from 'primeng/paginator';
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { EnrollmentSearchComponent } from './pages/simulators/enrollment-search/
     SimulatorDetailsComponent,
     GradesFilterComponent,
     EnrollmentSearchComponent,
+    GradesTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { EnrollmentSearchComponent } from './pages/simulators/enrollment-search/
     InputTextModule,
     ButtonModule,
     TableModule,
-    MultiSelectModule
+    MultiSelectModule,
+    PaginatorModule
   ],
   providers: [SimulatorService, GradeService, DomainService],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IEntity } from '../../models/utils.model';
+import { specialties, branches, classes } from './domain.data'
 
 @Injectable({
   providedIn: 'root'
@@ -9,34 +10,15 @@ export class DomainService {
   constructor() { }
 
   getSpecialties(): IEntity[] {
-    return [{
-      name: 'Clínica Médica',
-      id: 1
-    }, {
-      name: 'Cirurgia Geral',
-      id: 2
-    }]
+    return specialties
   };
 
   getBranches(): IEntity[] {
-    return [{
-      name: 'Salvador (BA)',
-      id: 1
-    }, {
-      name: 'São Paulo (SP)',
-      id: 2
-    }]
+    return branches
   };
 
   getClasses(): IEntity[] {
-    return [{
-      name: '2008 MEDCURSO SALVADOR - Turma A/2008 MED SALVADOR',
-      id: 1
-    }, {
-      name: '2008 MEDCURSO SÃO PAULO TURMA A/2008 MED SÃO PAULO TURMA A',
-      id: 2
-    }]
+    return classes
   };
-
-
 }
+

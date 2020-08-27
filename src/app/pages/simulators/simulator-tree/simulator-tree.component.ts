@@ -36,7 +36,6 @@ export class SimulatorTreeComponent implements OnInit {
   }
 
   nodeSelect({ node }) {
-    console.log(node);
     if (node.type === 'simulator_item') {
       this.onChangeSimulator.emit(node.data)
     }

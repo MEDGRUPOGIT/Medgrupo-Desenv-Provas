@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { DomainService } from 'src/app/services/domain/domain.service';
 import { IEntity } from 'src/app/models/utils.model';
 
@@ -8,6 +8,8 @@ import { IEntity } from 'src/app/models/utils.model';
   styleUrls: ['./grades-filter.component.scss']
 })
 export class GradesFilterComponent implements OnInit {
+
+  @Output() onFilter = new EventEmitter()
 
   specialtySelected: IEntity;
   branchSelected: IEntity;
@@ -26,4 +28,11 @@ export class GradesFilterComponent implements OnInit {
     this.classesOptions = this.domainServices.getClasses();
   }
 
+  filter() {
+    this.onFilter.emit({
+      specialtySelected: this.specialtySelected,
+      branchSelected: this.branchSelected,
+      classSelected: this.classSelected
+    })
+  }
 }

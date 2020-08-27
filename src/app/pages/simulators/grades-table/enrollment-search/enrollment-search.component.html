@@ -1,0 +1,17 @@
+<div class="enrollment-search">
+    <span class="p-input-icon-left">
+        <i class="pi pi-search"> </i>
+        <input 
+            type="number"
+            #input
+            pInputText 
+            (keyup)="onKeyUp($event)"
+            placeholder="Matrícula">         
+    </span>
+    <button 
+        (click)="search(input.value)"
+        pButton 
+        type="button" 
+        label="Procurar" 
+        icon="pi pi-search"></button>
+</div>

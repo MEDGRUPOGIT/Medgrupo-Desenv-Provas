@@ -1,0 +1,48 @@
+<article>
+    <app-enrollment-search (onSearch)="onSearch($event)"></app-enrollment-search>
+    <app-grades-filter (onFilter)="onFilter($event)"></app-grades-filter>
+</article>
+
+<div class="table-tools">
+    <div class="light-texts">
+        <p>
+            <small>
+                <span>Imprimir</span> | <span>Download Planilha</span> | <span>Enviar para um amigo</span> 
+            </small>
+        </p>
+        <p>
+            <small>Foram encontrados {{gradesFiltered.length}} registros</small>
+        </p>
+    </div>
+</div>
+<p-table 
+    (onFilter)="onTableFilter($event)"
+    #dataTable
+    paginatorPosition="both"
+    [paginator]="true"
+    [value]="grades"
+    [rows]="rows"
+    [rowsPerPageOptions]="[10,20,30,{showAll:'Todos'}]"
+>
+    <ng-template pTemplate="header">
+        <tr>
+            <th width="100px">Posição</th>
+            <th width="100px">Nota</th>
+            <th width="120px">Matrícula</th>
+            <th width="200px">Especialidade</th>
+            <th>Turma</th>
+            <th width="200px">Filial</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-grade let-i="rowIndex">
+        <tr>
+            <td>{{gradesFiltered[i].position}} º</td>
+            <td>{{grade.value}}</td>
+            <td>{{grade.enrollment}}</td>
+            <td>{{grade.specialty?.name}}</td>
+            <td>{{grade.class?.name}}</td>
+            <td>{{grade.branch?.name}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+

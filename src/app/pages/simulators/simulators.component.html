@@ -9,28 +9,9 @@
             [simulator]="simulatorSelected">
         </app-simulator-details>
     </article>
-   <article>
-       <app-enrollment-search></app-enrollment-search>
-       <app-grades-filter></app-grades-filter>
-   </article>
     <article class="simulator-table">
-        <p-table [value]="[]">
-            <ng-template pTemplate="header">
-                <tr>
-                    <th>Vin</th>
-                    <th>Year</th>
-                    <th>Brand</th>
-                    <th>Color</th>
-                </tr>
-            </ng-template>
-            <ng-template pTemplate="body" let-car>
-                <tr>
-                    <td>{{car.vin}}</td>
-                    <td>{{car.year}}</td>
-                    <td>{{car.brand}}</td>
-                    <td>{{car.color}}</td>
-                </tr>
-            </ng-template>
-        </p-table>
+        <app-grades-table 
+            *ngIf="grades"
+            [grades]="grades"></app-grades-table>
     </article>
 </section>

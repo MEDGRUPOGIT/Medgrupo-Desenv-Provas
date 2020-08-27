@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GradesFilterComponent } from './grades-filter.component';
+import { GradesTableComponent } from './grades-table.component';
 
-describe('GradesFilterComponent', () => {
-  let component: GradesFilterComponent;
-  let fixture: ComponentFixture<GradesFilterComponent>;
+describe('GradesTableComponent', () => {
+  let component: GradesTableComponent;
+  let fixture: ComponentFixture<GradesTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GradesFilterComponent ]
+      declarations: [ GradesTableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GradesFilterComponent);
+    fixture = TestBed.createComponent(GradesTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
