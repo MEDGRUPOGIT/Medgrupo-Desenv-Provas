@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@circlon/angular-tree-component/css/angular-tree-component.css';
+
+@font-face {
+    font-family: "New Brilliant";
+    src: url(assets/fonts/brilliant.otf) format("opentype");
+}
+ *{ 
+     font-family: "Arial";
+ }
+
+.main-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+body {
+    margin: 0;
+    background-image: url('./assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

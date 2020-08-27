@@ -1,0 +1,10 @@
+<div class="simulator-select">
+    <label><strong>Simulados 2018</strong></label>
+    <p-tree 
+        [(selection)]="nodeSelected"
+        styleClass="tree-simulator"
+        (onNodeSelect)="nodeSelect($event)"
+        selectionMode="single"
+        [value]="simulatorsOptions" >
+    </p-tree>
+</div>

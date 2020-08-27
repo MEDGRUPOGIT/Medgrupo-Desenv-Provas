@@ -1,0 +1,41 @@
+<section class="simulator-container">
+    <article class="simulator-content">
+        <app-simulator-tree 
+            (onChangeSimulator)="onChangeSimulator($event)">
+        </app-simulator-tree>
+
+        <app-simulator-details 
+            *ngIf="simulatorSelected"
+            [simulator]="simulatorSelected">
+        </app-simulator-details>
+    </article>
+
+    <article class="simulator-table">
+        <div>
+            <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText  placeholder="Matrícula">         
+            </span>
+            <div>
+                <p-table [value]="[]">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>Vin</th>
+                            <th>Year</th>
+                            <th>Brand</th>
+                            <th>Color</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-car>
+                        <tr>
+                            <td>{{car.vin}}</td>
+                            <td>{{car.year}}</td>
+                            <td>{{car.brand}}</td>
+                            <td>{{car.color}}</td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </article>
+</section>
