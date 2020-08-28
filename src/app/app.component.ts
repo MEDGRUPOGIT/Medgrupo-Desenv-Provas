@@ -24,6 +24,6 @@ export class AppComponent {
     this.simulatorService.genereteSimulatorDatabase()
       .pipe(mergeMap((simulators: ISimulator[]) => {
         return this.gradeService.generateGradesDataBase(simulators)
-      })).subscribe(() => { })
+      })).subscribe()
   }
 }

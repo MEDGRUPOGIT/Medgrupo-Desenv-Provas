@@ -23,7 +23,6 @@ import { EnrollmentSearchComponent } from './pages/simulators/grades-table/enrol
 import { GradesTableComponent } from './pages/simulators/grades-table/grades-table.component'
 import { PaginatorModule } from 'primeng/paginator';
 
-
 @NgModule({
   declarations: [
     AppComponent,
