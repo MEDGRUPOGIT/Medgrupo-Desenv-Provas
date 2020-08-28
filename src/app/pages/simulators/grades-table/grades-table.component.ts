@@ -1,9 +1,6 @@
-import { Component, OnInit, Input, ViewChild, OnChanges, SimpleChange } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, OnChanges } from '@angular/core';
 import { IGrade } from 'src/app/models/grade.model';
-import { IEntity } from 'src/app/models/utils.model';
-import { DomainService } from 'src/app/services/domain/domain.service';
 import { Table } from 'primeng/table';
-import { branches, specialties } from 'src/app/services/domain/domain.data';
 
 @Component({
   selector: 'app-grades-table',
@@ -13,8 +10,7 @@ import { branches, specialties } from 'src/app/services/domain/domain.data';
 export class GradesTableComponent implements OnInit, OnChanges {
 
   @ViewChild('dataTable') table: Table;
-  @Input() grades: IGrade[]
-  @Input() test: IGrade[]
+  @Input() grades: IGrade[] = []
   gradesFiltered: IGrade[]
   rows: number = 10;
   page: 1;

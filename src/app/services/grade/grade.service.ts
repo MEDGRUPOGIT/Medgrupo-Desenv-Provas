@@ -21,7 +21,6 @@ export class GradeService {
       this.gradesSubject.next(grades);
       subscribe.next();
     });
-
   }
 
   getGradesOfSimulator({ simulator, type }: ISimulatorSelected): Observable<IGrade[]> {

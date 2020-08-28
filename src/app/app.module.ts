@@ -45,8 +45,7 @@ import { PaginatorModule } from 'primeng/paginator';
     ButtonModule,
     TableModule,
     MultiSelectModule,
-    PaginatorModule
-  ],
+    PaginatorModule],
   providers: [SimulatorService, GradeService, DomainService],
   bootstrap: [AppComponent]
 })
