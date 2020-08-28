@@ -6,7 +6,7 @@
             dataKey="id"
             appendTo="body"
             [filter]="false"
-            [options]="specialtiesOptions" 
+            [options]="domainServices.specialties$ | async" 
             [(ngModel)]="specialtySelected">
         </p-multiSelect>
         <label for="specialty">Especialidade</label>
@@ -19,7 +19,7 @@
             dataKey="id"
             appendTo="body"
             [filter]="false"
-            [options]="classesOptions" 
+            [options]="domainServices.classes$ | async" 
             [(ngModel)]="classSelected">
         </p-multiSelect>
         <label for="class">Turma</label>
@@ -32,7 +32,7 @@
             dataKey="id"
             appendTo="body"
             [filter]="false"
-            [options]="branchesOptions" 
+            [options]="domainServices.branches$ | async" 
             [(ngModel)]="branchSelected">
         </p-multiSelect>
         <label for="branches">Filial</label>

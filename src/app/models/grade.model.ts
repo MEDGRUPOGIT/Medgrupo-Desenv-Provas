@@ -8,7 +8,8 @@ export interface IGrade {
     class: IEntity,
     branch: IEntity,
 
-    position?: number
-
+    position?: number,
+    simulator_id?: number,
+    simulator_type_id?: number
 }
 

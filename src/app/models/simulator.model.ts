@@ -1,7 +1,9 @@
+import { IGrade } from './grade.model';
+
 export interface ISimulator {
     id: number,
     name: string,
-    types: ISimulatorType[]
+    types: ISimulatorType[],
 }
 
 export interface ISimulatorType {

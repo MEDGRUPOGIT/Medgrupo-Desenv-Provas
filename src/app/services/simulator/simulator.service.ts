@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 import { ISimulator } from '../../models/simulator.model';
 import simulatorsData from './simulator.data';
 
@@ -8,12 +8,16 @@ import simulatorsData from './simulator.data';
 })
 export class SimulatorService {
 
+  private simulatorsSubject = new BehaviorSubject<ISimulator[]>([]);
+  simulators$ = this.simulatorsSubject.asObservable();
+
   constructor() { }
 
-
-  getSimulators(): Observable<ISimulator[]> {
+  genereteSimulatorDatabase(): Observable<ISimulator[]> {
     return Observable.create(subscribe => {
-      subscribe.next(simulatorsData())
+      const simulators = simulatorsData()
+      this.simulatorsSubject.next(simulators);
+      subscribe.next(simulators);
     });
   }
 }

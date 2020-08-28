@@ -20,13 +20,9 @@ export class GradesFilterComponent implements OnInit {
   classesOptions: IEntity[]
 
 
-  constructor(private domainServices: DomainService) { }
+  constructor(public domainServices: DomainService) { }
 
-  ngOnInit(): void {
-    this.specialtiesOptions = this.domainServices.getSpecialties();
-    this.branchesOptions = this.domainServices.getBranches();
-    this.classesOptions = this.domainServices.getClasses();
-  }
+  ngOnInit(): void {}
 
   filter() {
     this.onFilter.emit({

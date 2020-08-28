@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
-import { SimulatorService } from 'src/app/services/simulator/simulator.service';
-import { ITreeOptions } from '@circlon/angular-tree-component';
-import { ISimulator, ISimulatorType, ISimulatorSelected } from 'src/app/models/simulator.model';
+import { ISimulatorSelected } from 'src/app/models/simulator.model';
 import { IGrade } from 'src/app/models/grade.model';
 import { GradeService } from 'src/app/services/grade/grade.service';
+import { BehaviorSubject, from } from 'rxjs';
+import { mergeMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-simulators',
@@ -12,22 +11,28 @@ import { GradeService } from 'src/app/services/grade/grade.service';
   styleUrls: ['./simulators.component.scss']
 })
 
-
-
 export class SimulatorsComponent implements OnInit {
 
   simulatorSelected: ISimulatorSelected;
   grades: IGrade[]
 
+  private simuladorSelect$ = new BehaviorSubject<ISimulatorSelected>(null);
+
   constructor(private gradeService: GradeService) { }
 
   ngOnInit(): void {
-    this.grades = this.gradeService.getGrades().sort((a, b) => b.value - a.value);
+    this.simuladorSelect$.pipe(mergeMap((simulatorSelected: ISimulatorSelected) => {
+      if (!simulatorSelected) return from([])
+      this.simulatorSelected = simulatorSelected;
+      return this.gradeService.getGradesOfSimulator(simulatorSelected)
+    })).subscribe(grades => {
+      this.grades = grades;
+    })
   }
 
   onChangeSimulator(simulatorSelected: ISimulatorSelected) {
-    this.simulatorSelected = simulatorSelected;
+    if(simulatorSelected !== this.simulatorSelected){
+      this.simuladorSelect$.next(simulatorSelected)
+    }
   }
-
-
 }

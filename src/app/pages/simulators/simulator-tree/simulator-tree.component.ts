@@ -14,7 +14,7 @@ export class SimulatorTreeComponent implements OnInit {
   constructor(private simulatorService: SimulatorService) { }
 
   ngOnInit(): void {
-    this.simulatorService.getSimulators()
+    this.simulatorService.simulators$
       .subscribe(simulators => {
         this.simulatorsOptions = simulators
           .map((simulator) => {
@@ -22,7 +22,7 @@ export class SimulatorTreeComponent implements OnInit {
               label: simulator.name,
               data: simulator.id,
               selectable: false,
-              children: simulator.types.map((type, index) => ({
+              children: simulator.types.map(type => ({
                 label: type.name,
                 type: 'simulator_item',
                 data: {
