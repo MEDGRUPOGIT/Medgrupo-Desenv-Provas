@@ -1,0 +1,38 @@
+.simulator-select {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 12rem;
+    font-size: .9rem;
+
+    label {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+    }
+
+    ::ng-deep .tree-simulator {
+        padding: 0 !important;
+        border: unset;
+        background-color: transparent;
+
+
+        .p-treenode-content {
+            padding: .5rem 1rem .5rem 0;
+            font-size: .9rem;
+
+            &:focus {
+                box-shadow: unset;
+            }
+
+            &.p-highlight {
+                background-color: #333 !important;
+            }
+        }
+
+        .p-tree-toggler {
+            width: .9rem !important;
+            height: .9rem !important;
+        }
+    }
+
+}

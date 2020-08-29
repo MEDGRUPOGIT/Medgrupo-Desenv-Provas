@@ -1,0 +1,38 @@
+:host {
+    .table-tools {
+        .light-texts {
+            display: flex;
+            justify-content: space-between;
+            color: #888;
+
+            p {
+                span {
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    ::ng-deep p-paginator {
+        .p-paginator {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+    ::ng-deep p-table {
+        .p-column-filter{
+            width: 100%;
+        }
+
+        .tr-body {
+            td:nth-child(even){
+                background-color: #f8f9fa;
+            }
+        }
+    }
+
+}

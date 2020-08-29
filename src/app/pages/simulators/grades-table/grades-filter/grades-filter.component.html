@@ -1,0 +1,44 @@
+<div class="filter-content">
+    <span class="p-float-label form-group">
+        <p-multiSelect 
+            ngDefaultControl 
+            id="specialty"
+            optionLabel="name"
+            dataKey="id"
+            appendTo="body"
+            [filter]="false"
+            [options]="domainServices.specialties$ | async" 
+            [(ngModel)]="specialtySelected">
+        </p-multiSelect>
+        <label for="specialty">Especialidade</label>
+    </span>
+
+    <span class="p-float-label form-group">
+        <p-multiSelect 
+            id="class"
+            optionLabel="name"
+            dataKey="id"
+            appendTo="body"
+            [filter]="false"
+            [options]="domainServices.classes$ | async" 
+            [(ngModel)]="classSelected"
+            ngDefaultControl>
+        </p-multiSelect>
+        <label for="class">Turma</label>
+    </span>
+
+    <span class="p-float-label form-group">
+        <p-multiSelect 
+            id="branches"
+            optionLabel="name"
+            dataKey="id"
+            appendTo="body"
+            [filter]="false"
+            [options]="domainServices.branches$ | async" 
+            [(ngModel)]="branchSelected"
+            ngDefaultControl>
+        </p-multiSelect>
+        <label for="branches">Filial</label>
+    </span>
+    <button pButton type="button" label="Filtrar" icon="pi pi-filter" (click)="filter()"></button>
+</div>

@@ -1,0 +1,15 @@
+:host {
+    .my-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100px;
+        margin: auto;
+        
+        p {
+            font-family: "New Brilliant";
+            font-weight: bold;
+        }
+    }
+}

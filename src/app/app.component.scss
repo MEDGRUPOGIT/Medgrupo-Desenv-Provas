@@ -1,0 +1,12 @@
+main {
+    width: 80%;
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
+    padding: 0 2rem 5rem;
+}
+
+:host {
+    height: 100vh;
+    overflow: auto;
+}

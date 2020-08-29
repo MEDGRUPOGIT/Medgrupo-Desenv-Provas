@@ -1,0 +1,17 @@
+<section class="simulator-container">
+    <article class="simulator-content">
+        <app-simulator-tree 
+            (onChangeSimulator)="onChangeSimulator($event)">
+        </app-simulator-tree>
+
+        <app-simulator-details 
+            *ngIf="simulatorSelected"
+            [simulator]="simulatorSelected">
+        </app-simulator-details>
+    </article>
+    <article class="simulator-table">
+        <app-grades-table 
+            *ngIf="grades"
+            [grades]="grades"></app-grades-table>
+    </article>
+</section>
