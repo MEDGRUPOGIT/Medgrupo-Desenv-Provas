@@ -8,7 +8,7 @@ import simulatorsData from './simulator.data';
 })
 export class SimulatorService {
 
-  private simulatorsSubject = new BehaviorSubject<ISimulator[]>([]);
+  simulatorsSubject = new BehaviorSubject<ISimulator[]>([]);
   simulators$ = this.simulatorsSubject.asObservable();
 
   constructor() { }

@@ -29,16 +29,13 @@ export class GradesTableComponent implements OnInit, OnChanges {
   setPositionInGrades(grades = []) {
     let currentPosition = 1;
     return grades
+      .sort((a, b) => b.value - a.value)
       .map((grade: IGrade, index: number, grades: IGrade[]) => {
         if (index && grade.value !== grades[index - 1].value) {
           currentPosition++
         }
         return { ...grade, position: currentPosition }
       })
-  }
-
-  onMultipleFilterChange(event, key): void {
-    this.table.filter(event.value, key, 'in');
   }
 
   onFilter({
@@ -60,7 +57,8 @@ export class GradesTableComponent implements OnInit, OnChanges {
     if (!enrollmentValue) return this.table.first = 0
     const index = this.gradesFiltered
       .findIndex(({ enrollment }) => enrollment === Number(enrollmentValue));
-    this.table.first = index;
+
+    this.table.first = index === -1 ? 0 : index;
   }
 
   print() {
@@ -78,7 +76,7 @@ export class GradesTableComponent implements OnInit, OnChanges {
       }
     });
 
-    let array = typeof newArray != 'object' ? JSON.parse(newArray) : newArray;
+    let array = [...newArray];
     let str = '';
     for (let i = 0; i < array.length; i++) {
       let line = '';

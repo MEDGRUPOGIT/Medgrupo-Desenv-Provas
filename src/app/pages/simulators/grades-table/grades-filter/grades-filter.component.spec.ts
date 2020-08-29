@@ -25,4 +25,11 @@ describe('GradesFilterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call emit onFilter when filter has called', () => {
+    spyOn(component.onFilter, 'emit');
+    component.filter();
+    expect(component.onFilter.emit).toHaveBeenCalled();
+  })
+
 });

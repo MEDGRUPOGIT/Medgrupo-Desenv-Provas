@@ -6,6 +6,7 @@ import { SimulatorDetailsComponent } from './simulator-details/simulator-details
 import { TreeModule } from 'primeng/tree';
 import { ISimulatorSelected } from 'src/app/models/simulator.model';
 import { SimulatorService } from 'src/app/services/simulator/simulator.service';
+import grades from 'src/app/services/grade/grade.data';
 
 describe('SimulatorsComponent', () => {
   let component: SimulatorsComponent;
@@ -33,6 +34,8 @@ describe('SimulatorsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    expect(component.grades).toBeUndefined()
+    expect(component.simulatorSelected).toBeUndefined()
   });
 
   it('#onChangeSimulator should change the simulatorSelect Value', (done) => {
@@ -43,9 +46,16 @@ describe('SimulatorsComponent', () => {
       }
       component.onChangeSimulator(simulatorSelect)
       expect(component.simulatorSelected).toBe(simulatorSelect)
-      component.onChangeSimulator(null)
-      expect(component.simulatorSelected).toBe(simulatorSelect);
+
+      component.simuladorSelect$.next(null);
+      expect(component.grades.length).toBe(0)
       done();
     })
   });
+  
+  it('#onChangeSimulator should not change de value if simulator is a negative value', () => {
+    const value = component.simulatorSelected;
+    component.onChangeSimulator(undefined)
+    expect(component.simulatorSelected).toEqual(value);
+  })
 });

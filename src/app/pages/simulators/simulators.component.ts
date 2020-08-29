@@ -16,7 +16,7 @@ export class SimulatorsComponent implements OnInit {
   simulatorSelected: ISimulatorSelected;
   grades: IGrade[]
 
-  private simuladorSelect$ = new BehaviorSubject<ISimulatorSelected>(null);
+  simuladorSelect$ = new BehaviorSubject<ISimulatorSelected>(null);
 
   constructor(private gradeService: GradeService) { }
 
