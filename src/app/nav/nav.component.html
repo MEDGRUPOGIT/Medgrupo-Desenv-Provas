@@ -1,0 +1,47 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedToGap="64">
+        <app-menu>
+            <app-menu-item [menuFor]="simuladoUm">Simulado 1</app-menu-item>
+            <app-menu-item [menuFor]="simuladoDois">Simulado 2</app-menu-item>
+            <app-menu-item [menuFor]="simuladoTres">Simulado 3</app-menu-item>
+            <app-menu-item [menuFor]="simuladoQuatro">Simulado 4</app-menu-item>
+            <app-menu-item [menuFor]="simuladoCinco">Simulado 5</app-menu-item>
+        </app-menu>
+
+        <ng-template #simuladoUm>
+            <app-menu>
+                <app-menu-item>Prova Objetiva</app-menu-item>
+                <app-menu-item>Prova Final</app-menu-item>
+            </app-menu>
+        </ng-template>
+
+        <ng-template #simuladoDois>
+            <app-menu>
+                <app-menu-item>Prova Final</app-menu-item>
+                <app-menu-item>Objetiva</app-menu-item>
+            </app-menu>
+        </ng-template>
+
+        <ng-template #simuladoTres>
+            <app-menu>
+                <app-menu-item>Prova Final</app-menu-item>
+                <app-menu-item>Objetiva</app-menu-item>
+            </app-menu>
+        </ng-template>
+
+        <ng-template #simuladoQuatro>
+            <app-menu>
+                <app-menu-item>Prova Final</app-menu-item>
+                <app-menu-item>Objetiva</app-menu-item>
+            </app-menu>
+
+        </ng-template>
+
+        <ng-template #simuladoCinco>
+            <app-menu>
+                <app-menu-item>Prova Final</app-menu-item>
+                <app-menu-item>Objetiva</app-menu-item>
+            </app-menu>
+        </ng-template>
+    </mat-sidenav>
+</mat-sidenav-container>

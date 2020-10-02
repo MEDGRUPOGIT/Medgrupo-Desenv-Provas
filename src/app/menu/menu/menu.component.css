@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+/* .menu::before{
+    content: ' \2023';
+} */
