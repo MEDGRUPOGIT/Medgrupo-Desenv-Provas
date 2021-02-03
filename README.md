@@ -38,7 +38,7 @@
 
 ## Descrição
 
-https://files.slack.com/files-pri/T02E021J0-F01AJCHMM0X/teste.png
+https://drive.google.com/file/d/1scf_jw2bQHJiwMPfzr7q8eOA8UU6jRNo/view?usp=sharing
 
 Temos em anexo nesta mensagem uma serie de imagens na qual vamos solicitar que alguns requisitos e desafios
 de diagramaçao sejam realizados.
