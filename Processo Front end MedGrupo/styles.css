@@ -1,0 +1,133 @@
+@import url('CSS/DivSuperior.css');
+@import url('CSS/DivPesquisa.css');
+@import url('CSS/botoesInferiores.css');
+
+.body{
+    background-color: darkgrey; 
+    font-family: 'Roboto', sans-serif;  
+}
+
+#main{
+    position: absolute;
+    width: 100%;
+}
+
+.drop{
+    background-color: black;
+    height: 60px;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.titulo{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.botao2{
+    height:50px;
+    border-radius: 50px;
+    border: solid white;
+    float: left;
+    border: none;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+.trespontos{
+    float: right;
+    border: none;
+    background-color: black;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.dropMenu{
+    background-color: grey;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0 auto;
+    width: 85%;
+    display: none;
+}
+
+.infos{
+    width: 100%;
+    padding: 2%;
+    background-color: rgb(15, 15, 15);
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.graficoBox{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    float: left;
+}
+
+.CentroGráfico{
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+    border: 15px solid gray;
+}
+
+.CentroGráfico p{
+    font-size: 15px;
+}
+
+.boxValores{
+    width: 50%;
+    height: 200px;
+    margin-top: 30px;
+    background-color: rgb(15, 15, 15);
+    float: right;
+}
+
+.ac{
+    width: 140px;
+    text-align: left;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    padding: 5px;
+    float: right;
+}
+
+.balãoverde{
+    background-color: rgb(90, 246, 90);
+    padding: 1px 20px;
+    border-radius: 5px;
+    float: right;
+}
+
+.balãovermelho{
+    background-color: red;
+    padding: 1px 20px;
+    border-radius: 5px;
+    float: right;
+}
+
+.balãocinza{
+    background-color: grey;
+    border-radius: 5px;
+    float: right;
+    max-width: 50px;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-left: 12px;
+}
