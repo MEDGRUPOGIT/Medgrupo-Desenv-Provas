@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import do JS e CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>MedGroup Home</title>
+    <!-- import Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- import Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="body">
+    <!-- Barra superior -->
+    <header>
+        <div class="textoinicio1">
+            <span class="botao">
+                <button class="estiloBotao1" onclick="botaoVolta()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                </button>
+            </span>
+            MONTA PROVAS
+        </div>
+        <div class="textoinicio2 ">
+            MINHAS PROVAS
+        </div>
+        </div>
+        <!-- Barra de pesquisa -->
+        <div id="pesquisa" class="segundaBarra">
+            <button class="estiloBotao2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+            <input type="text" class="input" placeholder="Procurar em minhas provas">
+        </div>
+    </header>
+    <!-- Botoes com dropdown a partid daqui -->
+    <main>
+        <div id="main">
+            <div class="drop">
+                <button onclick="mostra1()" class="botao2">
+                    <img src="arquivos\Icons-Extra\swap_vert-24px.svg">
+                </button>
+                <span class="titulo">
+                    <h5>Teste</h5>
+                </span>
+                <button class="trespontos">
+                    <img src="arquivos\Icons-Extra\drag_indicator-white-24dp.svg">
+                </button>
+            </div>
+            <div id="drop1" class="dropMenu">
+                <div class="infos">
+                    <div class="graficoBox">
+                        <div class="CentroGráfico">
+                            <p>Total de<br> 100<br> Questões</p>
+                        </div>
+                    </div>
+                    <div class="boxValores">
+                        <div class="ac">
+                            Acertos
+                            <span class="balãoverde">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            erros
+                            <span class="balãovermelho">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            Não feitos
+                            <span class="balãocinza">
+                                100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dropwdown 2 -->
+
+            <div class="drop">
+                <button onclick="mostra2()" class="botao2">
+                    <img src="arquivos\Icons-Extra\swap_vert-24px.svg">
+                </button>
+                <span class="titulo">
+                    <h5>Clínica 2</h5>
+                </span>
+                <button class="trespontos">
+                    <img src="arquivos\Icons-Extra\drag_indicator-white-24dp.svg">
+                </button>
+            </div>
+            <div id="drop2" class="dropMenu">
+                <div class="infos">
+                    <div class="graficoBox">
+                        <div class="CentroGráfico">
+                            <p>Total de<br> 100<br> Questões</p>
+                        </div>
+                    </div>
+                    <div class="boxValores">
+                        <div class="ac">
+                            Acertos
+                            <span class="balãoverde">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            erros
+                            <span class="balãovermelho">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            Não feitos
+                            <span class="balãocinza">
+                                100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dropwdown 3 -->
+
+            <div class="drop">
+                <button onclick="mostra3()" class="botao2">
+                    <img src="arquivos\Icons-Extra\swap_vert-24px.svg">
+                </button>
+                <span class="titulo">
+                    <h5>Asd</h5>
+                </span>
+                <button class="trespontos">
+                    <img src="arquivos\Icons-Extra\drag_indicator-white-24dp.svg">
+                </button>
+            </div>
+            <div id="drop3" class="dropMenu">
+                <div class="infos">
+                    <div class="graficoBox">
+                        <div class="CentroGráfico">
+                            <p>Total de<br> 100<br> Questões</p>
+                        </div>
+                    </div>
+                    <div class="boxValores">
+                        <div class="ac">
+                            Acertos
+                            <span class="balãoverde">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            erros
+                            <span class="balãovermelho">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            Não feitos
+                            <span class="balãocinza">
+                                100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dropdown 4 -->
+            <div class="drop">
+                <button onclick="mostra4()" class="botao2">
+                    <img src="arquivos\Icons-Extra\swap_vert-24px.svg">
+                </button>
+                <span class="titulo">
+                    <h5>Oftalmo</h5>
+                </span>
+                <button class="trespontos">
+                    <img src="arquivos\Icons-Extra\drag_indicator-white-24dp.svg">
+                </button>
+            </div>
+            <div id="drop4" class="dropMenu">
+                <div class="infos">
+                    <div class="graficoBox">
+                        <div class="CentroGráfico">
+                            <p>Total de<br> 100<br> Questões</p>
+                        </div>
+                    </div>
+                    <div class="boxValores">
+                        <div class="ac">
+                            Acertos
+                            <span class="balãoverde">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            erros
+                            <span class="balãovermelho">
+                                0
+                            </span>
+                        </div>
+                        <div class="ac">
+                            Não feitos
+                            <span class="balãocinza">
+                                100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botao azul e branco inferiores -->
+        </div>
+        <div class="d-flex justify-content-center btn">
+            <a class="botaoAzul" onclick="">MONTAR PROVA</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footerb">
+            <span id="botaoinferior" class="btn-group dropup">
+                <button type="button" class="botaoINF" onclick="mostrax()">
+                    <img src="arquivos\Icons-Extra\MENU.svg">
+                </button>
+            </span>
+        </div>
+
+        <!-- BARRA BRANCA INFERIOR -->
+
+        <div id="dropx">
+            <div>
+                <div id="ControleBotao">
+                    <span id="botaoinferior2">
+                        <button class="botaoINF2" onclick="mostrax()">
+                            <img src="arquivos\Icons-Extra\MENU.svg">
+                        </button>
+                    </span>
+                </div>
+                <div id="MenuIMP">
+                    <p class="tittleMenu">
+                        Olá, Rafael!
+                    </p>
+                    <div class="menuCard card1">
+                        <img src="arquivos\Icons-Extra\home.svg" width="50px">
+                        <p class="textCard">Main</p>
+                    </div>
+                    <div class="menuCard card2">
+                        <img src="arquivos\Icons-Extra\medcode.svg " width="50px">
+                        <p class="textCard">Medcode</p>
+                    </div>
+                    <div class="menuCard card3">
+                        <img src="arquivos\Icons-Extra\slide da aula.svg" width="50px">
+                        <p class="textCard">Slide de Aula</p>
+                    </div>
+                    <div class="menuCard cardsInferiores">
+                        <img src="arquivos\Icons-Extra\duvidas.svg" width="50px">
+                        <p class="textCard">Dúvidas Acadêmicas</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="tittleMenu">
+                        Área de Treinamento
+                    </p>
+                    <div class="menuCard card1">
+                        <img src="arquivos\Icons-Extra\simluados.svg" width="50px">
+                        <p class="textCard">Todos os Simulados</p>
+                    </div>
+                    <div class="menuCard card2">
+                        <img src="arquivos\Icons-Extra\simluados.svg" width="50px">
+                        <p class="textCard">Simulado R3 Cirurgia</p>
+                    </div>
+                    <div class="menuCard card3">
+                        <img src="arquivos\Icons-Extra\simluados.svg" width="50px">
+                        <p class="textCard">Multimídia CP-MED</p>
+                    </div>
+                    <div class="menuCard cardsInferiores">
+                        <img src="arquivos\Icons-Extra\concursos na integra.svg" width="50px">
+                        <p class="textCard">Concursos na Íntegra</p>
+                    </div>
+                    <div class="menuCard cardsInferiores teste">
+                        <img src="arquivos\Icons-Extra\monta provas.svg" width="50px">
+                        <p class="textCard">Monta Provas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

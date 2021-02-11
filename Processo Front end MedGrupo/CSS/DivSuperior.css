@@ -1,0 +1,28 @@
+.textoinicio1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: black; 
+}
+
+.botao{
+    float: left;
+    padding-top: 10px;
+    margin-left: -5;
+}
+
+.textoinicio2{
+    color: lightblue;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: black;  
+}
+
+.estiloBotao1{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 15px;
+}
