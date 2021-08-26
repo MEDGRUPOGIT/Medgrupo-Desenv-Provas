@@ -25,10 +25,10 @@
 ### Ganhe pontos extras por
 
 - Desenvolver HTML semântico;
-- Utilizar boas práticas de SEO;
 - É permitido o uso de qualquer font que se aproxime do layout proposto.
-- Utilizar '@font-face' para os ícones (se houver)
 - Componentizar seu css;
+- Metodologia BEM;
+- Responsividade
 
 ## Material
 
