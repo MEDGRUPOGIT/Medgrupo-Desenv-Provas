@@ -32,7 +32,8 @@ Diferenciais:
 - Metodologia BEM
 ```
 
-**Junior**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior/junior.png)
+## Junior: 
+[Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior/junior.png)
 
 **Prazo para entrega: 4 dias**
 
@@ -52,7 +53,8 @@ Diferenciais:
 - Stencil
 ```
 
-**Pleno**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno/pleno.png)
+## Pleno: 
+[Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno/pleno.png)
 
 **Prazo para entrega: 5 dias**
 
