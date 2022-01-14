@@ -29,11 +29,9 @@ Diferenciais:
 - Desenvolvimento dos estados dos componentes em JS
 - Metodologia BEM
 ```
-
-#### Material
-
 [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
 	
+    
 **Junior**
 ```
 - CSS/SCSS
@@ -50,9 +48,6 @@ Diferenciais:
 - Typescrit
 - Stencil
 ```
-
-#### Material
-
 [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior/junior.png)
 
 
@@ -69,9 +64,6 @@ Diferenciais:
 - Ionic
 - Desenvolvimento dos estados dos componentes em JS ou TS
 ```
-
-#### Material
-
 [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno/pleno.png)
 
 
