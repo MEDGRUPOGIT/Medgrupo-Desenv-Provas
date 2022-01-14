@@ -16,18 +16,17 @@
 ### Requisitos
 
 **Estagiario**
-	- CSS
+```
+    - CSS
 	- HTML semântico
 	- Acessibilidade
-	
     Diferenciais:
-
 	- Animações CSS
 	- SCSS
 	- Componentização
 	- Desenvolvimento dos estados dos componentes em JS
     - Metodologia BEM
-
+```
 #### Material
 
 [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
