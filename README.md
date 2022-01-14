@@ -49,7 +49,7 @@
 
 #### Material
 
-- [Link para material](prova_jr.png)
+- ![Link para material](./prova_jr.png)
 
 
 **Pleno**
@@ -65,7 +65,7 @@
 
 #### Material
 
-- [Link para material](prova_pleno.png)
+- ![Link para material](./prova_pleno.png)
 
 
 ### Esperamos que você
