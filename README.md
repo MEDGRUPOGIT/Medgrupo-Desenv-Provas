@@ -30,7 +30,7 @@
 
 #### Material
 
-- ![Link para material](./prova_estag.png)
+- ![Link para material](estagiario/estagiario.png)
 	
 **Junior**
 	- CSS/SCSS
