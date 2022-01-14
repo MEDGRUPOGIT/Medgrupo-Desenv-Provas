@@ -1,4 +1,4 @@
-# Teste para candidatos à vaga de desenvolvedor Front-end
+# Teste para candidatos à vaga de desenvolvedor Front-end UI/UX
 
 > [![Logo Medgrupo](https://d1y36np0qkbzyh.cloudfront.net/logo-medgrupo-2.jpg)](http://www.medgrupo.com.br)
 
@@ -17,6 +17,8 @@
 
 **Estagiario**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
 
+**Prazo para entrega: 3 dias**
+
 ```
 - CSS
 - HTML semântico
@@ -32,6 +34,9 @@ Diferenciais:
 ```
 
 **Junior**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior/junior.png)
+
+**Prazo para entrega: 4 dias**
+
 ```
 - CSS/SCSS
 - HTML semântico
@@ -49,6 +54,9 @@ Diferenciais:
 ```
 
 **Pleno**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno/pleno.png)
+
+**Prazo para entrega: 5 dias**
+
 ```
 - HTML semântico
 - Acessibilidade
@@ -64,13 +72,8 @@ Diferenciais:
 
 ### Esperamos que você
 
-- Manter a fidelidade do layout apresentado
-- Mantenha os arquivos organizados, otimizados e versão não minificada.
-
-### Ganhe pontos extras por
-
-- É permitido o uso de qualquer font que se aproxime do layout proposto.
-- Utilizar '@font-face' para os ícones (se houver)
+- Represente o layout disponibilizado o mais próximo o possível.
+- Mantenha os arquivos organizados, otimizados e com uma versão não minificada dos arquivos.
 
 `Obs.: Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.`
 
