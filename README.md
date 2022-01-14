@@ -18,54 +18,55 @@
 **Estagiario**
 	- CSS
 	- HTML semântico
-	- HTML acessível
+	- Acessibilidade
 	
     Diferenciais:
 
 	- Animações CSS
 	- SCSS
-	- Separação em componentes
-	- estados em JS
+	- Componentização
+	- Desenvolvimento dos estados dos componentes em JS
     - Metodologia BEM
 
 #### Material
 
-- ![Link para material](estagiario/estagiario.png)
+![Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/estagiario)
 	
 **Junior**
 	- CSS/SCSS
 	- HTML semântico
-	- HTML acessível
-	- Separação em componentes
-	- estados em JS ou Typescrit
+	- Acessibilidade
+	- Componentização
+	- Desenvolvimento dos estados dos componentes em JS
 	- Animações CSS
     - Metodologia BEM
 
     Diferenciais:
 
 	- Ionic
-	- estados em Typescrit
+	- Typescrit
 	- Stencil
 
 #### Material
 
-- ![Link para material](./prova_jr.png)
+![Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior)
 
 
 **Pleno**
 	- HTML semântico
-	- HTML acessível
+	- Acessibilidade
 	- SCSS
     - Metodologia BEM
-	- Separação em componentes
+	- Componentização
 	- Animações CSS
 	- Stencil
 	- Storybook
 	- Ionic
+    - Desenvolvimento dos estados dos componentes em JS ou TS
 
 #### Material
 
-- ![Link para material](./prova_pleno.png)
+![Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno)
 
 
 ### Esperamos que você
