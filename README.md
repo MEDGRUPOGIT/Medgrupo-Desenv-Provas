@@ -13,9 +13,8 @@
 
 - **Observação** Trata-se da reprodução de um layout especifico através de print.
 
-### Requisitos
-
-**Estagiario**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
+## Estagiario: 
+[Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
 
 **Prazo para entrega: 3 dias**
 
