@@ -15,7 +15,8 @@
 
 ### Requisitos
 
-**Estagiario**
+**Estagiario**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
+
 ```
 - CSS
 - HTML semântico
@@ -29,10 +30,8 @@ Diferenciais:
 - Desenvolvimento dos estados dos componentes em JS
 - Metodologia BEM
 ```
-[Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
-	
-    
-**Junior**
+
+**Junior**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior/junior.png)
 ```
 - CSS/SCSS
 - HTML semântico
@@ -48,10 +47,8 @@ Diferenciais:
 - Typescrit
 - Stencil
 ```
-[Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/junior/junior.png)
 
-
-**Pleno**
+**Pleno**: [Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno/pleno.png)
 ```
 - HTML semântico
 - Acessibilidade
@@ -64,8 +61,6 @@ Diferenciais:
 - Ionic
 - Desenvolvimento dos estados dos componentes em JS ou TS
 ```
-[Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/pleno/pleno.png)
-
 
 ### Esperamos que você
 
