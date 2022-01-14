@@ -30,7 +30,7 @@
 
 #### Material
 
-![Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/tree/Prova-Front-2022/estagiario)
+![Link para material](https://github.com/MEDGRUPOGIT/Medgrupo-Desenv-Provas/blob/Prova-Front-2022/estagiario/estagiario.png)
 	
 **Junior**
 	- CSS/SCSS
