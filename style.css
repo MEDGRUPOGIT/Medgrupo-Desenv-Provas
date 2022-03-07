@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #202324;
+}
+
+section {
+  padding: 8px;
+}
+
+.cardfront {
+  display: none;
+  width: 300px;
+  height: 125px;
+  border-radius: 20%/20% 50% 50% 20%;
+  background-color: #070e0e;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 10px 0px 0px 15px;
+  display: inline-block;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+}
+
+.cardback {
+  display: none;
+  width: 300px;
+  height: 125px;
+  border-radius: 20%/20% 50% 50% 20%;
+  background-color: #070e0e;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 10px 0px 0px 15px;
+  display: inline-block;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+}
+
+span {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.dia {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+input[type=button] {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  background-color: #070e0e;
+  color: #00ae93;
+  border-color: #00ae93;
+  font-size: 16px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+}
+
+input[type=button]:hover {
+  /* background-color: $corSecond;
+    color: $corCard; */
+  cursor: pointer;
+}
+
+.cardback > input[type=button] {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  background-color: #070e0e;
+  color: #00ae93;
+  border-color: #00ae93;
+  font-size: 16px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.cardback > input[type=button]:hover {
+  /* background-color: $corSecond;
+    color: $corCard; */
+  cursor: pointer;
+}
+
+.mat {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -97px;
+  margin-left: 60px;
+  border-style: outset inset;
+  border-color: #00ae93;
+}
+
+.mat p {
+  margin-top: 22%;
+}
+
+.mat2 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -97px;
+  margin-left: 170px;
+  border-style: outset inset;
+  border-color: #00ae93;
+}
+
+.mat2 p {
+  margin-top: 22%;
+}
+
+.mat7 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: 60px;
+  border-style: outset inset;
+  border-color: #00ae93;
+}
+
+.mat7 p {
+  margin-top: 22%;
+}
+
+.mat8 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: 170px;
+  border-style: outset inset;
+  border-color: #00ae93;
+}
+
+.mat8 p {
+  margin-top: 22%;
+}
+
+.mat3 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -97px;
+  margin-left: 60px;
+  border-style: outset inset;
+  border-color: #00ae93;
+}
+
+.mat3 p {
+  margin-top: 22%;
+}
+
+.mat4 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -97px;
+  margin-left: 170px;
+}
+
+.mat4 p {
+  margin-top: 22%;
+}
+
+.mat9 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: 170px;
+  border-style: outset inset;
+}
+
+.mat9 p {
+  margin-top: 22%;
+}
+
+.mat10 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: 60px;
+  border-style: outset inset;
+  border-color: #00ae93;
+}
+
+.mat10 p {
+  margin-top: 22%;
+}
+
+.mat5 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -97px;
+  margin-left: 60px;
+}
+
+.mat5 p {
+  margin-top: 22%;
+}
+
+.mat6 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -97px;
+  margin-left: 170px;
+}
+
+.mat6 p {
+  margin-top: 22%;
+}
+
+.mat11 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: 170px;
+  border-style: outset inset;
+}
+
+.mat11 p {
+  margin-top: 22%;
+}
+
+.mat12 {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  background-color: transparent;
+  color: #00ae93;
+  border: 4px inset;
+  border-color: rgba(255, 255, 255, 0.116);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: 60px;
+  border-style: outset inset;
+}
+
+.mat12 p {
+  margin-top: 22%;
+}
+
+.bt1, .bt3, .bt5 {
+  margin-left: 30px;
+  position: absolute;
+}
+
+.bt2, .bt4, .bt6 {
+  margin-left: 140px;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
