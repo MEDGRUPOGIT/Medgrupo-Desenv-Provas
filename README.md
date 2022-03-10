@@ -16,7 +16,7 @@ Para executar o projeto é importante que você tenha instalado as seguintes fer
 ### **🎲️ Rodando a interface**
 ~~~
 # clone o repositório
-git clone LINK DO REPOSITÓRIO
+git clone https://github.com/matheuscarvalhoscm/Medgrupo-Desenv-Provas.git
 
 # acesse a pasta da aplicação
 cd app
@@ -31,7 +31,7 @@ npm start
 ~~~
 ---
 ## 🛠️ Tecnologias
-As seguintes tecnologias foram utilizadas na construção desse projeto:
+As seguintes tecnologias foram utilizadas na construção do projeto:
 
 * [React.js](https://pt-br.reactjs.org/) + [Javascript](https://www.javascript.com/)
   * [SASS](https://sass-lang.com/)
