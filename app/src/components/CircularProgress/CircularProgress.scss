@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap");
+@import "../styles//variables";
+
+.circle--container {
+  align-items: center;
+  color: $text-light;
+  display: flex;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  right: 50%;
+
+  svg {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    top: 8%;
+    left: 10%;
+
+    circle {
+      fill: none;
+      stroke: $secondary;
+      stroke-width: 5;
+      stroke-linecap: round;
+      transform: translate(5px, 5px);
+    }
+
+    .circle--progress-bar {
+      stroke: $primary;
+      position: relative;
+      z-index: 1;
+    }
+
+    text {
+      fill: $text-light;
+      font-size: 26px;
+      font-weight: bold;
+    }
+  }
+}

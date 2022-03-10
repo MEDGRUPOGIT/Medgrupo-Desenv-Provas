@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap");
+.circle--container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f6f9fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  right: 50%;
+}
+
+.circle--container svg {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  top: 8%;
+  left: 10%;
+}
+
+.circle--container svg circle {
+  fill: none;
+  stroke: #212d2d;
+  stroke-width: 5;
+  stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+.circle--container svg .circle--progress-bar {
+  stroke: #04e9cf;
+  position: relative;
+  z-index: 1;
+}
+
+.circle--container svg text {
+  fill: #f6f9fa;
+  font-size: 26px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=CircularProgress.css.map */
