@@ -272,24 +272,48 @@
                 </div>
             </div>
         </div>
-        <div class="card-inactive">
-            <div class="week-title">
-                <p>Semana</p>
-                <h1>14</h1>
-                <button class="flipbtn" type="button" @click="flipCard = !flipCard">
-                    <i v-if="!flipCard">+</i>
-                        <i v-if="flipCard">-</i>
-                </button>
-            </div>
-            <div class="progress">
-                <div class="subject">
-                    <h1>NEF</h1>
-                    <h2>1</h2>
+        <div class="scene">
+            <div class="card-inactive">
+                <div v-bind:class="{ flipme: cardOne == 'flipped' }" class="card">
+                    <div class="card__face card__face--front">
+                        <div class="week-title">
+                            <p>Semana</p>
+                            <h1>14</h1>
+                        </div>
+                        <div class="progress">
+                            <div class="subject">
+                                <h1>NEF</h1>
+                                <h2>1</h2>
+                            </div>
+                            <div class="subject">
+                                <h1>CIR</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="week-title">
+                            <p>16/08</p>
+                            <p>24/08</p>
+                        </div>
+                        <div class="progress">
+                            <div class="subject">
+                                <h1>NEF</h1>
+                                <h2>1</h2>
+                            </div>
+                            <div class="subject">
+                                <h1>CIR</h1>
+                                <h2>1</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="subject">
-                    <h1>CIR</h1>
-                    <h2>1</h2>
-                </div>
+                <button type="button"
+                 @click="cardOne == 'start' ? (cardOne = 'flipped' ) : (cardOne = 'start' )">
+                    <i v-if="cardOne">+</i>
+                        <i v-if="!cardOne">-</i>
+                </button> 
             </div>
         </div>
     </div>
@@ -297,25 +321,64 @@
 <script>
 export default {
     name: 'MedCard',
+    data() {
+    return {
+      cardOne: "start"
+    };
+  }
 };
 </script>
-<style>
+<style scoped>
  .line {
     display: flex;
     justify-content: space-between;
     margin: 10px;
  }
+
+ .scene {
+  width: 385px;
+  height: 160px;
+  margin: 40px 0;
+  perspective: 600px;  
+ }
+
+ .card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+ }
+
+ .card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #060f0e;
+  display: flex;
+ }
+
+.card__face--back {
+  transform: rotateX(180deg);
+  background-color: #060f0e;
+  display: flex;
+ }
+
+/* this style is applied when the card is clicked */
+.flipme {
+  transform: rotateX(180deg);
+ }
  .card-inactive {
     background-color: #060f0e;
-    border-radius: 10px 77px 77px 10px;
-    width: 38%;
     display: flex;
+    border-radius: 10px 77px 77px 10px;
     margin: 10px;
+    
  }
  .card-active {
     background-color: #005b49;
     border-radius: 10px 77px 77px 10px;
-    width: 38%;
     display: flex;
     margin: 10px;
  }
@@ -332,6 +395,8 @@ export default {
     color: #11cdaf;
     background: none;
     cursor: pointer;
+    height: 30px;
+    
  }
  .progress {
     display: flex;
