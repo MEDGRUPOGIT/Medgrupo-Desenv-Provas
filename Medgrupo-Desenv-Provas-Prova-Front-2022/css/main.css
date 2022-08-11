@@ -1,0 +1,171 @@
+html , body {
+    display: grid;
+    height: auto;
+    margin-top: 50px;
+    background-color: #202D2E;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+.flip , .flip2 , .flip3 {
+    transform: rotateX(180deg);
+}
+#card , #card2 , #card3 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all .8s;
+}
+.face , .face2 , .face3 {
+    background-color: #070E0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.299);
+}
+#front , #front2 , #front3 {
+    transform: rotateX(180deg);
+}
+#back , #back2 , #back3 {
+    backface-visibility: hidden;
+}
+#front , #back , #front2 , #back2 , #front3 , #back3 {
+    width: 355px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 30px 80px 80px 30px;
+}
+.infos {
+    padding-right: 40px;
+    padding-bottom: 45px;
+}
+.semana {
+    font-size: 16px;
+    font-weight: 500;
+}
+.numb {
+    margin: 0;
+    font-size: 2.1em;
+    margin-left: 4px;
+}
+.back-data1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+#mais , #mais2 , #mais3 {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("../img/button-circle-plus.png");
+    background-size: 30px;
+}
+#menos , #menos2 , #menos3 {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("../img/button-circle-minus.png");
+    background-size: 30px;
+}
+.button1 , .button2 , .button3 , .button4 , .button5 , .button6 {
+    background-color: #070E0E;
+    border: none;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-right:200px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url("../img/circle-button-arrow.png");
+    background-size: 30px;
+    z-index: 2;
+    transition-duration: 0.5s;
+}
+.progressao {
+    display: inline-flex;
+    place-items: center;
+    margin-left: 25px;
+}
+.titulo {
+    position: absolute;
+    font-size: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+#circular-progress1F , #circular-progress2F  , #circular-progress1B , #circular-progress2B , #circular-progress3F , #circular-progress3B , #circular-progress4F , #circular-progress4B , #circular-progress5F , #circular-progress5B , #circular-progress6F , #circular-progress6B  {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #202D2E;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 0px 5px black;
+}
+#circular-progress1F::before , #circular-progress2F::before , #circular-progress1B::before  , #circular-progress2B::before , #circular-progress3F::before , #circular-progress3B::before , #circular-progress4F::before , #circular-progress4B::before , #circular-progress5F::before , #circular-progress5B::before , #circular-progress6F::before , #circular-progress6B::before {
+    position: absolute;
+    content: "";
+    height: 90%;
+    width: 90%;
+    background-color: #070E0E;
+    border-radius: 50%;
+    text-align: center;
+}
+.value-container1F , .value-container2F , .value-container1B , .value-container2B , .value-container3F , .value-container3B , .value-container4F , .value-container4B , .value-container5F , .value-container5B , .value-container6F , .value-container6B {
+    position: absolute;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* ATIVAR BOTAO SETA */
+
+.ativar {
+    background-image: url("../img/circle-button-arrow2.png");
+    transition-duration: 0.5s;
+}
+.ativar2 {
+    color: #00ECCB;
+    transition-duration: 0.5s;
+}
+.ativar-face {
+    background: #005C49;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.299);
+    transition-duration: 0.5s;
+}
+#NEF1B , #NEF2B , #NEF3B , #CIR1B , #CIR2B , #CIR3B {
+    transition-duration: 0.5s;
+}
+#mais , #mais2 , #mais3{
+    position: absolute;
+    margin-top: -70px;
+    margin-right: 320px;
+}
+#menos , #menos2 , #menos3 {
+    position: absolute;
+    backface-visibility: hidden;
+    margin-top: 70px;
+    margin-right: 320px;
+}
+.aparecer {
+    visibility: visible;
+    z-index: 2;
+}
+.button1 , .button3 , .button5  {
+    position: absolute;
+    backface-visibility: hidden;
+    margin-left: 375px;
+}
+.button2 , .button4 , .button6 {
+    position: absolute;
+    backface-visibility: hidden;
+    margin-left: 125px;
+}
