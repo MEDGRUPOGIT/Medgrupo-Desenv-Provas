@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="../css/style.css">
+   
+</head>
+<body>
+   <main>
+      <div class="container">
+         <div class="front padrao">
+            <div class="semana">
+               <h1>Semana</h1>
+               <h2>09</h2>
+               <input type="image" src="../img/mais.png" alt="">
+            </div>
+            <div class="circulo">
+               <div>
+                  <section>
+                     <p>NEF</p>
+                     <p>5</p>
+                  </section>
+               </div>
+               <div>
+                  <section>
+                     <p>PED</p>
+                     <p>1</p>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="front padrao">
+            <div class="semana">
+               <h1>Semana</h1>
+               <h2>11</h2>
+               <input type="image" src="../img/mais.png" alt="">
+            </div>
+            <div class="circulo">
+               <div>
+                  <section>
+                     <p>REU</p>
+                     <p>2</p>
+                  </section>
+               </div>
+               <div>
+                  <section>
+                     <p>OBS</p>
+                     <p>2</p>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="front padrao">
+            <div class="semana">
+               <h1>Semana</h1>
+               <h2>13</h2>
+               <input type="image" src="../img/mais.png" alt="">
+            </div>
+            <div class="circulo">
+               <div>
+                  <section>
+                     <p>NEF</p>
+                     <p>1</p>
+                  </section>
+               </div>
+               <div>
+                  <section>
+                     <p>CIR</p>
+                     <p>1</p>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         var front = document.querySelectorAll(".front");
+         
+         for(var i=0; i<3; i++){
+            front[i].addEventListener("click", function(){
+               console.log(this);
+               this.classList.toggle("ativacao");
+            })
+         }
+      </script>
+   </main>
+</body>
+</html>

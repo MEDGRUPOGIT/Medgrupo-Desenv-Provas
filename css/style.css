@@ -1,0 +1,90 @@
+body{
+   background-color: #202D2E;
+}
+.padrao{
+   width: 350px;
+   height: 125px;
+   padding: 0 15px;
+   border-radius: 20px 100px 100px 20px;
+   background-color: #070E0E;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 25px;
+}
+
+.semana{
+   width: 100%;
+}
+
+.semana p{
+   color: white;
+}
+
+.circulo{
+   display: flex;
+   align-items: center;
+}
+
+.circulo section{
+   width: 85px;
+   height: 85px;
+   border-radius: 100%;
+   background-color: #070E0E;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.circulo div{
+   display: flex;
+   align-items: center;
+   padding: 1px 0 0 5px;
+   width: 90px;
+   height: 90px;
+   margin: 0 10px;
+   border-radius: 100%;
+}
+
+.front:nth-child(1) .circulo div:nth-child(1){
+   background: linear-gradient(90deg, #202D2E 50%, transparent 50%), linear-gradient(0deg, #202D2E 50%, #00EBCA 50%);
+}
+
+.front:nth-child(1) .circulo div:nth-child(2){
+   background: linear-gradient(90deg, #202D2E 50%, transparent 50%), linear-gradient(45deg, #202D2E 50%, #00EBCA 50%);
+}
+
+.front:nth-child(2) .circulo div:nth-child(1){
+   background: linear-gradient(90deg, #202D2E 50%, transparent 50%), linear-gradient(0deg, #202D2E 50%, #00EBCA 50%);
+}
+
+.front:nth-child(2) .circulo div:nth-child(2){
+   background: #202D2E;
+}
+
+.front:nth-child(3) .circulo div{
+   background: #202D2E;
+}
+
+.ativacao{
+   background-color: #005C49;
+}
+
+input{
+   width: 30px;
+   filter: invert(100%);
+   margin: 5px 0;
+   color: #00EBCA;
+}
+
+h1{
+   font-size: 20px;
+   color: white;
+}
+section p, h2{
+   font-size: 23px;
+   margin: 0;
+   color: white;
+   font-family: sans-serif;
+   font-weight: bolder;
+}
