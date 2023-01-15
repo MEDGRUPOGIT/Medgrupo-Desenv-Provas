@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+
+  & .card__course {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: $loader-color;
+    overflow: hidden;
+
+    @media screen and (min-width: 425px) {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+
+    & .card__course-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: calc(100% - 0.5rem);
+      height: calc(100% - 0.5rem);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $text;
+      border-radius: 50%;
+      background-color: $card-color;
+      z-index: 20;
+      transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+
+      @media screen and (min-width: 425px) {
+        font-size: 1.25rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      & > * {
+        display: block;
+        text-align: center;
+      }
+
+      &--active {
+        background-color: $card-color--active;
+        color: $text;
+      }
+    }
+
+    & .card__loader {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
+
+      & .card__inner-loader {
+        position: absolute;
+        bottom: 0;
+        width: 200%;
+        height: 100%;
+        background-color: $not-loaded;
+        transition: background-color 300ms ease-in-out, transform 500ms linear;
+
+        &--left {
+          right: 0;
+          transition-delay: 0s, 1s;
+          transform-origin: 100% 50%;
+        }
+
+        &--right {
+          left: 0;
+          transition-delay: 0s, 0.5s;
+          transform-origin: 0 50%;
+        }
+
+        &--active {
+          background-color: $card-color;
+        }
+      }
+    }
+  }
+
+  &--downloaded {
+    & .card__course {
+      & .card__course-title {
+        color: $loader-color;
+      }
+    }
+
+    & .btn--download {
+      color: $card-color;
+      background-color: $loader-color;
+    }
+  }
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: $loader-color;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: 2px solid $loader-color;
+  border-radius: 50%;
+  background-color: $card-color;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  cursor: pointer;
+
+  @media screen and (min-width: 425px) {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  & .btn__text {
+    text-indent: -9999px;
+    visibility: hidden;
+  }
+
+  &--download {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $loader-color;
+    z-index: 9999;
+  }
+}

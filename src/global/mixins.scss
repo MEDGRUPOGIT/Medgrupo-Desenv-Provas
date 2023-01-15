@@ -1,0 +1,35 @@
+@mixin show-title {
+  animation-name: show-title;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+  @keyframes show-title {
+    0% {
+      opacity: 0;
+      padding: 1rem 3.5rem;
+    }
+
+    100% {
+      opacity: 1;
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+
+@mixin slide-in-animation {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+  @keyframes slide {
+    0% {
+      left: -30%;
+      opacity: 0;
+    }
+
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}

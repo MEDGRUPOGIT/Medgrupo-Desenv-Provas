@@ -1,0 +1,296 @@
+export const studiesTimeline = [
+  {
+    week: "01",
+    startDate: "16/08",
+    endDate: "24/08",
+    courses: [
+      {
+        code: "NEF",
+        unit: "1",
+        completed: 100,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 100,
+        downloadable: true,
+        downloaded: true,
+      },
+    ],
+  },
+  {
+    week: "02",
+    startDate: "25/08",
+    endDate: "31/08",
+    courses: [
+      {
+        code: "NEF",
+        unit: "1",
+        completed: 100,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "NEF",
+        unit: "X",
+        completed: 100,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "03",
+    startDate: "02/09",
+    endDate: "08/09",
+    courses: [
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 100,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 100,
+        downloadable: true,
+        downloaded: true,
+      },
+    ],
+  },
+  {
+    week: "04",
+    startDate: "10/09",
+    endDate: "17/09",
+    courses: [
+      {
+        code: "NEF",
+        unit: "2",
+        completed: 100,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "GIN",
+        unit: "1",
+        completed: 80,
+        downloadable: true,
+        downloaded: true,
+      },
+    ],
+  },
+  {
+    week: "05",
+    startDate: "18/09",
+    endDate: "25/09",
+    courses: [
+      {
+        code: "NEF",
+        unit: "3",
+        completed: 65,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "PRE",
+        unit: "1",
+        completed: 60,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "06",
+    startDate: "28/09",
+    endDate: "04/10",
+    courses: [
+      {
+        code: "NEF",
+        unit: "1",
+        completed: 25,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 40,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "07",
+    startDate: "05/10",
+    endDate: "12/10",
+    courses: [
+      {
+        code: "PRE",
+        unit: "2",
+        completed: 75,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "OBS",
+        unit: "1",
+        completed: 30,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "08",
+    startDate: "13/10",
+    endDate: "20/10",
+    courses: [
+      {
+        code: "PRE",
+        unit: "2",
+        completed: 30,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "NEF",
+        unit: "4",
+        completed: 42,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "09",
+    startDate: "22/10",
+    endDate: "31/10",
+    courses: [
+      {
+        code: "NEF",
+        unit: "5",
+        completed: 28,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "PED",
+        unit: "1",
+        completed: 42,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "10",
+    startDate: "03/11",
+    endDate: "10/11",
+    courses: [
+      {
+        code: "PED",
+        unit: "1",
+        completed: 33,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "REU",
+        unit: "1",
+        completed: 15,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "11",
+    startDate: "12/11",
+    endDate: "18/11",
+    courses: [
+      {
+        code: "REU",
+        unit: "2",
+        completed: 38,
+        downloadable: true,
+        downloaded: true,
+      },
+      {
+        code: "OBS",
+        unit: "2",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "12",
+    startDate: "19/11",
+    endDate: "25/11",
+    courses: [
+      {
+        code: "NEF",
+        unit: "1",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "13",
+    startDate: "27/11",
+    endDate: "04/12",
+    courses: [
+      {
+        code: "NEF",
+        unit: "1",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+  {
+    week: "13",
+    startDate: "27/11",
+    endDate: "04/12",
+    courses: [
+      {
+        code: "NEF",
+        unit: "1",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+      {
+        code: "CIR",
+        unit: "1",
+        completed: 0,
+        downloadable: true,
+        downloaded: false,
+      },
+    ],
+  },
+];
