@@ -1,0 +1,137 @@
+{
+  "user": {
+    "avatar": "https://gravatar.com/avatar/a6a013dd781f3e328601aa167476a4fe?s=400&d=retro&r=x",
+    "notifications": true
+  },
+  "navigation": [
+    {
+      "icon": "icon-home",
+      "title": "Pra você"
+    },
+    {
+      "icon": "icon-play",
+      "title": "Conteúdos"
+    },
+    {
+      "icon": "icon-calendar",
+      "title": "Mentoria"
+    },
+    {
+      "icon": "icon-smart",
+      "title": "Treinamento"
+    },
+    {
+      "icon": "icon-chart-bar",
+      "title": "Métricas"
+    }
+  ],
+  "conteudos": [
+    {
+      "icon": "clinica",
+      "header": "Glomerulopatia I (Nefritica, Alterações Assintomáticas, GNRP)",
+      "short": "CLM",
+      "affix": [
+        {
+          "aulas": "94%"
+        },
+        {
+          "apostila": "94%"
+        },
+        {
+          "questoes": "34%"
+        }
+      ]
+    },
+    {
+      "icon": "clinica",
+      "header": "Glomerulopatia I (Nefritica, Alterações Assintomáticas, GNRP)",
+      "short": "CLM",
+      "affix": [
+        {
+          "aulas": "94%"
+        },
+        {
+          "apostila": "94%"
+        },
+        {
+          "questoes": "34%"
+        }
+      ]
+    }
+  ],
+  "parcial": [
+    {
+      "acertos": "90%",
+      "questoes": 32,
+      "weeks": [20, 70, 100, 100, 100, 100, 100]
+    }
+  ],
+  "tarefas": [
+    {
+      "title": "Aula Cirurgia 1",
+      "category": "MEDCURSO",
+      "schedule": "14h00 - 16h00",
+      "icon": "course"
+    },
+    {
+      "title": "Cirurgia Geral",
+      "category": "Category",
+      "schedule": "16h00 - 17h00",
+      "icon": "category"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    },
+    {
+      "title": "Nefrologia",
+      "category": "Fazer Revisão",
+      "schedule": "17h00 - 18h00",
+      "icon": "revision"
+    }
+  ]
+}
