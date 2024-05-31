@@ -52,7 +52,7 @@ Diferenciais:
 - Animações em CSS (Sinta-se a vontade para criar a sua própria, seguindo as premissas do layout)
 - Acessibilidade
 - Separação dos componentes em arquivos SCSS ou Styled Components
-- Desenvolvimento dos estados dos componentes em TypeScript (navegação extendida e modal)
+- Desenvolvimento da aplicação em Angular, utilizando o JSON fornecido
 - Git/Github
 - Organização
 - Comunicação
@@ -60,7 +60,6 @@ Diferenciais:
 Diferenciais:
 
 - Animações utilizando as plataformas GreenSock ou Ionic Animations
-- Desenvolvimento da aplicação em Stencil ou Angular ou React ou Vue ou Ionic ou React Native, utilizando o JSON fornecido
 - Documentação dos componentes em Storybook
 ```
 
