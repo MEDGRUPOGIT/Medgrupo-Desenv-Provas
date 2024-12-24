@@ -1,0 +1,1 @@
+<h2 class="title">{{title}}</h2>

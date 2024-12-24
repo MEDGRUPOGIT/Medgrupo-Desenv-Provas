@@ -1,0 +1,36 @@
+<div class="sidebar">
+  <div class="sidebar__profile">
+    <div class="sidebar__profile-container">
+      <img
+        class="sidebar__profile-image"
+        [src]="user().avatar"
+        alt="Foto de perfil"
+      />
+      <span
+        [ngClass]="user().notifications ? 'sidebar__notification-dot' : ''"
+      ></span>
+    </div>
+  </div>
+  <nav class="sidebar__navigation">
+    <ul class="sidebar__navigation-list">
+      <!-- <icon></icon> -->
+
+      <svg >
+        <use
+          xlink:href="./assets/icons/iconHome.svg#iconHome"
+        ></use>
+      </svg>
+
+
+      <li *ngFor="let item of navigation()" class="sidebar__navigation-item">
+
+        <div class="sidebar__navigation-title">
+          {{ item.title }}
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <footer class="sidebar__footer">
+    <div class="sidebar__footer-logo">logo</div>
+  </footer>
+</div>

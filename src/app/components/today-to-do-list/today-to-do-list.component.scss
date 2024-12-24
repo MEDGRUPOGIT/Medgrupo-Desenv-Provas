@@ -1,0 +1,24 @@
+.container {
+  // width: 400px;
+  height: 100%;
+  color: white;
+  background-color: #121616;
+}
+
+.content {
+  background-color: #121616;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  height: 100%;
+  bottom: 0;
+  justify-content: end;
+  overflow: hidden;
+}
+.sidenav {
+  &__text {
+    padding: 20px 20px 20px 0;
+    color: #f9fafa;
+  }
+  background-color: #121616;
+}

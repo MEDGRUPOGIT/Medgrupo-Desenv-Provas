@@ -1,0 +1,21 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" [position]="'end'" [mode]="mode">
+    <div class="sidenav__text">Suas tarefas de hoje</div>
+    <div class="outer-cards">
+      <div *ngFor="let task of tasks">
+        <app-card
+          [title]="task.title"
+          [category]="task.category"
+          [schedule]="task.schedule"
+          [icon]="task.icon"
+        />
+      </div>
+    </div>
+  </mat-drawer>
+
+  <div class="content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+</mat-drawer-container>

@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  height: 100vh;
+  background-color: #121616;
+  ;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  p {
+    color: white;
+  }
+}
+
+.main__container {
+  display: flex;
+}
+
+.main__content {
+  flex: 1;
+  padding: 16px;
+}
+
+.conteudos {
+  margin-top: 16px;
+}
+
+.card {
+  margin-bottom: 16px;
+}
