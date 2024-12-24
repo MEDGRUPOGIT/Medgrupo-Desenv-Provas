@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SvgComponentComponent } from './svg-component.component';
+import { FooterMobileComponent } from './footer-mobile.component';
 
-describe('SvgComponentComponent', () => {
-  let component: SvgComponentComponent;
-  let fixture: ComponentFixture<SvgComponentComponent>;
+describe('FooterMobileComponent', () => {
+  let component: FooterMobileComponent;
+  let fixture: ComponentFixture<FooterMobileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SvgComponentComponent]
+      imports: [FooterMobileComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SvgComponentComponent);
+    fixture = TestBed.createComponent(FooterMobileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

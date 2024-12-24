@@ -13,16 +13,16 @@
   </div>
   <nav class="sidebar__navigation">
     <ul class="sidebar__navigation-list">
-      <!-- <icon></icon> -->
-
-      <svg >
-        <use
-          xlink:href="./assets/icons/iconHome.svg#iconHome"
-        ></use>
-      </svg>
-
-
       <li *ngFor="let item of navigation()" class="sidebar__navigation-item">
+        <div class="sidebar__navigation-item-icon">
+          <svg class="icon">
+            <use
+              [attr.xlink:href]="
+                './assets/icons/' + item.icon + '.svg#' + item.icon
+              "
+            ></use>
+          </svg>
+        </div>
 
         <div class="sidebar__navigation-title">
           {{ item.title }}
@@ -31,6 +31,12 @@
     </ul>
   </nav>
   <footer class="sidebar__footer">
-    <div class="sidebar__footer-logo">logo</div>
+    <svg class="icon">
+      <use
+        [attr.xlink:href]="
+          './assets/icons/ProductSwitcher.svg#ProductSwitcher'
+        "
+      ></use>
+    </svg>
   </footer>
 </div>

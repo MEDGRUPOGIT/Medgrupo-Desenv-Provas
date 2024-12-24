@@ -1,73 +1,75 @@
-.sidebar {
-  position: fixed;
-  top: 0;
-  width: 104px;
-  height: 100%;
-  background-color: #121616;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  &__profile {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-  }
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    width: 104px;
+    height: 100%;
+    background-color: #121616;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__profile {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+    }
 
-  &__profile-container {
-    position: relative;
-    display: inline-block;
-  }
+    &__profile-container {
+      position: relative;
+      display: inline-block;
+    }
 
-  &__profile-image {
-    display: block;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-  }
+    &__profile-image {
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
 
-  &__notification-dot {
-    position: absolute;
-    top: -8px;
-    right: -5px;
-    width: 12px;
-    height: 12px;
-    background-color: #47d5eb;
-    border-radius: 50%;
-    border: 2px solid black;
-  }
+    &__notification-dot {
+      position: absolute;
+      top: -8px;
+      right: -5px;
+      width: 12px;
+      height: 12px;
+      background-color: #47d5eb;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
 
-  &__navigation {
-    margin: 0;
-    padding: 0;
-
-    &-list {
+    &__navigation {
       margin: 0;
       padding: 0;
+
+      &-list {
+        margin: 0;
+        padding: 0;
+      }
+
+      &-item {
+        list-style-type: none;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        font-size: 10px;
+      }
+
     }
 
-    &-item {
-      list-style-type: none;
-      padding: 10px;
-      margin: 0;
-      text-align: center;
-      font-size: 10px;
+    &__footer {
+      height: 84px;
     }
-
-    // &-icon {
-    //   /* Add styles for the navigation icon if needed */
-    // }
-
-    // &-title {
-    //   /* Add styles for the navigation title if needed */
-    // }
   }
+}
 
-  &__footer {
-    height: 84px;
+.icon {
+  width: 25px;
+  height: 25px;
+}
 
-    // &-logo {
-    //   /* Add styles for the footer logo if needed */
-    // }
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    display: none;
   }
 }

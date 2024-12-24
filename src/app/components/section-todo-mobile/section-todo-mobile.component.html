@@ -1,0 +1,12 @@
+<!-- <div class="today-to-do-list__sidenav-text">Suas tarefas de hoje</div> -->
+<div class="outer-cards">
+  <div class="today-to-do-list__sidenav-text">Suas tarefas de hoje</div>
+  <div *ngFor="let task of tasks">
+    <app-card
+      [title]="task.title"
+      [category]="task.category"
+      [schedule]="task.schedule"
+      [icon]="task.icon"
+    />
+  </div>
+</div>

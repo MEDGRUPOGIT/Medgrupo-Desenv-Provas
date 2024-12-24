@@ -21,7 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
 export class SidebarComponent {
   user = signal<SidebarUser>(DataObject.user);
   navigation = signal<Array<SidebarNavigation>>(DataObject.navigation); //TODO: Fazer o serviço para o JSON
-  inlineSVG = signal<string>('../../../assets/icons/iconHome.svg');
 
 }
 

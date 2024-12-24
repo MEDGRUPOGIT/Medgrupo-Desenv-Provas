@@ -1,6 +1,6 @@
-<mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav" [position]="'end'" [mode]="mode">
-    <div class="sidenav__text">Suas tarefas de hoje</div>
+<mat-drawer-container class="today-to-do-list__container" autosize>
+  <mat-drawer #drawer class="today-to-do-list__sidenav" [position]="'end'" [mode]="mode">
+    <div class="today-to-do-list__sidenav-text">Suas tarefas de hoje</div>
     <div class="outer-cards">
       <div *ngFor="let task of tasks">
         <app-card
@@ -13,9 +13,11 @@
     </div>
   </mat-drawer>
 
-  <div class="content">
+  <div class="today-to-do-list__content">
     <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
+      <svg class="today-to-do-list__icon">
+        <use xlink:href="./assets/icons/side-toogle.svg#icon-side-toogle"></use>
+      </svg>
     </button>
   </div>
 </mat-drawer-container>

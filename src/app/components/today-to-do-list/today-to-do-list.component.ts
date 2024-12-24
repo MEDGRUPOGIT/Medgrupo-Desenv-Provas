@@ -19,9 +19,5 @@ export class TodayTodoList {
   @Input() tasks: Array<any> = [];
   showFiller = false;
   mode: MatDrawerMode = 'side';
-  opened = false;
-  end = false;
-  shouldRun = true;
-
 
 }

@@ -10,11 +10,5 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  constructor(
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer
-  ) {
-    this.matIconRegistry.addSvgIcon(`icon-home`, this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/iconHome.svg"));
-  }
 
 }

@@ -2,28 +2,81 @@
   display: flex;
   height: 100vh;
   background-color: #121616;
-  ;
-  display: flex;
   justify-content: space-between;
-  color: white;
-  p {
-    color: white;
+  color: #F9FAFA;
+  &__title{
+    padding-left:20px ;
   }
-}
-
-.main__container {
-  display: flex;
 }
 
 .main__content {
   flex: 1;
   padding: 16px;
+  margin-left: 104px; // Adjust this value based on the sidebar width
 }
 
-.conteudos {
+.main__title {
+  color: white;
+}
+
+.main__conteudos {
   margin-top: 16px;
+  display: flex;
 }
 
 .card {
   margin-bottom: 16px;
+  padding: 20px;
+  width: 50%;
+}
+
+.card__icon{
+  display: flex;
+}
+
+.card__infos{
+  display: flex;
+  justify-content: space-between ;
+}
+
+.card__image {
+  height: 200px;
+  width: 100%;
+  display: block;
+  background-color: orange;
+}
+
+.card__body {
+  padding: 20px;
+}
+
+.card__text {
+  color: white;
+}
+
+.footer-mobile {
+  position: fixed;
+}
+
+@media screen and (max-width: 1023px) {
+  .main {
+    margin-left: 0; // Reset margin for smaller screens
+    display: block;
+    &__content {
+      margin-left: 0;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  .main__conteudos {
+    margin-top: 16px;
+    display: block;
+  }
+  .right-todo-list{
+    display: none;
+  }
+  .card{
+    width: 100%;
+    padding: 20px 0;
+  }
 }

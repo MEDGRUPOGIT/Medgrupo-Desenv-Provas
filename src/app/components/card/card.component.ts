@@ -1,12 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input, input, signal } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { Icon } from '../icons/icons.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { sign } from 'crypto';
 
 @Component({
   selector: 'app-card',
-  imports: [MatCardModule, MatCheckboxModule, Icon],
+  imports: [MatCardModule, MatCheckboxModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
