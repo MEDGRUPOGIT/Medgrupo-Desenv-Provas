@@ -57,6 +57,9 @@
 .footer-mobile {
   position: fixed;
 }
+.section-todo-mobile{
+  display: none;
+}
 
 @media screen and (max-width: 1023px) {
   .main {
@@ -78,5 +81,8 @@
   .card{
     width: 100%;
     padding: 20px 0;
+  }
+  .section-todo-mobile{
+    display: block;
   }
 }

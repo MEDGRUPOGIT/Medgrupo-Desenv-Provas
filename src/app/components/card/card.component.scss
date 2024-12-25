@@ -33,11 +33,13 @@
   }
 
   &__icon {
-    /* Estilos para o ícone do cartão */
+    width: 20px;
+    height: 20px;
+    padding: 3px;
   }
 
   &__category {
-    /* Estilos para a categoria do cartão */
+    padding: 7px;
   }
 
   &__category-text {
@@ -47,11 +49,15 @@
   }
 
   &__time {
-    /* Estilos para o horário do cartão */
+    padding: 7px;
   }
 
   &__time-text {
     font-size: 12px;
     font-weight: 400;
   }
+}
+.icon {
+  width: 20px;
+  height: 20px;
 }
