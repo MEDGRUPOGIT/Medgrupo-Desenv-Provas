@@ -112,7 +112,7 @@ Pontos a serem validados:
 
 ### Troca de tema
 
-Trocar e salvar as cores dinâmicamente conforme a **[Paleta](https://www.figma.com/design/4QvnRfhttlJ2hIKQbuEPZl/02.-Tokens?node-id=5154-11248&t=Emb74IGcwQBuEONq-0)** de cores.
+Trocar e salvar as cores dinâmicamente conforme a **[Paleta]([https://www.figma.com/design/4QvnRfhttlJ2hIKQbuEPZl/02.-Tokens?node-id=5154-11248&t=Emb74IGcwQBuEONq-0](https://www.figma.com/design/z8XhCwiKDTFnm0d1pc1QWX/Templa%CC%81rios-Test?node-id=632-1213&p=f&t=epOlBMYwCHKOOWXH-0))** de cores.
 
 ### Arquitetura do projeto
 
