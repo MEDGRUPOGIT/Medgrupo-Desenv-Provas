@@ -1,0 +1,59 @@
+<aside class="aside-bar">
+  <nav class="aside-bar__container">
+    <div class="aside-bar__profile" (click)="openModalLightDarkMode()">
+      <div class="aside-bar__status"></div>
+      <img
+        class="aside-bar__avatar"
+        [src]="user.avatar"
+        alt="Foto de perfil do usuário"
+      />
+    </div>
+
+    <ul class="aside-bar__menu">
+      <li
+        class="aside-bar__item"
+        *ngFor="let item of navigation; let first = first"
+      >
+        <a href="#" class="aside-bar__link">
+          <img
+            [src]="'../../../assets/icon/' + item.icon + '.png'"
+            [alt]="'Ícone ' + item.title"
+            class="aside-bar__icon"
+          />
+          <span
+            class="aside-bar__text"
+            [ngClass]="{ 'aside-bar__text--first': first }"
+          >
+            {{ item.title }}
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="aside-bar__footer" (click)="openModal()">
+      <img
+        src="../../../assets/icon/icon-medgrupo-aside.png"
+        alt="Expandir menu"
+        class="aside-bar__toggle-icon"
+      />
+      <img
+        class="aside-bar__arrow-icon"
+        src="../../../assets/icon/icon-arrow.png"
+        alt="Seta para expandir"
+      />
+    </div>
+    <div class="aside-bar__bar-mobile">
+      <div class="aside-bar__mobile-bar"></div>
+      <div class="aside-bar__mobile-bar"></div>
+    </div>
+  </nav>
+  <app-modal-products
+    [modalIsOpen]="modalIsOpen"
+    (isOpenEmit)="emitirEvento($event)"
+  ></app-modal-products>
+
+  <app-modal-light-mode
+    [modalIsOpen]="modalLightModeComponent"
+    (isOpenEmit)="emitirEventoLight($event)"
+  />
+</aside>

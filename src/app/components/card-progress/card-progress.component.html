@@ -1,0 +1,35 @@
+<article class="card-progress">
+  <h2 class="card-progress__title">Veja a parcial de sua semana</h2>
+  <div class="card-progress__container">
+    <section class="card-progress__descriptions">
+      <div class="card-progress__stats">
+        <span class="card-progress__label">Acertos</span>
+        <img
+          src="../../../assets/icon/icon-interrogation.png"
+          class="card-progress__icon"
+          alt="Ícone de interrogação"
+        />
+      </div>
+      <div class="card-progress__metrics">
+        <span class="card-progress__percentage">{{ parcial[0].acertos }}</span>
+        <span class="card-progress__questions"
+          >{{ parcial[0].questoes }} questões</span
+        >
+      </div>
+    </section>
+
+    <section class="card-progress__bars-container">
+      <div class="card-progress__bar" *ngFor="let week of parcial[0].weeks">
+        <span
+          class="card-progress__done"
+          [ngStyle]="{'--week':week}"
+        >
+        </span>
+      </div>
+    </section>
+  </div>
+
+  <footer class="card-progress__footer">
+    <h2 class="card-progress__more">Acessar o painel de métrica &gt;</h2>
+  </footer>
+</article>

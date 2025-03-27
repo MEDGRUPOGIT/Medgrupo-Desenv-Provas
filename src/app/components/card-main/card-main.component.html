@@ -1,0 +1,48 @@
+<article class="card-main">
+  <section class="card-main__container">
+    <header>
+      <h1 class="card-main__title">Conteúdos da semana</h1>
+    </header>
+    <main class="card-main__principal">
+      <ng-container *ngFor="let conteudo of conteudos">
+        <span class="card-main__text">{{ conteudo.short }}</span>
+        <figure class="card-main__image-container">
+          <img
+            src="../../../assets/img/card-image.png"
+            alt="Imagem ilustrativa do conteúdo"
+            class="card-main__image"
+          />
+          <figcaption class="card-main__description">
+            {{ conteudo.header }}
+          </figcaption>
+          <div class="card-main__subtitle">
+            <img
+              class="card-main__icon"
+              src="../../../assets/icon/icon-play.png"
+              alt="icone de aulas"
+            />
+            <span class="card-main__icon-description--classes">Aulas</span>
+            <img
+              class="card-main__icon"
+              src="../../../assets/icon/icon-handout.png"
+              alt="icone de apostilas"
+            /><span class="card-main__icon-description--handout">Apostila</span>
+            <img
+              class="card-main__icon"
+              src="../../../assets/icon/icon-check-question.png"
+              alt="icone de questões"
+            /><span class="card-main__icon-description--questions">Questões</span>
+          </div>
+
+          <ul class="card-main__stats">
+            <li class="card-main__stat" *ngFor="let item of conteudo.affix">
+              <span class="card-main__classes">{{ item.apostila }}</span>
+              <span class="card-main__handout">{{ item.aulas }}</span>
+              <span class="card-main__questions">{{ item.questoes }}</span>
+            </li>
+          </ul>
+        </figure>
+      </ng-container>
+    </main>
+  </section>
+</article>

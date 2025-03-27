@@ -1,0 +1,49 @@
+<div class="modal-mode" *ngIf="modalIsOpen">
+  <div class="modal-mode__overlay"></div>
+  <div class="modal-mode__container">
+    <a href="#" (click)="emitirEvento()">
+      <img
+        class="modal-mode__close"
+        src="../../../assets/icon/icon-left.png"
+        alt="x"
+      />
+      <img
+        class="modal-mode__close-mobile"
+        src="../../../assets/icon/icon-chevron-left.png"
+        alt="x"
+      />
+    </a>
+    <section class="modal-mode__modes">
+      <h2 class="modal-mode__title {
+        align-items: start;
+      }">Modo Claro</h2>
+      <p class="modal-mode__description">
+        Por enquanto esta funcionalidade está disponível apenas para algumas
+        áreas, em breve estará disponível para todo o aplicativo.
+      </p>
+      <div class="modal-mode__buttons">
+        <div class="modal-mode__button-aplly">
+          <a class="modal-mode__dark" href="#">
+            <img
+              class="modal-mode__icon"
+              src="../../../assets/icon/icon-moon.png"
+              alt="x"
+            />
+          </a>
+          <span class="modal-mode__button-description">Modo Escuto</span>
+        </div>
+        <div class="modal-mode__button-aplly">
+          <a class="modal-mode__dark" href="#">
+            <img
+              class="modal-mode__icon"
+              src="../../../assets/icon/icon-sun.png"
+              alt="x"
+            />
+          </a>
+          <span class="modal-mode__button-description">Modo Claro</span>
+        </div>
+      </div>
+      <button class="modal-mode__button">Aplicar</button>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,128 @@
+.card-main {
+  padding-left: 292px;
+  color: var(--med-color-neutral-10);
+  background-color: var(--med-color-neutral-1);
+  animation: appear 1s;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 32px 0 24px 0;
+    color: var(--med-color-neutral-10);
+  }
+
+  &__principal {
+    display: flex;
+    padding-bottom: 95px;
+  }
+
+  &__text {
+    position: relative;
+    top: 24px;
+    left: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 0;
+  }
+
+  &__image-container {
+    width: 420px;
+    height: 328px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    padding-right: 16px;
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 16px 0;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--med-color-neutral-5);
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  &__icon-description {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+
+    &--classes {
+      margin-right: 80px;
+    }
+
+    &--handout {
+      margin-right: 63px;
+    }
+  }
+
+  &__stats {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+  }
+
+  &__stat {
+    margin-top: 12px;
+
+    &:not(:last-child) {
+      padding: 0 98px 0 0;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    padding-left: 146px;
+
+    &__principal {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      width: 100%;
+      padding-bottom: 135px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &__stats {
+      margin-bottom: 40px;
+    }
+
+    &__image-container {
+      flex: 0 0 auto;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding-left: 24px;
+    background-color: var(--med-color-neutral-15);
+  }
+
+  &__title {
+    padding: 24px 0 24px 0;
+  }
+
+  &__image {
+    width: 420px;
+    height: 328px;
+  }
+}

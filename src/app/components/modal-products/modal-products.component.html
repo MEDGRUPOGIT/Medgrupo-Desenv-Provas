@@ -1,0 +1,28 @@
+<div class="modal-products" *ngIf="modalIsOpen">
+  <div class="modal-products__overlay" (click)="emitirEvento()"></div>
+  <div class="modal-products__container">
+    <a (click)="emitirEvento()" href="#">
+      <img class="modal-products__close" src="../../../assets/icon/icon-left.png" alt="x" >
+    </a>
+    <section class="modal-products__products">
+      <h2 class="modal-products__title">Escolha um dos seus produtos</h2>
+      <ul>
+        <li class="modal-products__item" *ngFor="let product of products">
+          <article class="modal-products__topics">
+            <img
+              [src]="product.image"
+              [alt]="product.name"
+              class="modal-products__icon"
+            />
+            <span class="modal-products__description">{{ product.name }}</span>
+          </article>
+        </li>
+      </ul>
+      <footer class="modal-products__title--footer">
+        <span>
+          (+5) mostrar todos os produtos
+        </span>
+      </footer>
+    </section>
+  </div>
+</div>

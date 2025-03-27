@@ -1,0 +1,31 @@
+<section class="todo">
+  <div class="todo__container" [class.todo__container--open]="isOpen">
+    <h2 class="todo__title">Suas tarefas de hoje</h2>
+
+    <article class="todo__item" *ngFor="let tarefa of tarefas">
+      <input class="todo__checkbox" type="checkbox" />
+      <div class="todo__task">
+        <h3 class="todo__task-title">{{ tarefa.title }}</h3>
+        <img
+          class="todo__icon"
+          [src]="'../../../assets/icon/' + tarefa.icon + '.png'"
+          [alt]="'Ícone da tarefa ' + tarefa.title"
+        />
+        <span class="todo__description">
+          {{ tarefa.category }}
+          <span class="todo__description--weight">{{ tarefa.schedule }}</span>
+        </span>
+      </div>
+    </article>
+
+    <h2 class="todo__title todo__title--mobile">Ver tarefas da semana ></h2>
+  </div>
+
+  <img
+    [class.todo__toggle--rotated]="isOpen"
+    class="todo__toggle"
+    src="../../../assets/icon/icon-transition.png"
+    alt="Ícone de alternância"
+    (click)="toggleTodoList()"
+  />
+</section>

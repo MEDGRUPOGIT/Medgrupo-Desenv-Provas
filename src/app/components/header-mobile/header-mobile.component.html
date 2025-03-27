@@ -1,0 +1,33 @@
+<header class="header-mobile">
+<div class="header-mobile__container">
+  <div class="header-mobile__products" (click)="openModal()">
+  <img
+    src="../../../assets/icon/icon-medgrupo.png"
+    alt="Expandir menu"
+    class="header-mobile__toggle-icon"
+  /><span class="header-mobile__description">2022 REVALIDAÇÃO</span>
+  <img
+    class="header-mobile__arrow-icon"
+    src="../../../assets/icon/icon-chevron-down.png"
+    alt="Seta para expandir"
+  />
+</div>
+<div class="header-mobile__mode" (click)="openModalLightDarkMode()">
+
+  <img
+  class="header-mobile__avatar"
+  [src]="user.avatar"
+  alt="Foto de perfil do usuário"
+/>
+<div class="header-mobile__status"></div>
+</div>
+
+</div>
+<app-modal-products
+[modalIsOpen]="modalIsOpen"
+(isOpenEmit)="emitirEvento($event)"
+></app-modal-products>
+
+<app-modal-light-mode [modalIsOpen]="modalLightModeComponent" (isOpenEmit)="emitirEventoLight($event)"/>
+
+</header>

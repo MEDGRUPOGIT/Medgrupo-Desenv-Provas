@@ -1,0 +1,166 @@
+.card-progress {
+  padding: 32px 0 100px 292px;
+  animation: appear 2s 1s;
+  animation-fill-mode: backwards;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 32px 0 24px 0;
+    color: var(--med-color-neutral-10);
+  }
+
+  &__container {
+    display: flex;
+    width: 420px;
+    height: 160px;
+    border-radius: 8px;
+    background-color: var(--med-color-neutral-15);
+  }
+
+  &__descriptions {
+    margin: 24px 8px 24px 24px;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--med-color-neutral-10);
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__metrics {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__percentage {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 36px;
+    line-height: 32px;
+    color: var(--med-color-neutral-10);
+  }
+
+  &__questions {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 12px;
+    line-height: 16px;
+    color: var(--med-color-neutral-6);
+  }
+
+  &__bars-container {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(270deg);
+    margin-left: 66px;
+  }
+
+  &__bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 8px;
+    width: 112px;
+    border-radius: 4px;
+    margin: 12.335px 24px;
+    background: var(--med-color-neutral-2);
+  }
+
+  &__done {
+    position: relative;
+    overflow: hidden;
+    width: calc(var(--week) * 1%);
+    height: 20px;
+    border-radius: 50px;
+    animation: fillProgress 1.5s ease-out forwards 1.5s;
+    animation-fill-mode: backwards;
+    background-color: var(--med-color-brand-4);
+  }
+
+  &__more {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 32px 0 40px 0;
+    cursor: pointer;
+    color: var(--med-color-neutral-10);
+  }
+
+  @media (max-width: 1140px) {
+    padding: 32px 0 100px 146px;
+  }
+
+  @media (max-width: 800px) {
+    & {
+      padding: 0 0 0 24px;
+    }
+
+    &__container {
+      width: 366px;
+      height: 120px;
+    }
+
+    &__title {
+      padding: 40px 24px 24px 0px;
+    }
+
+    &__descriptions {
+      margin: 12px 0px 12px 16px;
+    }
+
+    &__stats {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__percentage {
+      margin-top: 24px;
+    }
+
+    &__questions {
+      margin-top: 8px;
+    }
+
+    &__bars-container {
+      margin-left: 87.9px;
+    }
+
+    &__bar {
+      width: 88px;
+      height: 8px;
+      margin: 8.91px 16px;
+      border-radius: 4px;
+    }
+
+    &__more {
+      margin: 24px 0;
+    }
+
+    @media (max-width: 420px) {
+      &__container {
+        width: 286.1px;
+        height: 120px;
+      }
+
+      &__bars-container {
+        margin-left: 8px;
+      }
+    }
+  }
+}

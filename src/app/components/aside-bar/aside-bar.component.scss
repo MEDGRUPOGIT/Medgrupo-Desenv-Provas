@@ -1,0 +1,173 @@
+.aside-bar {
+  &__container {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 104px;
+    height: 100%;
+    padding: 0 24px;
+    background-color: var(--med-color-neutral-1);
+  }
+
+  &__profile {
+    cursor: pointer;
+  }
+
+  &__status {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 60px;
+    top: 20px;
+    border-radius: 20px;
+    background-color: var(--med-color-brand-4);
+    border: 2px solid var(--med-color-brand-1);
+  }
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    margin: 24px 0;
+    border-radius: 50px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    transition: .3s;
+    color: var(--med-color-neutral-6);
+
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+
+    &--first {
+      color: var(--med-color-brand-4);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__toggle-icon {
+    width: 40px;
+    height: 40px;
+    margin: 24px 0;
+  }
+
+  &__arrow-icon {
+    width: 10px;
+    height: 8px;
+    margin-left: 8px;
+  }
+
+  &__bar-mobile {
+    display: none;
+  }
+
+  @media (max-width: 800px) {
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 104px;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      border-top: 1px solid var(--med-color-neutral-6);
+    }
+
+    &__menu {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding-top: 8px;
+    }
+
+    &__item {
+      margin-bottom: 0;
+    }
+
+    &__link {
+      margin-top: 8px;
+    }
+
+    &__toggle-icon {
+      display: none;
+    }
+    &__arrow-icon {
+      display: none;
+    }
+
+    &__avatar {
+      display: none;
+    }
+
+    &__status {
+      display: none;
+    }
+
+    &__bar-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+
+      :first-child {
+        margin-top: 20px;
+      }
+
+      :last-child {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__mobile {
+      display: inline;
+      position: fixed;
+      top: 0;
+      left: 20px;
+    }
+
+    &__mobile-bar {
+      display: block;
+      width: 144px;
+      height: 4px;
+      background-color: var(--med-color-neutral-2);
+    }
+  }
+}
