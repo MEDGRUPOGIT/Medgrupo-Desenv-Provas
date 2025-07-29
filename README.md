@@ -4,7 +4,7 @@
 
 ## Instruções
 
-1. As atividades deverão ser realizadas no prazo estipulado: **até as 00:00 de quinta-feira**;
+1. As atividades deverão ser realizadas no prazo estipulado;
 2. Implemente o layout com base no figma disponibilizado (utilizar a font-family **open sans**);
 3. Faça um fork deste repositório, para poder armazenar sua prova;
 4. Após terminar o teste, submeta um pull request e aguarde seu feedback;
