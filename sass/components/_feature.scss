@@ -1,0 +1,36 @@
+
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 32px 40px;
+    gap: 16px;
+
+
+
+    h1 {
+        font-size: 1.25rem;
+        margin-bottom: 9px;
+    }
+
+    &__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 16px;
+        flex-wrap: nowrap;
+
+        
+    }
+
+    @media (max-width: 768px) {
+        padding: 24px;
+        &__container {
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+            padding-bottom: 16px; 
+        }
+    }
+}

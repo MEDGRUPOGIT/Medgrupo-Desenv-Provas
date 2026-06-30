@@ -1,0 +1,23 @@
+{
+  "name": "medgrupo",
+  "version": "1.0.0",
+  "description": "Prova Medgrupo",
+  "homepage": "https://github.com/rodriguegg96-commits/Prova-MedGrupo-Front#readme",
+  "bugs": {
+    "url": "https://github.com/rodriguegg96-commits/Prova-MedGrupo-Front/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodriguegg96-commits/Prova-MedGrupo-Front.git"
+  },
+  "license": "ISC",
+  "author": "Gabriel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {"compile:sass": "sass sass/main.scss css/style.css",
+  "watch:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}

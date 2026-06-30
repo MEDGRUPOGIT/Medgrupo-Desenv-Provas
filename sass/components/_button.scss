@@ -1,0 +1,126 @@
+@use"../abstracts/variables";
+
+.btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+.btn-switch {
+
+    &__avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+    &__badge {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 12px;
+        height: 12px;
+        background-color: variables.$color-primary;
+        border-radius: 50%;
+        border: 2.5px solid variables.$color-bars;
+    }
+}
+
+.btn-products {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+
+    &__arrow {
+        color: variables.$color-secondary;
+
+        &:hover {
+            color: variables.$color-primary;
+        }
+    }
+
+    &__txt {
+        color: variables.$color-text-main;
+        font-weight: bold;
+        display: none;
+        font-size: 1.25rem;
+
+        @media (max-width: 768px) {
+            display: block;
+
+        }
+    }
+
+
+}
+
+.btn-close__tema,
+.btn-close__products {
+    margin: 20px 32px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 0;
+    color: variables.$color-text-main;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: variables.$color-primary;
+    }
+
+    svg {
+        width: 12px;
+        height: 12px;
+
+    }
+
+
+}
+
+
+
+.btn-close__tema {
+
+    @media (max-width: 768px) {
+        position: absolute;
+        top: 80px;
+        left: 24px;
+        margin: 0;
+
+
+    }
+
+
+}
+
+.modal-switch__btn {
+    background-color: variables.$color-primary;
+    color: variables.$color-text-main;
+    font-size: 1rem;
+    border: none;
+    border-radius: 500px;
+    padding: 12px 64px;
+    cursor: pointer;
+    align-self: center;
+    margin: 80px auto 24px auto;
+    transition: transform 0.2s ease, filter 0.2s;
+
+    &:hover {
+        background-color: variables.$color-primary-hover;
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+        align-self: stretch;
+        margin: auto 24px 32px 24px;
+    }
+
+}

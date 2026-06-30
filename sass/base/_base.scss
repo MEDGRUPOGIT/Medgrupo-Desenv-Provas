@@ -1,0 +1,16 @@
+@use"../abstracts/variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: variables.$color-background;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: variables.$color-text-main;
+    font-size: 0.875rem;
+}

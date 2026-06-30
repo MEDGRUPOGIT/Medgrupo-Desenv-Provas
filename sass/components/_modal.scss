@@ -1,0 +1,244 @@
+@use"../abstracts/variables";
+
+
+.modal-overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    background-color: variables.$color-modal-overlay;
+    backdrop-filter: blur(40px);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+
+    .modal-products {
+        background-color: variables.$color-background;
+        max-width: 880px;
+        width: 100%;
+
+        &__list {
+            list-style: none;
+            padding: 40px 64px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &__item {
+            list-style: none;
+            width: 100%;
+
+            p {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            svg {
+                width: 42px;
+                height: 42px;
+                color: variables.$color-text-main;
+            }
+
+
+
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background-color: variables.$color-task-card;
+            padding: 16px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+            border: 1px solid transparent;
+            text-decoration: none;
+            color: variables.$color-text-main;
+            width: 100%;
+
+            &:hover {
+                border-color: variables.$color-modal-task-border;
+
+            }
+        }
+
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 64px;
+        }
+
+
+
+        &__show-all {
+            text-decoration: none;
+            color: variables.$color-text-main;
+            margin: 40px 64px;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: bold;
+
+            &:hover {
+                color: variables.$color-primary;
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 100%;
+            padding-top: 64px;
+            z-index: 1000;
+
+            &__list {
+                padding: 40px 24px;
+            }
+
+            .btn-close__products {
+                margin: 20px 32px;
+            }
+
+            h1 {
+                margin: 20px 32px;
+            }
+
+            &__show-all{
+                margin: 20px 32px;
+            }
+        }
+    }
+
+
+
+
+}
+
+.modal-switch {
+    max-width: 880px;
+    width: 100%;
+    height: auto;
+    background-color: variables.$color-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__card {
+
+        display: flex;
+        gap: 16px;
+        margin: 0 64px;
+
+    }
+
+    &__selection {
+        padding: 64px;
+        flex: 1;
+        height: 320px;
+        background-color: variables.$color-task-card;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 8px;
+        border: 3px solid transparent;
+        color: variables.$color-text-main;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+
+        &:hover {
+            border-color: variables.$color-primary;
+            color: variables.$color-primary;
+
+        }
+
+    }
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+
+
+
+    }
+
+    &__selection-text {
+        font-size: 1rem;
+        font-weight: 500;
+        color: variables.$color-text-main;
+    }
+
+
+
+    &__info {
+        margin: 24px 0;
+        padding: 16px 64px 32px 64px;
+
+        h1 {
+            font-size: 2rem;
+            color: variables.$color-text-main;
+            margin: 0 0 8px 0;
+        }
+
+        p {
+            color: variables.$color-text-secondary;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        display: flex;
+        padding-top: 64px;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 0;
+
+
+
+
+        &__info {
+            margin-top: 64px;
+            padding: 80px 24px 24px 24px;
+
+            h1 {
+                font-size: 1.75rem;
+
+            }
+        }
+
+        &__card {
+            margin: 0 24px;
+
+        }
+
+        &__selection {
+            padding: 24px;
+            height: auto;
+            min-height: 180px;
+            justify-content: center;
+        }
+
+
+    }
+
+
+}

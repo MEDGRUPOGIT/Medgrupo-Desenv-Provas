@@ -1,0 +1,39 @@
+@use"../abstracts/variables";
+
+.task-panel {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 390px;
+    min-width: 250px;
+    background-color: variables.$color-background;
+    padding: 32px 0 24px 24px;
+    margin: 0 24px;
+    border-left: 1px solid variables.$color-border-task;
+    position: relative;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        color: variables.$color-text-main;
+        margin-bottom: 24px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        align-self: center;
+        padding: 24px;
+
+    }
+
+
+
+}

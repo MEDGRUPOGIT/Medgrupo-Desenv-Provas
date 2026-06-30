@@ -1,0 +1,120 @@
+@use"../abstracts/variables";
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: variables.$color-task-card;
+    padding: 14px 16px;
+    border-radius: 8px;
+
+    &__checkbox-wrapper {
+        cursor: pointer;
+
+        &:hover {
+            .task__checkbox:not(:checked)~.task__custom-checkbox {
+                border-color: variables.$color-primary; 
+                &::after {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+            }
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+
+
+
+        &:checked~.task__custom-checkbox {
+            background-color: variables.$color-primary;
+            border-color: variables.$color-primary;
+            svg {
+                display: block;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__custom-checkbox {
+        width: 20px;
+        height: 20px;
+        border: 2px solid variables.$color-border-checkbox;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        position: relative;
+
+        &::after {
+            content: '';
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            width: 10px;
+            height: 2px;
+            background-color: variables.$color-primary;
+            border-radius: 1px;
+            transition: all 0.2s ease;
+        }
+
+        svg {
+            display: none; // Ícone começa invisível
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+    }
+
+    &__title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: variables.$color-text-main;
+        margin: 0;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.75rem;
+        color: variables.$color-text-secondary;
+    }
+
+    &__category {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+
+    }
+
+    &__time {
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 0.75rem;
+    }
+
+
+}

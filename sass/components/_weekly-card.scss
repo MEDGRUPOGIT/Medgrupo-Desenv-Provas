@@ -1,0 +1,125 @@
+@use"../abstracts/variables";
+
+
+.weekly-report {
+
+    width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px; // Espaçamento entre título, card e link
+    padding: 32px 40px;
+
+    color: variables.$color-text-main;
+
+    &__title {
+        font-size: 1.25rem; 
+        margin: 0;
+    }
+
+    .weekly-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: variables.$color-task-card;
+        border-radius: 8px;
+        padding: 24px;
+
+
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        &__header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 36px;
+
+        }
+
+        &__label {
+            font-size: 0.875rem; 
+            font-weight: 600;
+        }
+
+        &__icon {
+            width: 16px;
+            height: 16px;
+            color: variables.$color-text-secondary;
+            cursor: pointer;
+        }
+
+        &__value {
+            font-size: 2rem; 
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        &__subtext {
+            font-size: 0.75rem; 
+            color: variables.$color-text-secondary;
+
+        }
+
+        &__chart {
+
+            display: flex;
+            align-items: flex-start; // Garante que as barras cresçam de baixo para cima
+            gap: 20px;
+            height: 116px; // Altura máxima do gráfico
+
+
+        }
+
+        &__bar {
+            width: 8px; // Largura do pino da barra
+            height: 100%; // 100% da caixa __chart (90px)
+            background-color: variables.$color-bars;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        &__bar-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: variables.$color-primary;
+            border-radius: 4px; // Arredonda também o pedaço pintado
+            transition: height 0.4s ease-out; // Efeito suave caso injete os dados dinamicamente
+        }
+    }
+
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: variables.$color-text-main;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 8px;
+        transition: opacity 0.2s ease;
+        
+
+        &:hover {
+           color: variables.$color-text-secondary
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+        min-width: 400px;
+        padding: 24px;
+
+
+    }
+}
